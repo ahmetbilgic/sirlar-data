@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "updatedAt": "2026-07-25",
+  "note": "Kelimeler en fazla 8 harf (ızgara 9x9 kalsın), her kategori 5-8 kelime.",
+  "categories": [
+    { "id": "yemekler", "name": "Yemekler", "emoji": "🍽️" },
+    { "id": "unlu_yerler", "name": "Ünlü Yerler", "emoji": "📍" },
+    { "id": "yoresel_kelimeler", "name": "Yöresel Kelimeler", "emoji": "💬" }
+  ],
+  "provinces": [
+    {
+      "name": "Adana",
+      "plate": 1,
+      "items": {
+        "yemekler": ["Kebap", "Şırdan", "Bici Bici", "Şalgam", "Ciğer"],
+        "unlu_yerler": ["Taş Köprü", "Ulu Cami", "Sabancı", "Varda", "Kale"],
+        "yoresel_kelimeler": ["Haçan", "Emmi", "Zabun", "Cıncık", "Höllük"]
+      }
+    },
+    {
+      "name": "Kahramanmaraş",
+      "plate": 46,
+      "items": {
+        "yemekler": ["Dondurma", "Tarhana", "Acı Biber", "Kadayıf", "Künefe"],
+        "unlu_yerler": ["Ulu Cami", "Kale", "Kurtuluş", "Çarşı", "Müze"],
+        "yoresel_kelimeler": ["Gari", "Hölle", "Çalkama", "Ayidi", "Höllük"]
+      }
+    },
+    {
+      "name": "Gaziantep",
+      "plate": 27,
+      "items": {
+        "yemekler": ["Baklava", "Lahmacun", "Beyran", "Katmer", "Yuvalama"],
+        "unlu_yerler": ["Kale", "Zeugma", "Ulu Cami", "Çarşı", "Müze"],
+        "yoresel_kelimeler": ["Cıncık", "Höllük", "Firik", "Şıllık", "Gari"]
+      }
+    },
+    {
+      "name": "Şanlıurfa",
+      "plate": 63,
+      "items": {
+        "yemekler": ["Çiğ Köfte", "Kebap", "Lahmacun", "Şıllık", "Borani"],
+        "unlu_yerler": ["Gölbaşı", "Kale", "Ulu Cami", "Çarşı", "Müze"],
+        "yoresel_kelimeler": ["İşmar", "Deng", "Havar", "Zerf", "Emmi"]
+      }
+    },
+    {
+      "name": "Trabzon",
+      "plate": 61,
+      "items": {
+        "yemekler": ["Hamsi", "Kuymak", "Köfte", "Pide", "Mısır"],
+        "unlu_yerler": ["Sümela", "Uzungöl", "Ayasofya", "Boztepe", "Kale"],
+        "yoresel_kelimeler": ["Kuşkuş", "Pekmez", "Uşağum", "Hele", "Emmi"]
+      }
+    },
+    {
+      "name": "İstanbul",
+      "plate": 34,
+      "items": {
+        "yemekler": ["Kokoreç", "Midye", "Boza", "Simit", "Lokum"],
+        "unlu_yerler": ["Ayasofya", "Galata", "Topkapı", "Çamlıca", "Kale"],
+        "yoresel_kelimeler": ["Abi", "Reis", "Hadi", "Nolur", "Kanka"]
+      }
+    },
+    {
+      "name": "İzmir",
+      "plate": 35,
+      "items": {
+        "yemekler": ["Boyoz", "Kumru", "Gevrek", "Söğüş", "Lokma"],
+        "unlu_yerler": ["Kordon", "Agora", "Saat", "Konak", "Kale"],
+        "yoresel_kelimeler": ["Hadi", "Yaa", "Kanka", "Emmi", "Reis"]
+      }
+    },
+    {
+      "name": "Ankara",
+      "plate": 6,
+      "items": {
+        "yemekler": ["Döner", "Simit", "Çubuk", "Kuru", "Tavuk"],
+        "unlu_yerler": ["Kale", "Kızılay", "Kuğulu", "Müze", "Cami"],
+        "yoresel_kelimeler": ["Hadi", "Baba", "Emmi", "Gari", "Reis"]
+      }
+    },
+    {
+      "name": "Konya",
+      "plate": 42,
+      "items": {
+        "yemekler": ["Sac Arası", "Bamya", "Tirit", "Etli", "Fırın"],
+        "unlu_yerler": ["Mevlana", "Alaeddin", "Sille", "Kale", "Müze"],
+        "yoresel_kelimeler": ["Gari", "Bacım", "Hadi", "Emmi", "Baba"]
+      }
+    },
+    {
+      "name": "Bursa",
+      "plate": 16,
+      "items": {
+        "yemekler": ["İskender", "Kestane", "Cantık", "Köfte", "Tahin"],
+        "unlu_yerler": ["Ulu Cami", "Uludağ", "Yeşil", "Kale", "Müze"],
+        "yoresel_kelimeler": ["Hadi", "Aba", "Gari", "Emmi", "Baba"]
+      }
+    },
+    {
+      "name": "Antalya",
+      "plate": 7,
+      "items": {
+        "yemekler": ["Piyaz", "Hibeş", "Tahinli", "Köfte", "Serpme"],
+        "unlu_yerler": ["Kaleiçi", "Düden", "Aspendos", "Hadrian", "Kale"],
+        "yoresel_kelimeler": ["Hadi", "Yavrum", "Aba", "Emmi", "Gari"]
+      }
+    },
+    {
+      "name": "Erzurum",
+      "plate": 25,
+      "items": {
+        "yemekler": ["Kadayıf", "Kete", "Su Böreği", "Lavaş", "Tandır"],
+        "unlu_yerler": ["Kale", "Yakutiye", "Çifte", "Müze", "Cami"],
+        "yoresel_kelimeler": ["Hele", "Uşağum", "Emmi", "Gari", "Baba"]
+      }
+    }
+  ],
+  "specialLevels": [
+    {
+      "title": "Eski Türk Devletleri",
+      "category": { "id": "eski_turk_devletleri", "name": "Devletler", "emoji": "⚔️" },
+      "words": ["Göktürk", "Uygur", "Selçuklu", "Hun", "Avar", "Hazar", "Gazneli", "Kıpçak"]
+    },
+    {
+      "title": "Eski Türkçe",
+      "category": { "id": "eski_turkce", "name": "Kelimeler", "emoji": "📜" },
+      "words": ["Kağan", "Otağ", "Tümen", "Yabgu", "Balbal", "Kurgan", "Damga", "Yörük"]
+    }
+  ]
+}
