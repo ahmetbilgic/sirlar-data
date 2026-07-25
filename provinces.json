@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "updatedAt": "2026-07-25",
-  "note": "Kelimeler en fazla 8 harf (ızgara 9x9). Her kategori 5-8 kelime, sayı değişken.",
+  "note": "Kural: her bölüm 5-8 kelime (sayı değişken). Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
   "categories": [
     { "id": "yemekler", "name": "Yemekler", "emoji": "🍽️" },
     { "id": "unlu_yerler", "name": "Ünlü Yerler", "emoji": "📍" },
@@ -12,8 +12,8 @@
       "name": "Adana",
       "plate": 1,
       "items": {
-        "yemekler": ["Kebap", "Şırdan", "Bici Bici", "Şalgam", "Ciğer", "Kısır", "Humus"],
-        "unlu_yerler": ["Taş Köprü", "Ulu Cami", "Sabancı", "Varda", "Kale"],
+        "yemekler": ["Adana Kebabı", "Şırdan", "Bici Bici", "Şalgam", "Analı Kızlı", "Ciğer"],
+        "unlu_yerler": ["Taş Köprü", "Sabancı Camii", "Ulu Cami", "Varda Köprüsü", "Merkez Park"],
         "yoresel_kelimeler": ["Haçan", "Emmi", "Zabun", "Cıncık", "Höllük", "Gari"]
       }
     },
@@ -21,8 +21,8 @@
       "name": "Kahramanmaraş",
       "plate": 46,
       "items": {
-        "yemekler": ["Dondurma", "Tarhana", "Acı Biber", "Kadayıf", "Künefe", "Parmak"],
-        "unlu_yerler": ["Ulu Cami", "Kale", "Kurtuluş", "Çarşı", "Müze"],
+        "yemekler": ["Dondurma", "Tarhana", "Acı Biber", "İçli Köfte", "Kadayıf", "Künefe"],
+        "unlu_yerler": ["Kapalı Çarşı", "Ulu Cami", "Maraş Kalesi", "Kurtuluş", "Müze"],
         "yoresel_kelimeler": ["Gari", "Hölle", "Çalkama", "Ayidi", "Höllük"]
       }
     },
@@ -30,8 +30,8 @@
       "name": "Gaziantep",
       "plate": 27,
       "items": {
-        "yemekler": ["Baklava", "Lahmacun", "Beyran", "Katmer", "Yuvalama", "Künefe", "Simit", "Menengiç"],
-        "unlu_yerler": ["Kale", "Zeugma", "Ulu Cami", "Çarşı", "Müze", "Bakırcı"],
+        "yemekler": ["Baklava", "Lahmacun", "Beyran", "Katmer", "Yuvalama", "İçli Köfte", "Menengiç"],
+        "unlu_yerler": ["Antep Kalesi", "Zeugma", "Bakırcılar", "Ulu Cami", "Çarşı", "Müze"],
         "yoresel_kelimeler": ["Cıncık", "Höllük", "Firik", "Şıllık", "Gari"]
       }
     },
@@ -39,8 +39,8 @@
       "name": "Şanlıurfa",
       "plate": 63,
       "items": {
-        "yemekler": ["Çiğ Köfte", "Kebap", "Lahmacun", "Şıllık", "Borani", "İsot"],
-        "unlu_yerler": ["Gölbaşı", "Kale", "Ulu Cami", "Çarşı", "Müze", "Harran"],
+        "yemekler": ["Çiğ Köfte", "Urfa Kebabı", "Lahmacun", "Şıllık", "Borani", "İsot"],
+        "unlu_yerler": ["Balıklıgöl", "Göbeklitepe", "Ulu Cami", "Urfa Kalesi", "Harran"],
         "yoresel_kelimeler": ["İşmar", "Deng", "Havar", "Zerf", "Emmi"]
       }
     },
@@ -48,8 +48,8 @@
       "name": "Trabzon",
       "plate": 61,
       "items": {
-        "yemekler": ["Hamsi", "Kuymak", "Köfte", "Pide", "Mısır", "Hurmalı", "Tereyağ"],
-        "unlu_yerler": ["Sümela", "Uzungöl", "Ayasofya", "Boztepe", "Kale", "Sera"],
+        "yemekler": ["Hamsi", "Kuymak", "Akçaabat", "Karalahana", "Vakfıkebir", "Pide"],
+        "unlu_yerler": ["Sümela", "Uzungöl", "Ayasofya", "Atatürk Köşkü", "Boztepe", "Kale"],
         "yoresel_kelimeler": ["Kuşkuş", "Pekmez", "Uşağum", "Hele", "Emmi"]
       }
     },
@@ -57,8 +57,8 @@
       "name": "İstanbul",
       "plate": 34,
       "items": {
-        "yemekler": ["Kokoreç", "Midye", "Boza", "Simit", "Lokum", "Balık", "Kestane", "Turşu"],
-        "unlu_yerler": ["Ayasofya", "Galata", "Topkapı", "Çamlıca", "Kale", "Eminönü", "Beyoğlu", "Ortaköy"],
+        "yemekler": ["Balık Ekmek", "Kokoreç", "Midye Dolma", "Islak Burger", "Boza", "Simit", "Kestane"],
+        "unlu_yerler": ["Ayasofya", "Sultanahmet", "Galata Kulesi", "Kapalıçarşı", "Topkapı", "Kız Kulesi", "Dolmabahçe", "Ortaköy"],
         "yoresel_kelimeler": ["Abi", "Reis", "Hadi", "Nolur", "Kanka", "Moruk"]
       }
     },
@@ -67,7 +67,7 @@
       "plate": 35,
       "items": {
         "yemekler": ["Boyoz", "Kumru", "Gevrek", "Söğüş", "Lokma", "Şambali"],
-        "unlu_yerler": ["Kordon", "Agora", "Saat", "Konak", "Kale", "Asansör"],
+        "unlu_yerler": ["Saat Kulesi", "Kordon", "Kadifekale", "Agora", "Konak", "Asansör"],
         "yoresel_kelimeler": ["Hadi", "Yaa", "Kanka", "Emmi", "Reis"]
       }
     },
@@ -75,8 +75,8 @@
       "name": "Ankara",
       "plate": 6,
       "items": {
-        "yemekler": ["Döner", "Simit", "Çubuk", "Kuru", "Tavuk"],
-        "unlu_yerler": ["Kale", "Kızılay", "Kuğulu", "Müze", "Cami"],
+        "yemekler": ["Döner", "Simit", "Beypazarı", "Çubuk", "Tavuk"],
+        "unlu_yerler": ["Anıtkabir", "Kale", "Kızılay", "Kuğulu", "Kocatepe", "Müze"],
         "yoresel_kelimeler": ["Hadi", "Baba", "Emmi", "Gari", "Reis"]
       }
     },
@@ -84,8 +84,8 @@
       "name": "Konya",
       "plate": 42,
       "items": {
-        "yemekler": ["Sac Arası", "Bamya", "Tirit", "Etli", "Fırın", "Höşmerim"],
-        "unlu_yerler": ["Mevlana", "Alaeddin", "Sille", "Kale", "Müze", "Karatay"],
+        "yemekler": ["Etli Ekmek", "Fırın Kebap", "Bamya", "Sac Arası", "Tirit", "Höşmerim"],
+        "unlu_yerler": ["Mevlana", "Alaeddin", "İnce Minare", "Sille", "Karatay", "Müze"],
         "yoresel_kelimeler": ["Gari", "Bacım", "Hadi", "Emmi", "Baba"]
       }
     },
@@ -93,8 +93,8 @@
       "name": "Bursa",
       "plate": 16,
       "items": {
-        "yemekler": ["İskender", "Kestane", "Cantık", "Köfte", "Tahin", "Pideli"],
-        "unlu_yerler": ["Ulu Cami", "Uludağ", "Yeşil", "Kale", "Müze", "Cumali"],
+        "yemekler": ["İskender", "Kestane", "Pideli Köfte", "Cantık", "Tahin", "Köfte"],
+        "unlu_yerler": ["Ulu Cami", "Yeşil Türbe", "Uludağ", "Cumalıkızık", "Kale", "Müze"],
         "yoresel_kelimeler": ["Hadi", "Aba", "Gari", "Emmi", "Baba"]
       }
     },
@@ -102,8 +102,8 @@
       "name": "Antalya",
       "plate": 7,
       "items": {
-        "yemekler": ["Piyaz", "Hibeş", "Tahinli", "Köfte", "Serpme", "Şiş"],
-        "unlu_yerler": ["Kaleiçi", "Düden", "Aspendos", "Hadrian", "Kale", "Yivli"],
+        "yemekler": ["Piyaz", "Şiş Köfte", "Hibeş", "Tahinli", "Serpme", "Köfte"],
+        "unlu_yerler": ["Kaleiçi", "Düden", "Aspendos", "Hadrian", "Yivli", "Kale"],
         "yoresel_kelimeler": ["Hadi", "Yavrum", "Aba", "Emmi", "Gari"]
       }
     },
@@ -111,8 +111,8 @@
       "name": "Erzurum",
       "plate": 25,
       "items": {
-        "yemekler": ["Kadayıf", "Kete", "Su Böreği", "Lavaş", "Tandır", "Cağ"],
-        "unlu_yerler": ["Kale", "Yakutiye", "Çifte", "Müze", "Cami", "Tortum"],
+        "yemekler": ["Cağ Kebabı", "Kadayıf", "Su Böreği", "Kete", "Lavaş", "Tandır"],
+        "unlu_yerler": ["Çifte Minare", "Palandöken", "Yakutiye", "Kale", "Müze", "Tortum"],
         "yoresel_kelimeler": ["Hele", "Uşağum", "Emmi", "Gari", "Baba"]
       }
     }
