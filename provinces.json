@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "updatedAt": "2026-07-26",
   "note": "Kural: her bölüm 5-8 kelime. Yemekler o ilin en meşhur/popüler olanları. Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
   "categories": [
@@ -607,6 +607,387 @@
           "Gök Medrese",
           "Balıklı",
           "Buruciye"
+        ]
+      }
+    },
+    {
+      "name": "Balıkesir",
+      "plate": 10,
+      "items": {
+        "yemekler": [
+          "Höşmerim",
+          "Kuzu Tandır",
+          "Ayvalık Tostu",
+          "Keşkek",
+          "Papara"
+        ],
+        "unlu_yerler": [
+          "Ayvalık",
+          "Cunda",
+          "Kaz Dağları",
+          "Sarımsaklı",
+          "Manyas"
+        ]
+      }
+    },
+    {
+      "name": "Aydın",
+      "plate": 9,
+      "items": {
+        "yemekler": [
+          "İncir",
+          "Çöp Şiş",
+          "Keşkek",
+          "Lokma",
+          "Zeytinyağlı"
+        ],
+        "unlu_yerler": [
+          "Afrodisias",
+          "Didim",
+          "Kuşadası",
+          "Milet",
+          "Priene"
+        ]
+      }
+    },
+    {
+      "name": "Çanakkale",
+      "plate": 17,
+      "items": {
+        "yemekler": [
+          "Ezine Peyniri",
+          "Sardalya",
+          "Zeytinyağlı",
+          "Lokma",
+          "Kaz Eti"
+        ],
+        "unlu_yerler": [
+          "Truva",
+          "Gelibolu",
+          "Assos",
+          "Bozcaada",
+          "Şehitler"
+        ]
+      }
+    },
+    {
+      "name": "Manisa",
+      "plate": 45,
+      "items": {
+        "yemekler": [
+          "Mesir Macunu",
+          "Manisa Kebabı",
+          "Sübye",
+          "Höşmerim",
+          "Keşkek"
+        ],
+        "unlu_yerler": [
+          "Spil Dağı",
+          "Ağlayan Kaya",
+          "Sardes",
+          "Kula",
+          "Sart"
+        ]
+      }
+    },
+    {
+      "name": "Afyonkarahisar",
+      "plate": 3,
+      "items": {
+        "yemekler": [
+          "Sucuk",
+          "Kaymak",
+          "Lokum",
+          "Ağzı Açık",
+          "Haşhaşlı",
+          "Bükme"
+        ],
+        "unlu_yerler": [
+          "Afyon Kalesi",
+          "Frig Vadisi",
+          "Kaya Camii",
+          "Kaplıca",
+          "Zafer Anıtı"
+        ]
+      }
+    },
+    {
+      "name": "Isparta",
+      "plate": 32,
+      "items": {
+        "yemekler": [
+          "Gül Tatlısı",
+          "Kabaklama",
+          "Ekmek Dolması",
+          "Banaz Pidesi",
+          "Höşmerim"
+        ],
+        "unlu_yerler": [
+          "Gül Bahçesi",
+          "Eğirdir",
+          "Kovada",
+          "Davraz",
+          "Yalvaç"
+        ]
+      }
+    },
+    {
+      "name": "Bolu",
+      "plate": 14,
+      "items": {
+        "yemekler": [
+          "Mantı",
+          "Keşkek",
+          "Tirit",
+          "Saray Helvası",
+          "Kaz Eti"
+        ],
+        "unlu_yerler": [
+          "Abant",
+          "Yedigöller",
+          "Gölcük",
+          "Kartalkaya",
+          "Mudurnu"
+        ]
+      }
+    },
+    {
+      "name": "Edirne",
+      "plate": 22,
+      "items": {
+        "yemekler": [
+          "Ciğer",
+          "Badem Ezmesi",
+          "Deva Macunu",
+          "Peynir",
+          "Hardaliye"
+        ],
+        "unlu_yerler": [
+          "Selimiye",
+          "Meriç",
+          "Karaağaç",
+          "Sarayiçi",
+          "Eski Cami"
+        ]
+      }
+    },
+    {
+      "name": "Tekirdağ",
+      "plate": 59,
+      "items": {
+        "yemekler": [
+          "Köfte",
+          "Rakı",
+          "Peynir",
+          "Ayçöreği",
+          "Badem"
+        ],
+        "unlu_yerler": [
+          "Rakoczi",
+          "Namık Kemal",
+          "Uçmakdere",
+          "Şarköy",
+          "Ganos"
+        ]
+      }
+    },
+    {
+      "name": "Ordu",
+      "plate": 52,
+      "items": {
+        "yemekler": [
+          "Fındık",
+          "Karalahana",
+          "Pide",
+          "Taflan",
+          "Mısır Ekmeği"
+        ],
+        "unlu_yerler": [
+          "Boztepe",
+          "Yason Burnu",
+          "Çambaşı",
+          "Perşembe",
+          "Ulugöl"
+        ]
+      }
+    },
+    {
+      "name": "Giresun",
+      "plate": 28,
+      "items": {
+        "yemekler": [
+          "Fındık",
+          "Pide",
+          "Karalahana",
+          "Tereyağı",
+          "Kiraz"
+        ],
+        "unlu_yerler": [
+          "Giresun Adası",
+          "Kümbet",
+          "Mavi Göl",
+          "Kuzalan",
+          "Bektaş"
+        ]
+      }
+    },
+    {
+      "name": "Kastamonu",
+      "plate": 37,
+      "items": {
+        "yemekler": [
+          "Etli Ekmek",
+          "Banduma",
+          "Pastırma",
+          "Çekme Helva",
+          "Simit"
+        ],
+        "unlu_yerler": [
+          "Ilgaz",
+          "Küre",
+          "Pınarbaşı",
+          "Şeker Han",
+          "Nasrullah"
+        ]
+      }
+    },
+    {
+      "name": "Amasya",
+      "plate": 5,
+      "items": {
+        "yemekler": [
+          "Elma",
+          "Bamya",
+          "Çiçek Bamyası",
+          "Keşkek",
+          "Toyga Çorbası"
+        ],
+        "unlu_yerler": [
+          "Kral Kaya",
+          "Harşena",
+          "Yalıboyu",
+          "Ferhat Şirin",
+          "Saat Kulesi"
+        ]
+      }
+    },
+    {
+      "name": "Tokat",
+      "plate": 60,
+      "items": {
+        "yemekler": [
+          "Tokat Kebabı",
+          "Bez Sucuk",
+          "Zile Pekmezi",
+          "Bat",
+          "Keşkek"
+        ],
+        "unlu_yerler": [
+          "Ballıca",
+          "Tokat Kalesi",
+          "Ali Paşa",
+          "Latifoğlu",
+          "Sulusokak"
+        ]
+      }
+    },
+    {
+      "name": "Malatya",
+      "plate": 44,
+      "items": {
+        "yemekler": [
+          "Kayısı",
+          "Kağıt Kebabı",
+          "Analı Kızlı",
+          "İçli Köfte",
+          "Kome"
+        ],
+        "unlu_yerler": [
+          "Aslantepe",
+          "Levent Vadisi",
+          "Battalgazi",
+          "Somuncu Baba",
+          "Sürsürü"
+        ]
+      }
+    },
+    {
+      "name": "Elazığ",
+      "plate": 23,
+      "items": {
+        "yemekler": [
+          "İçli Köfte",
+          "Orcik",
+          "Kelem Dolması",
+          "Gömme",
+          "Sırın"
+        ],
+        "unlu_yerler": [
+          "Harput",
+          "Hazar Gölü",
+          "Buzluk",
+          "Palu",
+          "Keban"
+        ]
+      }
+    },
+    {
+      "name": "Mardin",
+      "plate": 47,
+      "items": {
+        "yemekler": [
+          "Kaburga",
+          "İkbebet",
+          "Sembusek",
+          "Kibe",
+          "Firikli Pilav"
+        ],
+        "unlu_yerler": [
+          "Zinciriye",
+          "Kasımiye",
+          "Eski Mardin",
+          "Dara",
+          "Midyat"
+        ]
+      }
+    },
+    {
+      "name": "Erzincan",
+      "plate": 24,
+      "items": {
+        "yemekler": [
+          "Tulum Peyniri",
+          "Bosdurma",
+          "Lahana Sarma",
+          "Gordi",
+          "Cağ Kebabı"
+        ],
+        "unlu_yerler": [
+          "Girlevik",
+          "Kemaliye",
+          "Ergan",
+          "Tercan",
+          "Kadıgölü"
+        ]
+      }
+    },
+    {
+      "name": "Sinop",
+      "plate": 57,
+      "items": {
+        "yemekler": [
+          "Nokul",
+          "Mantı",
+          "Balık",
+          "Katlama",
+          "Manda Yoğurdu"
+        ],
+        "unlu_yerler": [
+          "Sinop Kalesi",
+          "İnceburun",
+          "Hamsilos",
+          "Erfelek",
+          "Akliman"
         ]
       }
     }
