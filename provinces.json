@@ -1,132 +1,652 @@
 {
-  "version": 6,
-  "updatedAt": "2026-07-25",
+  "version": 7,
+  "updatedAt": "2026-07-26",
   "note": "Kural: her bölüm 5-8 kelime. Yemekler o ilin en meşhur/popüler olanları. Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
   "categories": [
-    { "id": "yemekler", "name": "Yemekler", "emoji": "🍽️" },
-    { "id": "unlu_yerler", "name": "Ünlü Yerler", "emoji": "📍" },
-    { "id": "yoresel_kelimeler", "name": "Yöresel Kelimeler", "emoji": "💬" }
+    {
+      "id": "yemekler",
+      "name": "Yemekler",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "unlu_yerler",
+      "name": "Ünlü Yerler",
+      "emoji": "📍"
+    },
+    {
+      "id": "yoresel_kelimeler",
+      "name": "Yöresel Kelimeler",
+      "emoji": "💬"
+    }
   ],
   "provinces": [
     {
       "name": "Adana",
       "plate": 1,
       "items": {
-        "yemekler": ["Adana Kebabı", "Şırdan", "Bici Bici", "Şalgam", "Analı Kızlı", "Ciğer"],
-        "unlu_yerler": ["Taş Köprü", "Sabancı Camii", "Ulu Cami", "Varda Köprüsü", "Merkez Park"],
-        "yoresel_kelimeler": ["Haçan", "Emmi", "Zabun", "Cıncık", "Höllük", "Gari"]
+        "yemekler": [
+          "Adana Kebabı",
+          "Şırdan",
+          "Bici Bici",
+          "Şalgam",
+          "Analı Kızlı",
+          "Ciğer"
+        ],
+        "unlu_yerler": [
+          "Taş Köprü",
+          "Sabancı Camii",
+          "Ulu Cami",
+          "Varda Köprüsü",
+          "Merkez Park"
+        ],
+        "yoresel_kelimeler": [
+          "Haçan",
+          "Emmi",
+          "Zabun",
+          "Cıncık",
+          "Höllük",
+          "Gari"
+        ]
       }
     },
     {
       "name": "Kahramanmaraş",
       "plate": 46,
       "items": {
-        "yemekler": ["Dondurma", "Tarhana", "Eli Böğründe", "Analı Kızlı", "Kadayıf", "Acem Pilavı"],
-        "unlu_yerler": ["Kapalı Çarşı", "Ulu Cami", "Maraş Kalesi", "Kurtuluş", "Müze"],
-        "yoresel_kelimeler": ["Gari", "Hölle", "Çalkama", "Ayidi", "Höllük"]
+        "yemekler": [
+          "Dondurma",
+          "Tarhana",
+          "Eli Böğründe",
+          "Analı Kızlı",
+          "Kadayıf",
+          "Acem Pilavı"
+        ],
+        "unlu_yerler": [
+          "Kapalı Çarşı",
+          "Ulu Cami",
+          "Maraş Kalesi",
+          "Kurtuluş",
+          "Müze"
+        ],
+        "yoresel_kelimeler": [
+          "Gari",
+          "Hölle",
+          "Çalkama",
+          "Ayidi",
+          "Höllük"
+        ]
       }
     },
     {
       "name": "Gaziantep",
       "plate": 27,
       "items": {
-        "yemekler": ["Baklava", "Lahmacun", "Beyran", "Katmer", "Yuvalama", "İçli Köfte", "Menengiç"],
-        "unlu_yerler": ["Antep Kalesi", "Zeugma", "Bakırcılar", "Ulu Cami", "Çarşı", "Müze"],
-        "yoresel_kelimeler": ["Cıncık", "Höllük", "Firik", "Şıllık", "Gari"]
+        "yemekler": [
+          "Baklava",
+          "Lahmacun",
+          "Beyran",
+          "Katmer",
+          "Yuvalama",
+          "İçli Köfte",
+          "Menengiç"
+        ],
+        "unlu_yerler": [
+          "Antep Kalesi",
+          "Zeugma",
+          "Bakırcılar",
+          "Ulu Cami",
+          "Çarşı",
+          "Müze"
+        ],
+        "yoresel_kelimeler": [
+          "Cıncık",
+          "Höllük",
+          "Firik",
+          "Şıllık",
+          "Gari"
+        ]
       }
     },
     {
       "name": "Şanlıurfa",
       "plate": 63,
       "items": {
-        "yemekler": ["Çiğ Köfte", "Urfa Kebabı", "Lahmacun", "Şıllık", "İsot", "Borani"],
-        "unlu_yerler": ["Balıklıgöl", "Göbeklitepe", "Ulu Cami", "Urfa Kalesi", "Harran"],
-        "yoresel_kelimeler": ["İşmar", "Deng", "Havar", "Zerf", "Emmi"]
+        "yemekler": [
+          "Çiğ Köfte",
+          "Urfa Kebabı",
+          "Lahmacun",
+          "Şıllık",
+          "İsot",
+          "Borani"
+        ],
+        "unlu_yerler": [
+          "Balıklıgöl",
+          "Göbeklitepe",
+          "Ulu Cami",
+          "Urfa Kalesi",
+          "Harran"
+        ],
+        "yoresel_kelimeler": [
+          "İşmar",
+          "Deng",
+          "Havar",
+          "Zerf",
+          "Emmi"
+        ]
       }
     },
     {
       "name": "Trabzon",
       "plate": 61,
       "items": {
-        "yemekler": ["Hamsi", "Kuymak", "Akçaabat", "Karalahana", "Vakfıkebir", "Pide"],
-        "unlu_yerler": ["Sümela", "Uzungöl", "Ayasofya", "Atatürk Köşkü", "Boztepe", "Kale"],
-        "yoresel_kelimeler": ["Kuşkuş", "Pekmez", "Uşağum", "Hele", "Emmi"]
+        "yemekler": [
+          "Hamsi",
+          "Kuymak",
+          "Akçaabat",
+          "Karalahana",
+          "Vakfıkebir",
+          "Pide"
+        ],
+        "unlu_yerler": [
+          "Sümela",
+          "Uzungöl",
+          "Ayasofya",
+          "Atatürk Köşkü",
+          "Boztepe",
+          "Kale"
+        ],
+        "yoresel_kelimeler": [
+          "Kuşkuş",
+          "Pekmez",
+          "Uşağum",
+          "Hele",
+          "Emmi"
+        ]
       }
     },
     {
       "name": "İstanbul",
       "plate": 34,
       "items": {
-        "yemekler": ["Balık Ekmek", "Kokoreç", "Midye Dolma", "Islak Burger", "Simit", "Boza", "Kestane"],
-        "unlu_yerler": ["Ayasofya", "Sultanahmet", "Galata Kulesi", "Kapalıçarşı", "Topkapı", "Kız Kulesi", "Dolmabahçe", "Ortaköy"],
-        "yoresel_kelimeler": ["Abi", "Reis", "Hadi", "Nolur", "Kanka", "Moruk"]
+        "yemekler": [
+          "Balık Ekmek",
+          "Kokoreç",
+          "Midye Dolma",
+          "Islak Burger",
+          "Simit",
+          "Boza",
+          "Kestane"
+        ],
+        "unlu_yerler": [
+          "Ayasofya",
+          "Sultanahmet",
+          "Galata Kulesi",
+          "Kapalıçarşı",
+          "Topkapı",
+          "Kız Kulesi",
+          "Dolmabahçe",
+          "Ortaköy"
+        ],
+        "yoresel_kelimeler": [
+          "Abi",
+          "Reis",
+          "Hadi",
+          "Nolur",
+          "Kanka",
+          "Moruk"
+        ]
       }
     },
     {
       "name": "İzmir",
       "plate": 35,
       "items": {
-        "yemekler": ["Boyoz", "Kumru", "Gevrek", "Söğüş", "Lokma", "Şambali"],
-        "unlu_yerler": ["Saat Kulesi", "Kordon", "Kadifekale", "Agora", "Konak", "Asansör"],
-        "yoresel_kelimeler": ["Hadi", "Yaa", "Kanka", "Emmi", "Reis"]
+        "yemekler": [
+          "Boyoz",
+          "Kumru",
+          "Gevrek",
+          "Söğüş",
+          "Lokma",
+          "Şambali"
+        ],
+        "unlu_yerler": [
+          "Saat Kulesi",
+          "Kordon",
+          "Kadifekale",
+          "Agora",
+          "Konak",
+          "Asansör"
+        ],
+        "yoresel_kelimeler": [
+          "Hadi",
+          "Yaa",
+          "Kanka",
+          "Emmi",
+          "Reis"
+        ]
       }
     },
     {
       "name": "Ankara",
       "plate": 6,
       "items": {
-        "yemekler": ["Ankara Tava", "Döner", "Beypazarı", "Simit", "Tavuk"],
-        "unlu_yerler": ["Anıtkabir", "Kale", "Kızılay", "Kuğulu", "Kocatepe", "Müze"],
-        "yoresel_kelimeler": ["Hadi", "Baba", "Emmi", "Gari", "Reis"]
+        "yemekler": [
+          "Ankara Tava",
+          "Döner",
+          "Beypazarı",
+          "Simit",
+          "Tavuk"
+        ],
+        "unlu_yerler": [
+          "Anıtkabir",
+          "Kale",
+          "Kızılay",
+          "Kuğulu",
+          "Kocatepe",
+          "Müze"
+        ],
+        "yoresel_kelimeler": [
+          "Hadi",
+          "Baba",
+          "Emmi",
+          "Gari",
+          "Reis"
+        ]
       }
     },
     {
       "name": "Konya",
       "plate": 42,
       "items": {
-        "yemekler": ["Etli Ekmek", "Fırın Kebap", "Bamya", "Tirit", "Höşmerim", "Sac Arası"],
-        "unlu_yerler": ["Mevlana", "Alaeddin", "İnce Minare", "Sille", "Karatay", "Müze"],
-        "yoresel_kelimeler": ["Gari", "Bacım", "Hadi", "Emmi", "Baba"]
+        "yemekler": [
+          "Etli Ekmek",
+          "Fırın Kebap",
+          "Bamya",
+          "Tirit",
+          "Höşmerim",
+          "Sac Arası"
+        ],
+        "unlu_yerler": [
+          "Mevlana",
+          "Alaeddin",
+          "İnce Minare",
+          "Sille",
+          "Karatay",
+          "Müze"
+        ],
+        "yoresel_kelimeler": [
+          "Gari",
+          "Bacım",
+          "Hadi",
+          "Emmi",
+          "Baba"
+        ]
       }
     },
     {
       "name": "Bursa",
       "plate": 16,
       "items": {
-        "yemekler": ["İskender", "İnegöl Köfte", "Kestane", "Pideli Köfte", "Cantık"],
-        "unlu_yerler": ["Ulu Cami", "Yeşil Türbe", "Uludağ", "Cumalıkızık", "Kale", "Müze"],
-        "yoresel_kelimeler": ["Hadi", "Aba", "Gari", "Emmi", "Baba"]
+        "yemekler": [
+          "İskender",
+          "İnegöl Köfte",
+          "Kestane",
+          "Pideli Köfte",
+          "Cantık"
+        ],
+        "unlu_yerler": [
+          "Ulu Cami",
+          "Yeşil Türbe",
+          "Uludağ",
+          "Cumalıkızık",
+          "Kale",
+          "Müze"
+        ],
+        "yoresel_kelimeler": [
+          "Hadi",
+          "Aba",
+          "Gari",
+          "Emmi",
+          "Baba"
+        ]
       }
     },
     {
       "name": "Antalya",
       "plate": 7,
       "items": {
-        "yemekler": ["Piyaz", "Şiş Köfte", "Hibeş", "Tahinli", "Tandır", "Serpme"],
-        "unlu_yerler": ["Kaleiçi", "Düden", "Aspendos", "Hadrian", "Yivli", "Kale"],
-        "yoresel_kelimeler": ["Hadi", "Yavrum", "Aba", "Emmi", "Gari"]
+        "yemekler": [
+          "Piyaz",
+          "Şiş Köfte",
+          "Hibeş",
+          "Tahinli",
+          "Tandır",
+          "Serpme"
+        ],
+        "unlu_yerler": [
+          "Kaleiçi",
+          "Düden",
+          "Aspendos",
+          "Hadrian",
+          "Yivli",
+          "Kale"
+        ],
+        "yoresel_kelimeler": [
+          "Hadi",
+          "Yavrum",
+          "Aba",
+          "Emmi",
+          "Gari"
+        ]
       }
     },
     {
       "name": "Erzurum",
       "plate": 25,
       "items": {
-        "yemekler": ["Cağ Kebabı", "Kadayıf", "Su Böreği", "Kete", "Lavaş", "Tandır"],
-        "unlu_yerler": ["Çifte Minare", "Palandöken", "Yakutiye", "Kale", "Müze", "Tortum"],
-        "yoresel_kelimeler": ["Hele", "Uşağum", "Emmi", "Gari", "Baba"]
+        "yemekler": [
+          "Cağ Kebabı",
+          "Kadayıf",
+          "Su Böreği",
+          "Kete",
+          "Lavaş",
+          "Tandır"
+        ],
+        "unlu_yerler": [
+          "Çifte Minare",
+          "Palandöken",
+          "Yakutiye",
+          "Kale",
+          "Müze",
+          "Tortum"
+        ],
+        "yoresel_kelimeler": [
+          "Hele",
+          "Uşağum",
+          "Emmi",
+          "Gari",
+          "Baba"
+        ]
+      }
+    },
+    {
+      "name": "Hatay",
+      "plate": 31,
+      "items": {
+        "yemekler": [
+          "Künefe",
+          "Humus",
+          "Tepsi Kebabı",
+          "Oruk",
+          "Kağıt Kebabı",
+          "Muhammara"
+        ],
+        "unlu_yerler": [
+          "Titus Tüneli",
+          "Habibi Neccar",
+          "Uzun Çarşı",
+          "Harbiye",
+          "Asi Nehri"
+        ]
+      }
+    },
+    {
+      "name": "Mersin",
+      "plate": 33,
+      "items": {
+        "yemekler": [
+          "Tantuni",
+          "Cezerye",
+          "Kerebiç",
+          "Bici Bici",
+          "Batırık"
+        ],
+        "unlu_yerler": [
+          "Kızkalesi",
+          "Mamure",
+          "Kleopatra",
+          "Tarsus",
+          "Adamkayalar"
+        ]
+      }
+    },
+    {
+      "name": "Nevşehir",
+      "plate": 50,
+      "items": {
+        "yemekler": [
+          "Testi Kebabı",
+          "Nevşehir Tava",
+          "Düğün Pilavı",
+          "Sac Böreği",
+          "Kabak Tatlısı"
+        ],
+        "unlu_yerler": [
+          "Göreme",
+          "Peribacaları",
+          "Derinkuyu",
+          "Uçhisar",
+          "Ürgüp"
+        ]
+      }
+    },
+    {
+      "name": "Denizli",
+      "plate": 20,
+      "items": {
+        "yemekler": [
+          "Saç Tava",
+          "Kabak Tatlısı",
+          "Ekşili Köfte",
+          "Bükme",
+          "Arap Aşı"
+        ],
+        "unlu_yerler": [
+          "Pamukkale",
+          "Hierapolis",
+          "Laodikya",
+          "Kaklık",
+          "Akhan"
+        ]
+      }
+    },
+    {
+      "name": "Muğla",
+      "plate": 48,
+      "items": {
+        "yemekler": [
+          "Çökertme",
+          "Keşkek",
+          "Armola",
+          "Katmer",
+          "Zeytinyağlı"
+        ],
+        "unlu_yerler": [
+          "Bodrum Kalesi",
+          "Ölüdeniz",
+          "Dalyan",
+          "Marmaris",
+          "Datça"
+        ]
+      }
+    },
+    {
+      "name": "Rize",
+      "plate": 53,
+      "items": {
+        "yemekler": [
+          "Muhlama",
+          "Laz Böreği",
+          "Hamsi Tava",
+          "Mısır Ekmeği",
+          "Pide"
+        ],
+        "unlu_yerler": [
+          "Ayder",
+          "Zilkale",
+          "Fırtına",
+          "Çay Bahçesi",
+          "Pokut"
+        ]
+      }
+    },
+    {
+      "name": "Van",
+      "plate": 65,
+      "items": {
+        "yemekler": [
+          "Otlu Peynir",
+          "Murtuğa",
+          "Keledoş",
+          "Cacık",
+          "Kavut"
+        ],
+        "unlu_yerler": [
+          "Van Kalesi",
+          "Akdamar",
+          "Van Gölü",
+          "Muradiye",
+          "Çavuştepe"
+        ]
+      }
+    },
+    {
+      "name": "Diyarbakır",
+      "plate": 21,
+      "items": {
+        "yemekler": [
+          "Kaburga",
+          "Meftune",
+          "Lebeni",
+          "Çiğ Köfte",
+          "İçli Köfte"
+        ],
+        "unlu_yerler": [
+          "Surlar",
+          "Ulu Cami",
+          "On Gözlü Köprü",
+          "Hevsel",
+          "Hasanpaşa"
+        ]
+      }
+    },
+    {
+      "name": "Kayseri",
+      "plate": 38,
+      "items": {
+        "yemekler": [
+          "Mantı",
+          "Pastırma",
+          "Sucuk",
+          "Yağlama",
+          "Nevzine"
+        ],
+        "unlu_yerler": [
+          "Erciyes",
+          "Kültepe",
+          "Gevher Nesibe",
+          "Talas",
+          "Develi"
+        ]
+      }
+    },
+    {
+      "name": "Eskişehir",
+      "plate": 26,
+      "items": {
+        "yemekler": [
+          "Çibörek",
+          "Balaban Köfte",
+          "Met Helva",
+          "Haşhaşlı",
+          "Yaprak Sarma"
+        ],
+        "unlu_yerler": [
+          "Odunpazarı",
+          "Porsuk",
+          "Sazova",
+          "Kurşunlu",
+          "Lületaşı"
+        ]
+      }
+    },
+    {
+      "name": "Samsun",
+      "plate": 55,
+      "items": {
+        "yemekler": [
+          "Bafra Pidesi",
+          "Nokul",
+          "Pide",
+          "Keşkek",
+          "Mısır Çorbası"
+        ],
+        "unlu_yerler": [
+          "Bandırma",
+          "Amazon Köyü",
+          "Amisos",
+          "Atatürk Anıtı",
+          "Kızılırmak"
+        ]
+      }
+    },
+    {
+      "name": "Sivas",
+      "plate": 58,
+      "items": {
+        "yemekler": [
+          "Sivas Köftesi",
+          "Katmer",
+          "Madımak",
+          "Pancar Ovması",
+          "Kesme Aşı"
+        ],
+        "unlu_yerler": [
+          "Divriği",
+          "Kızılırmak",
+          "Gök Medrese",
+          "Balıklı",
+          "Buruciye"
+        ]
       }
     }
   ],
   "specialLevels": [
     {
       "title": "Eski Türk Devletleri",
-      "category": { "id": "eski_turk_devletleri", "name": "Devletler", "emoji": "⚔️" },
-      "words": ["Göktürk", "Uygur", "Selçuklu", "Hun", "Avar", "Hazar", "Gazneli", "Kıpçak"]
+      "category": {
+        "id": "eski_turk_devletleri",
+        "name": "Devletler",
+        "emoji": "⚔️"
+      },
+      "words": [
+        "Göktürk",
+        "Uygur",
+        "Selçuklu",
+        "Hun",
+        "Avar",
+        "Hazar",
+        "Gazneli",
+        "Kıpçak"
+      ]
     },
     {
       "title": "Eski Türkçe",
-      "category": { "id": "eski_turkce", "name": "Kelimeler", "emoji": "📜" },
-      "words": ["Kağan", "Otağ", "Tümen", "Yabgu", "Balbal", "Kurgan", "Damga", "Yörük"]
+      "category": {
+        "id": "eski_turkce",
+        "name": "Kelimeler",
+        "emoji": "📜"
+      },
+      "words": [
+        "Kağan",
+        "Otağ",
+        "Tümen",
+        "Yabgu",
+        "Balbal",
+        "Kurgan",
+        "Damga",
+        "Yörük"
+      ]
     }
   ]
 }
