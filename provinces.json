@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "updatedAt": "2026-07-26",
   "note": "Kural: her bölüm 5-8 kelime. Yemekler o ilin en meşhur/popüler olanları. Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
   "categories": [
@@ -55,18 +55,18 @@
       "items": {
         "yemekler": [
           "Dondurma",
-          "Tarhana",
+          "Maraş Tava",
           "Eli Böğründe",
-          "Analı Kızlı",
-          "Kadayıf",
-          "Acem Pilavı"
+          "Tarhana",
+          "Acem Pilavı",
+          "Kadayıf"
         ],
         "unlu_yerler": [
+          "Maraş Kalesi",
           "Kapalı Çarşı",
           "Ulu Cami",
-          "Maraş Kalesi",
           "Kurtuluş",
-          "Müze"
+          "Uzunoluk"
         ],
         "yoresel_kelimeler": [
           "Gari",
@@ -95,8 +95,7 @@
           "Zeugma",
           "Bakırcılar",
           "Ulu Cami",
-          "Çarşı",
-          "Müze"
+          "Zincirli"
         ],
         "yoresel_kelimeler": [
           "Cıncık",
@@ -115,9 +114,9 @@
           "Çiğ Köfte",
           "Urfa Kebabı",
           "Lahmacun",
+          "Ciğer",
           "Şıllık",
-          "İsot",
-          "Borani"
+          "İsot"
         ],
         "unlu_yerler": [
           "Balıklıgöl",
@@ -173,9 +172,8 @@
           "Kokoreç",
           "Midye Dolma",
           "Islak Burger",
-          "Simit",
-          "Boza",
-          "Kestane"
+          "Kumpir",
+          "Simit"
         ],
         "unlu_yerler": [
           "Ayasofya",
@@ -204,9 +202,9 @@
         "yemekler": [
           "Boyoz",
           "Kumru",
+          "İzmir Köftesi",
           "Gevrek",
           "Söğüş",
-          "Lokma",
           "Şambali"
         ],
         "unlu_yerler": [
@@ -232,10 +230,10 @@
       "items": {
         "yemekler": [
           "Ankara Tava",
-          "Döner",
           "Beypazarı",
-          "Simit",
-          "Tavuk"
+          "Efelek Sarması",
+          "Tutmaç",
+          "Ankara Simidi"
         ],
         "unlu_yerler": [
           "Anıtkabir",
@@ -263,7 +261,7 @@
           "Fırın Kebap",
           "Bamya",
           "Tirit",
-          "Höşmerim",
+          "Mevlana Böreği",
           "Sac Arası"
         ],
         "unlu_yerler": [
@@ -272,7 +270,7 @@
           "İnce Minare",
           "Sille",
           "Karatay",
-          "Müze"
+          "Çatalhöyük"
         ],
         "yoresel_kelimeler": [
           "Gari",
@@ -290,7 +288,7 @@
         "yemekler": [
           "İskender",
           "İnegöl Köfte",
-          "Kestane",
+          "Kestane Şekeri",
           "Pideli Köfte",
           "Cantık"
         ],
@@ -299,8 +297,8 @@
           "Yeşil Türbe",
           "Uludağ",
           "Cumalıkızık",
-          "Kale",
-          "Müze"
+          "Tophane",
+          "Gölyazı"
         ],
         "yoresel_kelimeler": [
           "Hadi",
@@ -317,11 +315,10 @@
       "items": {
         "yemekler": [
           "Piyaz",
-          "Şiş Köfte",
           "Hibeş",
-          "Tahinli",
-          "Tandır",
-          "Serpme"
+          "Cive",
+          "Testi Kebabı",
+          "Şilofta"
         ],
         "unlu_yerler": [
           "Kaleiçi",
@@ -329,7 +326,7 @@
           "Aspendos",
           "Hadrian",
           "Yivli",
-          "Kale"
+          "Yanartaş"
         ],
         "yoresel_kelimeler": [
           "Hadi",
@@ -349,16 +346,15 @@
           "Kadayıf",
           "Su Böreği",
           "Kete",
-          "Lavaş",
-          "Tandır"
+          "Lor Dolması"
         ],
         "unlu_yerler": [
           "Çifte Minare",
           "Palandöken",
           "Yakutiye",
-          "Kale",
-          "Müze",
-          "Tortum"
+          "Üç Kümbet",
+          "Tortum",
+          "Kale"
         ],
         "yoresel_kelimeler": [
           "Hele",
