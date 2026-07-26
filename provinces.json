@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "updatedAt": "2026-07-26",
   "note": "Kural: her bölüm 5-8 kelime. Yemekler o ilin en meşhur/popüler olanları. Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
   "categories": [
@@ -375,18 +375,18 @@
       "items": {
         "yemekler": [
           "Künefe",
-          "Humus",
           "Tepsi Kebabı",
+          "Humus",
           "Oruk",
-          "Kağıt Kebabı",
+          "Fellah Köftesi",
           "Muhammara"
         ],
         "unlu_yerler": [
+          "Sen Piyer",
+          "Hatay Müzesi",
           "Titus Tüneli",
           "Habibi Neccar",
-          "Uzun Çarşı",
-          "Harbiye",
-          "Asi Nehri"
+          "Harbiye"
         ]
       }
     },
@@ -417,9 +417,9 @@
         "yemekler": [
           "Testi Kebabı",
           "Nevşehir Tava",
-          "Düğün Pilavı",
-          "Sac Böreği",
-          "Kabak Tatlısı"
+          "Soğanlama",
+          "Ağpakla",
+          "Düğün Pilavı"
         ],
         "unlu_yerler": [
           "Göreme",
@@ -435,18 +435,18 @@
       "plate": 20,
       "items": {
         "yemekler": [
+          "Denizli Kebabı",
           "Saç Tava",
-          "Kabak Tatlısı",
           "Ekşili Köfte",
-          "Bükme",
-          "Arap Aşı"
+          "Gömbe",
+          "Kabak Tatlısı"
         ],
         "unlu_yerler": [
           "Pamukkale",
           "Hierapolis",
           "Laodikya",
-          "Kaklık",
-          "Akhan"
+          "Karahayıt",
+          "Kaklık"
         ]
       }
     },
@@ -456,10 +456,10 @@
       "items": {
         "yemekler": [
           "Çökertme",
+          "Bodrum Mantısı",
+          "Oğlak Yahni",
           "Keşkek",
-          "Armola",
-          "Katmer",
-          "Zeytinyağlı"
+          "Lokma"
         ],
         "unlu_yerler": [
           "Bodrum Kalesi",
@@ -477,16 +477,16 @@
         "yemekler": [
           "Muhlama",
           "Laz Böreği",
-          "Hamsi Tava",
+          "Hamsili Pilav",
           "Mısır Ekmeği",
-          "Pide"
+          "Karalahana"
         ],
         "unlu_yerler": [
           "Ayder",
+          "Pokut",
           "Zilkale",
           "Fırtına",
-          "Çay Bahçesi",
-          "Pokut"
+          "Palovit"
         ]
       }
     },
@@ -495,18 +495,18 @@
       "plate": 65,
       "items": {
         "yemekler": [
+          "Keledoş",
+          "Van Kahvaltısı",
           "Otlu Peynir",
           "Murtuğa",
-          "Keledoş",
-          "Cacık",
-          "Kavut"
+          "Van Ketesi"
         ],
         "unlu_yerler": [
           "Van Kalesi",
           "Akdamar",
           "Van Gölü",
           "Muradiye",
-          "Çavuştepe"
+          "Hoşap"
         ]
       }
     },
@@ -517,8 +517,8 @@
         "yemekler": [
           "Kaburga",
           "Meftune",
+          "Ciğer",
           "Lebeni",
-          "Çiğ Köfte",
           "İçli Köfte"
         ],
         "unlu_yerler": [
@@ -545,8 +545,8 @@
           "Erciyes",
           "Kültepe",
           "Gevher Nesibe",
-          "Talas",
-          "Develi"
+          "Kurşunlu",
+          "Talas"
         ]
       }
     },
@@ -558,14 +558,14 @@
           "Çibörek",
           "Balaban Köfte",
           "Met Helva",
-          "Haşhaşlı",
-          "Yaprak Sarma"
+          "Nuga Helva",
+          "Miyane"
         ],
         "unlu_yerler": [
           "Odunpazarı",
-          "Porsuk",
           "Sazova",
-          "Kurşunlu",
+          "Porsuk",
+          "Kent Park",
           "Lületaşı"
         ]
       }
@@ -576,17 +576,17 @@
       "items": {
         "yemekler": [
           "Bafra Pidesi",
+          "Kaz Tiridi",
           "Nokul",
-          "Pide",
-          "Keşkek",
-          "Mısır Çorbası"
+          "Baklalı Sarma",
+          "Katık Böreği"
         ],
         "unlu_yerler": [
           "Bandırma",
-          "Amazon Köyü",
           "Amisos",
-          "Atatürk Anıtı",
-          "Kızılırmak"
+          "Onur Anıtı",
+          "Kuş Cenneti",
+          "Şahinkaya"
         ]
       }
     },
@@ -596,17 +596,17 @@
       "items": {
         "yemekler": [
           "Sivas Köftesi",
-          "Katmer",
+          "Kesme Aşı",
           "Madımak",
-          "Pancar Ovması",
-          "Kesme Aşı"
+          "Peskütan",
+          "Divriği Pilavı"
         ],
         "unlu_yerler": [
           "Divriği",
-          "Kızılırmak",
           "Gök Medrese",
-          "Balıklı",
-          "Buruciye"
+          "Buruciye",
+          "Çifte Minare",
+          "Balıklı"
         ]
       }
     },
@@ -616,10 +616,10 @@
       "items": {
         "yemekler": [
           "Höşmerim",
-          "Kuzu Tandır",
+          "Susurluk Tostu",
           "Ayvalık Tostu",
-          "Keşkek",
-          "Papara"
+          "Saçaklı Mantı",
+          "Papalina"
         ],
         "unlu_yerler": [
           "Ayvalık",
@@ -636,10 +636,10 @@
       "items": {
         "yemekler": [
           "İncir",
+          "Çine Köftesi",
           "Çöp Şiş",
-          "Keşkek",
-          "Lokma",
-          "Zeytinyağlı"
+          "Tahinli Pide",
+          "Keşkek"
         ],
         "unlu_yerler": [
           "Afrodisias",
@@ -657,9 +657,9 @@
         "yemekler": [
           "Ezine Peyniri",
           "Sardalya",
-          "Zeytinyağlı",
-          "Lokma",
-          "Kaz Eti"
+          "Börülce",
+          "Peynir Helvası",
+          "İncir Dolması"
         ],
         "unlu_yerler": [
           "Truva",
@@ -675,18 +675,18 @@
       "plate": 45,
       "items": {
         "yemekler": [
-          "Mesir Macunu",
           "Manisa Kebabı",
+          "Mesir Macunu",
+          "Kapama",
           "Sübye",
-          "Höşmerim",
-          "Keşkek"
+          "Höşmerim"
         ],
         "unlu_yerler": [
           "Spil Dağı",
           "Ağlayan Kaya",
           "Sardes",
           "Kula",
-          "Sart"
+          "Şehzadeler"
         ]
       }
     },
@@ -697,17 +697,16 @@
         "yemekler": [
           "Sucuk",
           "Kaymak",
+          "Ekmek Kadayıfı",
           "Lokum",
-          "Ağzı Açık",
-          "Haşhaşlı",
-          "Bükme"
+          "Ağzı Açık"
         ],
         "unlu_yerler": [
           "Afyon Kalesi",
           "Frig Vadisi",
-          "Kaya Camii",
-          "Kaplıca",
-          "Zafer Anıtı"
+          "Gazlıgöl",
+          "Zafer Anıtı",
+          "Kaplıca"
         ]
       }
     },
@@ -717,17 +716,17 @@
       "items": {
         "yemekler": [
           "Gül Tatlısı",
-          "Kabaklama",
-          "Ekmek Dolması",
-          "Banaz Pidesi",
-          "Höşmerim"
+          "Çömlek Kebabı",
+          "Keşkek",
+          "Yalvaç Güllacı",
+          "Tirit"
         ],
         "unlu_yerler": [
           "Gül Bahçesi",
           "Eğirdir",
-          "Kovada",
           "Davraz",
-          "Yalvaç"
+          "Zindan",
+          "Lavanta"
         ]
       }
     },
@@ -736,17 +735,17 @@
       "plate": 14,
       "items": {
         "yemekler": [
-          "Mantı",
-          "Keşkek",
-          "Tirit",
-          "Saray Helvası",
-          "Kaz Eti"
+          "Abant Kebabı",
+          "Mengen Pilavı",
+          "Bolu Tava",
+          "Ovmaç Çorbası",
+          "Saray Helvası"
         ],
         "unlu_yerler": [
           "Abant",
           "Yedigöller",
-          "Gölcük",
           "Kartalkaya",
+          "Gölcük",
           "Mudurnu"
         ]
       }
@@ -756,11 +755,11 @@
       "plate": 22,
       "items": {
         "yemekler": [
-          "Ciğer",
+          "Tava Ciğeri",
           "Badem Ezmesi",
-          "Deva Macunu",
-          "Peynir",
-          "Hardaliye"
+          "Mutancana",
+          "Hardaliye",
+          "Deva Macunu"
         ],
         "unlu_yerler": [
           "Selimiye",
@@ -776,11 +775,11 @@
       "plate": 59,
       "items": {
         "yemekler": [
-          "Köfte",
-          "Rakı",
-          "Peynir",
-          "Ayçöreği",
-          "Badem"
+          "Tekirdağ Köfte",
+          "Burma Sucuğu",
+          "Hardaliye",
+          "Sini Pidesi",
+          "Manda Yoğurdu"
         ],
         "unlu_yerler": [
           "Rakoczi",
@@ -797,10 +796,10 @@
       "items": {
         "yemekler": [
           "Fındık",
+          "Kuymak",
+          "Mısır Ekmeği",
           "Karalahana",
-          "Pide",
-          "Taflan",
-          "Mısır Ekmeği"
+          "Pancar Çorbası"
         ],
         "unlu_yerler": [
           "Boztepe",
@@ -817,10 +816,10 @@
       "items": {
         "yemekler": [
           "Fındık",
-          "Pide",
+          "Görele Pidesi",
           "Karalahana",
-          "Tereyağı",
-          "Kiraz"
+          "Mısır Ekmeği",
+          "Hamsili Pilav"
         ],
         "unlu_yerler": [
           "Giresun Adası",
@@ -840,14 +839,14 @@
           "Banduma",
           "Pastırma",
           "Çekme Helva",
-          "Simit"
+          "Cırık"
         ],
         "unlu_yerler": [
           "Ilgaz",
           "Küre",
           "Pınarbaşı",
-          "Şeker Han",
-          "Nasrullah"
+          "Nasrullah",
+          "Cide"
         ]
       }
     },
@@ -857,8 +856,8 @@
       "items": {
         "yemekler": [
           "Elma",
-          "Bamya",
-          "Çiçek Bamyası",
+          "Şehzade Kebabı",
+          "Amasya Çöreği",
           "Keşkek",
           "Toyga Çorbası"
         ],
@@ -867,7 +866,7 @@
           "Harşena",
           "Yalıboyu",
           "Ferhat Şirin",
-          "Saat Kulesi"
+          "Borabay"
         ]
       }
     },
@@ -880,7 +879,7 @@
           "Bez Sucuk",
           "Zile Pekmezi",
           "Bat",
-          "Keşkek"
+          "Çemen"
         ],
         "unlu_yerler": [
           "Ballıca",
@@ -898,16 +897,16 @@
         "yemekler": [
           "Kayısı",
           "Kağıt Kebabı",
-          "Analı Kızlı",
+          "Gırık",
           "İçli Köfte",
-          "Kome"
+          "Kömbe"
         ],
         "unlu_yerler": [
           "Aslantepe",
           "Levent Vadisi",
           "Battalgazi",
           "Somuncu Baba",
-          "Sürsürü"
+          "Gülpınar"
         ]
       }
     },
@@ -916,11 +915,11 @@
       "plate": 23,
       "items": {
         "yemekler": [
+          "Harput Köftesi",
           "İçli Köfte",
           "Orcik",
-          "Kelem Dolması",
-          "Gömme",
-          "Sırın"
+          "Patila",
+          "Gömme"
         ],
         "unlu_yerler": [
           "Harput",
@@ -937,10 +936,10 @@
       "items": {
         "yemekler": [
           "Kaburga",
-          "İkbebet",
+          "Soğan Kebabı",
+          "İçli Köfte",
           "Sembusek",
-          "Kibe",
-          "Firikli Pilav"
+          "Firik Pilavı"
         ],
         "unlu_yerler": [
           "Zinciriye",
@@ -958,16 +957,16 @@
         "yemekler": [
           "Tulum Peyniri",
           "Bosdurma",
-          "Lahana Sarma",
-          "Gordi",
-          "Cağ Kebabı"
+          "Kuzu Dolması",
+          "Kelecoş",
+          "Kemalpaşa"
         ],
         "unlu_yerler": [
           "Girlevik",
           "Kemaliye",
           "Ergan",
-          "Tercan",
-          "Kadıgölü"
+          "Altıntepe",
+          "Munzur"
         ]
       }
     },
@@ -977,17 +976,17 @@
       "items": {
         "yemekler": [
           "Nokul",
-          "Mantı",
-          "Balık",
-          "Katlama",
-          "Manda Yoğurdu"
+          "Sırık Kebabı",
+          "Sinop Islama",
+          "Hamsi Tava",
+          "Prenses"
         ],
         "unlu_yerler": [
           "Sinop Kalesi",
           "İnceburun",
           "Hamsilos",
           "Erfelek",
-          "Akliman"
+          "Cezaevi"
         ]
       }
     }
