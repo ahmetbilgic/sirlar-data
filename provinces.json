@@ -1,7 +1,14 @@
 {
-  "version": 10,
-  "updatedAt": "2026-07-26",
-  "note": "Kural: her bölüm 5-8 kelime. Yemekler o ilin en meşhur/popüler olanları. Kelime uzunluğu serbest; ızgara en uzun kelimeye göre büyür (en az 9x9).",
+  "version": 17,
+  "flags": {
+    "ads_enabled": true,
+    "reminders_enabled": true,
+    "min_supported_build": 0,
+    "notice": ""
+  },
+  "schema_version": 1,
+  "updatedAt": "2026-07-28",
+  "note": "Kural: her bolum 5-8 kelime, en uzun kelime bosluksuz <=13 harf (izgara buna gore). 6 kategori: yemekler, gezilecek_yerler, tarihi_yapilar, dogal_guzellikler, yoresel_urunler, unlu_kisiler. facts: 'kategori' (tum parcalar) ya da 'kategori#parca' (o parcaya ozel) -> bolum sonu 1-2 cumlelik bilgi karti. schema_version: verinin yapisal surumu; uygulama kSupportedSchemaVersion'dan yenisini yok sayar. version: icerik surumu, her yayinda artar.",
   "categories": [
     {
       "id": "yemekler",
@@ -9,14 +16,29 @@
       "emoji": "🍽️"
     },
     {
-      "id": "unlu_yerler",
-      "name": "Ünlü Yerler",
+      "id": "gezilecek_yerler",
+      "name": "Gezilecek Yerler",
       "emoji": "📍"
     },
     {
-      "id": "yoresel_kelimeler",
-      "name": "Yöresel Kelimeler",
-      "emoji": "💬"
+      "id": "tarihi_yapilar",
+      "name": "Tarihi Yapılar",
+      "emoji": "🏛️"
+    },
+    {
+      "id": "dogal_guzellikler",
+      "name": "Doğal Güzellikler",
+      "emoji": "🌿"
+    },
+    {
+      "id": "yoresel_urunler",
+      "name": "Yöresel Ürünler",
+      "emoji": "🎁"
+    },
+    {
+      "id": "unlu_kisiler",
+      "name": "Ünlü Kişiler",
+      "emoji": "👤"
     }
   ],
   "provinces": [
@@ -32,21 +54,57 @@
           "Analı Kızlı",
           "Ciğer"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Taş Köprü",
           "Sabancı Camii",
           "Ulu Cami",
           "Varda Köprüsü",
-          "Merkez Park"
+          "Merkez Park",
+          "Yılankale",
+          "Kozan Kalesi",
+          "Atatürk Evi",
+          "Karaisalı",
+          "Adana Müzesi"
         ],
-        "yoresel_kelimeler": [
-          "Haçan",
-          "Emmi",
-          "Zabun",
-          "Cıncık",
-          "Höllük",
-          "Gari"
+        "tarihi_yapilar": [
+          "Taş Köprü",
+          "Ulu Cami",
+          "Yağ Camii",
+          "Bebekli Kilise",
+          "Misis",
+          "Anavarza"
+        ],
+        "dogal_guzellikler": [
+          "Seyhan",
+          "Yumurtalık",
+          "Karataş",
+          "Aladağlar",
+          "Kapıkaya",
+          "Akyatan"
+        ],
+        "yoresel_urunler": [
+          "Şalgam",
+          "Kırmızı Biber",
+          "Karpuz",
+          "Portakal",
+          "Turunç"
+        ],
+        "unlu_kisiler": [
+          "Yılmaz Güney",
+          "Orhan Kemal",
+          "Yaşar Kemal",
+          "Ümit Yaşar",
+          "Muzaffer İzgü"
         ]
+      },
+      "facts": {
+        "yemekler": "Zırhla kıyılan etten yapılan Adana kebabı, acısı ve ateşte pişimiyle şehrin simgesidir.",
+        "gezilecek_yerler": "Roma döneminden kalma Taş Köprü ve dev Sabancı Merkez Camii Adana'nın simgeleridir.",
+        "tarihi_yapilar": "Seyhan üzerindeki Taş Köprü, yaklaşık 1700 yıldır ayakta olan dünyanın en eski kullanılan köprülerindendir.",
+        "dogal_guzellikler": "Aladağlar'ın zirvelerinden Akyatan ve Yumurtalık lagünlerine Adana geniş bir doğa yelpazesi sunar.",
+        "yoresel_urunler": "Fermente şalgam suyu ve Çukurova'nın kırmızı biberi, Adana sofrasının ayrılmaz ikilisidir.",
+        "unlu_kisiler": "Yönetmen Yılmaz Güney ile yazarlar Orhan Kemal ve Yaşar Kemal Çukurova'da yetişmiştir.",
+        "gezilecek_yerler#1": "Ceyhan kıyısındaki Yılankale, adını kapısındaki yılan kabartmasından alır. Kozan Kalesi ise sarp bir tepeden Çukurova'ya bakar."
       }
     },
     {
@@ -61,20 +119,53 @@
           "Acem Pilavı",
           "Kadayıf"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Maraş Kalesi",
           "Kapalı Çarşı",
           "Ulu Cami",
           "Kurtuluş",
           "Uzunoluk"
         ],
-        "yoresel_kelimeler": [
-          "Gari",
-          "Hölle",
-          "Çalkama",
-          "Ayidi",
-          "Höllük"
+        "tarihi_yapilar": [
+          "Taş Medrese",
+          "Hatuniye Camii",
+          "Malik Ejder",
+          "Germenicia",
+          "Eshabı Kehf",
+          "Maraş Kalesi"
+        ],
+        "dogal_guzellikler": [
+          "Sır Barajı",
+          "Yavşan",
+          "Başkonuş",
+          "Döngel",
+          "Çokran",
+          "Kumaşır Gölü"
+        ],
+        "yoresel_urunler": [
+          "Maraş Biberi",
+          "Pul Biber",
+          "Sumak",
+          "Bakırcılık",
+          "Ceviz",
+          "Çörek Otu"
+        ],
+        "unlu_kisiler": [
+          "Zarifoğlu",
+          "Karakoç",
+          "Nuri Pakdil",
+          "Akif İnan",
+          "Özdenören",
+          "Erdem Bayazıt"
         ]
+      },
+      "facts": {
+        "yemekler": "Kahramanmaraş dondurması, dövülerek yapılan yoğun kıvamıyla dünyaca ünlüdür; öyle ki bıçakla kesilebilir.",
+        "gezilecek_yerler": "Maraş Kalesi şehrin tam ortasında yükselir; eteğindeki Kapalı Çarşı ve Uzunoluk kentin en eski dokusunu taşır.",
+        "tarihi_yapilar": "Ulu Cami ve bitişiğindeki Taş Medrese, 15. yüzyılda Dulkadiroğulları döneminden kalma bir külliye oluşturur.",
+        "dogal_guzellikler": "Sır Barajı, Ceyhan Nehri üzerinde kuruludur; Başkonuş ve Yavşan yaylaları ise sedir ormanlarıyla ünlüdür.",
+        "yoresel_urunler": "Maraş biberi (pul biber) ve sumak yörenin simgesidir; şehirde bakırcılık hâlâ geleneksel bir zanaat olarak sürer.",
+        "unlu_kisiler": "Cahit Zarifoğlu, Erdem Bayazıt, Nuri Pakdil ve Rasim Özdenören gibi isimlerle Maraş bir 'şairler şehri' sayılır."
       }
     },
     {
@@ -90,20 +181,52 @@
           "İçli Köfte",
           "Menengiç"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Antep Kalesi",
           "Zeugma",
           "Bakırcılar",
           "Ulu Cami",
           "Zincirli"
         ],
-        "yoresel_kelimeler": [
-          "Cıncık",
-          "Höllük",
-          "Firik",
-          "Şıllık",
-          "Gari"
+        "tarihi_yapilar": [
+          "Antep Kalesi",
+          "Bedesten",
+          "Şirvani Camii",
+          "Boyacı Camii",
+          "Kastel",
+          "Ömeriye"
+        ],
+        "dogal_guzellikler": [
+          "Dülükbaba",
+          "Rumkale",
+          "Fırat",
+          "Huzurlu",
+          "Burç Ormanı",
+          "Sof Dağı"
+        ],
+        "yoresel_urunler": [
+          "Antep Fıstığı",
+          "Bakır",
+          "Yemeni",
+          "Kutnu",
+          "Tarhana",
+          "Sedef Kakma"
+        ],
+        "unlu_kisiler": [
+          "Ülkü Tamer",
+          "Ahmet Ümit",
+          "Edip Akbayram",
+          "Şahin Bey",
+          "Karayılan"
         ]
+      },
+      "facts": {
+        "yemekler": "Antep baklavası fıstık ve tereyağıyla yapılır; şehir UNESCO Gastronomi Şehri seçilmiştir.",
+        "gezilecek_yerler": "Zeugma Mozaik Müzesi, dünyaca ünlü 'Çingene Kızı' mozaiğine ev sahipliği yapar.",
+        "tarihi_yapilar": "Roma dönemine uzanan Antep Kalesi, şehrin tam ortasındaki bir tepede yükselir.",
+        "dogal_guzellikler": "Fırat kıyısındaki Rumkale ve Dülükbaba Tabiat Parkı, Antep'in doğal duraklarıdır.",
+        "yoresel_urunler": "Antep fıstığı, bakır işçiliği ve kutnu kumaşı yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Kurtuluş Savaşı kahramanları Şahin Bey ve Karayılan, Antep savunmasının simgeleridir."
       }
     },
     {
@@ -118,20 +241,50 @@
           "Şıllık",
           "İsot"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Balıklıgöl",
           "Göbeklitepe",
           "Ulu Cami",
           "Urfa Kalesi",
           "Harran"
         ],
-        "yoresel_kelimeler": [
-          "İşmar",
-          "Deng",
-          "Havar",
-          "Zerf",
-          "Emmi"
+        "tarihi_yapilar": [
+          "Göbeklitepe",
+          "Karahantepe",
+          "Rızvaniye",
+          "Şuayb Şehri",
+          "Halil Rahman",
+          "Harran"
+        ],
+        "dogal_guzellikler": [
+          "Balıklıgöl",
+          "Halfeti",
+          "Tektek",
+          "Fırat",
+          "Birecik"
+        ],
+        "yoresel_urunler": [
+          "Nar Ekşisi",
+          "Pul Biber",
+          "Kilim",
+          "Bakır",
+          "Şire"
+        ],
+        "unlu_kisiler": [
+          "Tatlıses",
+          "Nabi",
+          "Kazancı Bedih",
+          "Bekir Yıldız",
+          "Hz. İbrahim"
         ]
+      },
+      "facts": {
+        "yemekler": "Çiğ köfte Urfa'da acılı isot biberiyle yoğrulur; şehir 'peygamberler diyarı' olarak da anılır.",
+        "gezilecek_yerler": "Göbeklitepe, on iki bin yıl önce dikilen tapınaklarıyla dünyanın en eski ibadet yeri sayılır.",
+        "tarihi_yapilar": "Balıklıgöl kıyısındaki Halil Rahman ve Rızvaniye camileri Hz. İbrahim inancıyla anılır.",
+        "dogal_guzellikler": "Halfeti'nin sular altındaki köyü ve nadir 'kara gül'ü, Urfa'nın en çok merak edilen doğal cazibesidir.",
+        "yoresel_urunler": "Nar ekşisi ve pul biber (isot), Urfa mutfağının ve sofralarının vazgeçilmezidir.",
+        "unlu_kisiler": "İbrahim Tatlıses ve divan şairi Nabi, Şanlıurfa'nın yetiştirdiği tanınmış isimlerdendir."
       }
     },
     {
@@ -146,7 +299,7 @@
           "Vakfıkebir",
           "Pide"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Sümela",
           "Uzungöl",
           "Ayasofya",
@@ -154,13 +307,50 @@
           "Boztepe",
           "Kale"
         ],
-        "yoresel_kelimeler": [
-          "Kuşkuş",
-          "Pekmez",
-          "Uşağum",
-          "Hele",
-          "Emmi"
+        "tarihi_yapilar": [
+          "Trabzon Kalesi",
+          "Gülbahar Hatun",
+          "Fatih Camii",
+          "Ortahisar",
+          "Zağnos",
+          "Kaymaklı"
+        ],
+        "dogal_guzellikler": [
+          "Sera Gölü",
+          "Karaca",
+          "Çakırgöl",
+          "Hıdırnebi",
+          "Zigana",
+          "Sultanmurat"
+        ],
+        "yoresel_urunler": [
+          "Hasır Bilezik",
+          "Kemençe",
+          "Tereyağı",
+          "Hamsi",
+          "Fındık",
+          "Karayemiş",
+          "Mısır Unu",
+          "Kestane Balı",
+          "Şimşir Kaşık",
+          "Yayla Çayı"
+        ],
+        "unlu_kisiler": [
+          "Kanuni",
+          "Sunay Akın",
+          "Deniz Çakır",
+          "Volkan Konak",
+          "Şükrü Özyıldız"
         ]
+      },
+      "facts": {
+        "yemekler": "Hamsi Trabzon mutfağının başrolüdür; kuymak ise tereyağı ve mısır unuyla yapılır.",
+        "gezilecek_yerler": "Kayalara oyulmuş Sümela Manastırı ve masmavi Uzungöl, Trabzon'un en çok gezilen yerleridir.",
+        "tarihi_yapilar": "Fatih'in annesi adına yapılan Gülbahar Hatun Camii, şehrin önemli Osmanlı eseridir.",
+        "dogal_guzellikler": "Zigana ve Sultanmurat yaylaları ile Çakırgöl, Doğu Karadeniz'in yeşilini yansıtır.",
+        "yoresel_urunler": "Trabzon hasır bileziği, kemençe ve köy tereyağı yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Kanuni Sultan Süleyman Trabzon'da doğdu; şair Sunay Akın da bu şehirdendir.",
+        "yoresel_urunler#1": "Mısır unu ekmeği, kestane balı ve şimşir kaşık; dik yamaçlarda kurulan Karadeniz hayatının el emeğiyle şekillenmiş halidir."
       }
     },
     {
@@ -175,7 +365,7 @@
           "Kumpir",
           "Simit"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ayasofya",
           "Sultanahmet",
           "Galata Kulesi",
@@ -185,14 +375,46 @@
           "Dolmabahçe",
           "Ortaköy"
         ],
-        "yoresel_kelimeler": [
-          "Abi",
-          "Reis",
-          "Hadi",
-          "Nolur",
-          "Kanka",
-          "Moruk"
+        "tarihi_yapilar": [
+          "Süleymaniye",
+          "Topkapı",
+          "Rumeli Hisarı",
+          "Yerebatan",
+          "Yıldız Sarayı",
+          "Beylerbeyi"
+        ],
+        "dogal_guzellikler": [
+          "Boğaz",
+          "Belgrad Ormanı",
+          "Adalar",
+          "Çamlıca",
+          "Şile",
+          "Polonezköy"
+        ],
+        "yoresel_urunler": [
+          "Lokum",
+          "Akide Şekeri",
+          "Türk Kahvesi",
+          "Ebru",
+          "Çini",
+          "Baharat"
+        ],
+        "unlu_kisiler": [
+          "Orhan Pamuk",
+          "Barış Manço",
+          "Ara Güler",
+          "Cem Yılmaz",
+          "Sertab Erener",
+          "Aziz Nesin"
         ]
+      },
+      "facts": {
+        "yemekler": "Balık ekmek ve midye dolma, Eminönü ve Boğaz kıyılarının vazgeçilmez sokak lezzetleridir.",
+        "gezilecek_yerler": "Ayasofya, Topkapı ve Sultanahmet aynı meydana bakar; İstanbul iki kıtayı birleştiren tek şehirdir.",
+        "tarihi_yapilar": "Mimar Sinan'ın başyapıtı Süleymaniye Camii, 16. yüzyıldan beri şehrin siluetine hâkimdir.",
+        "dogal_guzellikler": "Belgrad Ormanı ve Adalar, on beş milyonluk şehrin içindeki birer doğa kaçamağıdır.",
+        "yoresel_urunler": "Hacı Bekir'in lokumu ve akide şekeri, iki asırdır İstanbul'un en meşhur hediyeliğidir.",
+        "unlu_kisiler": "Nobelli yazar Orhan Pamuk ve efsanevi müzisyen Barış Manço İstanbul'da doğmuştur."
       }
     },
     {
@@ -207,7 +429,7 @@
           "Söğüş",
           "Şambali"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Saat Kulesi",
           "Kordon",
           "Kadifekale",
@@ -215,13 +437,50 @@
           "Konak",
           "Asansör"
         ],
-        "yoresel_kelimeler": [
-          "Hadi",
-          "Yaa",
-          "Kanka",
-          "Emmi",
-          "Reis"
+        "tarihi_yapilar": [
+          "Efes",
+          "Bergama",
+          "Artemis",
+          "Meryemana",
+          "Klazomenai",
+          "Teos"
+        ],
+        "dogal_guzellikler": [
+          "Şirince",
+          "Çeşme",
+          "Alaçatı",
+          "Foça",
+          "Gümüldür",
+          "Nazarköy"
+        ],
+        "yoresel_urunler": [
+          "Bergama Halısı",
+          "Kekik Yağı",
+          "Zeytinyağı",
+          "Çeşme Sakızı",
+          "Enginar",
+          "Kuru İncir",
+          "Sultaniye Üzüm",
+          "Tire Keçesi",
+          "Kınık Karpuzu",
+          "Çam Fıstığı"
+        ],
+        "unlu_kisiler": [
+          "Attila İlhan",
+          "Dario Moreno",
+          "Necati Cumalı",
+          "Metin Oktay",
+          "Adnan Saygun"
         ]
+      },
+      "facts": {
+        "yemekler": "Boyoz ve gevrek (simit), İzmirlilerin klasik kahvaltı ikilisidir.",
+        "gezilecek_yerler": "Saat Kulesi ve Kordon, Ege'nin incisi İzmir'in simge noktalarıdır.",
+        "tarihi_yapilar": "Efes Antik Kenti ve Bergama, dünya mirası listesindeki İzmir hazineleridir.",
+        "dogal_guzellikler": "Alaçatı, Çeşme ve Şirince, İzmir'in en sevilen doğa ve tatil rotalarıdır.",
+        "yoresel_urunler": "Bergama halısı, Ege zeytinyağı ve Çeşme sakızı yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Şair Attila İlhan ve sanatçı Dario Moreno İzmir'de doğmuştur.",
+        "yoresel_urunler#1": "Ege'nin kuru inciri ve sultaniye üzümü dünya pazarlarının aranan ürünüdür; Tire'nin keçesi ise yüzyıllık bir zanaatın devamıdır."
       }
     },
     {
@@ -235,7 +494,7 @@
           "Tutmaç",
           "Ankara Simidi"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Anıtkabir",
           "Kale",
           "Kızılay",
@@ -243,13 +502,50 @@
           "Kocatepe",
           "Müze"
         ],
-        "yoresel_kelimeler": [
-          "Hadi",
-          "Baba",
-          "Emmi",
-          "Gari",
-          "Reis"
+        "tarihi_yapilar": [
+          "Ankara Kalesi",
+          "Gordion",
+          "Augustus",
+          "Roma Hamamı",
+          "Aslanhane",
+          "Julianus"
+        ],
+        "dogal_guzellikler": [
+          "Eymir Gölü",
+          "Nallıhan",
+          "Tulumtaş",
+          "Kızılcahamam",
+          "Soğuksu",
+          "Karagöl"
+        ],
+        "yoresel_urunler": [
+          "Telkari",
+          "Tiftik",
+          "Ankara Keçisi",
+          "Gümüş",
+          "Çubuk Turşusu",
+          "Kalecik Karası",
+          "Ankara Armudu",
+          "Ankara Kedisi",
+          "Sof Kumaşı",
+          "Nallıhan Oyası"
+        ],
+        "unlu_kisiler": [
+          "Hacı Bayram",
+          "Atatürk",
+          "Mehmet Akif",
+          "Nejat İşler",
+          "Demet Evgar"
         ]
+      },
+      "facts": {
+        "yemekler": "Ankara tava ve Beypazarı kurusu, başkentin meşhur lezzetlerindendir.",
+        "gezilecek_yerler": "Atatürk'ün anıtmezarı Anıtkabir, her yıl milyonlarca ziyaretçi ağırlar.",
+        "tarihi_yapilar": "Frig başkenti Gordion ve Roma dönemi Augustus Tapınağı, Ankara'nın kadim yapılarıdır.",
+        "dogal_guzellikler": "Eymir Gölü ve Nallıhan Kuş Cenneti, başkentlilerin doğa kaçamaklarıdır.",
+        "yoresel_urunler": "Beypazarı gümüş telkarisi ve Ankara keçisinin tiftiği yöreyle özdeşleşmiştir.",
+        "unlu_kisiler": "Ankara'da doğan Hacı Bayram Veli, şehirle özdeşleşen büyük bir Türk mutasavvıfıdır.",
+        "yoresel_urunler#1": "Ankara keçisinin tiftiğinden dokunan sof kumaşı yüzyıllarca Avrupa'ya ihraç edildi. Kalecik Karası üzümü de şehrin bağlarından çıkan tescilli bir tattır."
       }
     },
     {
@@ -264,7 +560,7 @@
           "Mevlana Böreği",
           "Sac Arası"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Mevlana",
           "Alaeddin",
           "İnce Minare",
@@ -272,13 +568,44 @@
           "Karatay",
           "Çatalhöyük"
         ],
-        "yoresel_kelimeler": [
-          "Gari",
-          "Bacım",
-          "Hadi",
-          "Emmi",
-          "Baba"
+        "tarihi_yapilar": [
+          "Alaeddin Camii",
+          "Sahip Ata",
+          "Sırçalı",
+          "Eşrefoğlu",
+          "Aziziye Camii",
+          "İplikçi Camii"
+        ],
+        "dogal_guzellikler": [
+          "Tuz Gölü",
+          "Meke Gölü",
+          "Beyşehir Gölü",
+          "Yerköprü",
+          "Obruk",
+          "Meram"
+        ],
+        "yoresel_urunler": [
+          "Mevlana Şekeri",
+          "Ereğli Halısı",
+          "Divle Tulum",
+          "Sille Çömlek",
+          "Bıçkı Helvası"
+        ],
+        "unlu_kisiler": [
+          "Mevlana",
+          "Şems",
+          "Nasreddin Hoca",
+          "Sultan Veled",
+          "Yunus Emre"
         ]
+      },
+      "facts": {
+        "yemekler": "Etli ekmek ve fırın kebabı, Konya sofralarının en meşhur lezzetleridir.",
+        "gezilecek_yerler": "Mevlana'nın türbesindeki turkuaz kubbe Konya'nın simgesidir; Çatalhöyük ise dünyanın en eski yerleşimlerindendir.",
+        "tarihi_yapilar": "İnce Minareli Medrese ve Alaeddin Camii, Selçuklu taş işçiliğinin başyapıtlarındandır.",
+        "dogal_guzellikler": "Tuz Gölü'ndeki flamingolar ve Meke Gölü, İç Anadolu'nun eşsiz doğa manzaralarıdır.",
+        "yoresel_urunler": "Mevlana şekeri ve Ereğli halısı, Konya'nın bilinen yöresel ürünleridir.",
+        "unlu_kisiler": "Mevlana ile Şems'in dostluğu Konya'da filizlenmiş; Nasreddin Hoca da bu topraklarda yaşamıştır."
       }
     },
     {
@@ -292,7 +619,7 @@
           "Pideli Köfte",
           "Cantık"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ulu Cami",
           "Yeşil Türbe",
           "Uludağ",
@@ -300,13 +627,44 @@
           "Tophane",
           "Gölyazı"
         ],
-        "yoresel_kelimeler": [
-          "Hadi",
-          "Aba",
-          "Gari",
-          "Emmi",
-          "Baba"
+        "tarihi_yapilar": [
+          "Ulu Cami",
+          "Koza Han",
+          "Muradiye",
+          "Yıldırım",
+          "Tophane",
+          "Yeşil Türbe"
+        ],
+        "dogal_guzellikler": [
+          "Uludağ",
+          "Cumalıkızık",
+          "Uluabat",
+          "Oylat",
+          "Gölyazı",
+          "Saitabat"
+        ],
+        "yoresel_urunler": [
+          "İpek",
+          "Kestane Şekeri",
+          "Karagöz",
+          "Bursa Bıçağı",
+          "Havlu"
+        ],
+        "unlu_kisiler": [
+          "Zeki Müren",
+          "Müzeyyen Senar",
+          "Osman Gazi",
+          "Orhan Gazi",
+          "Emir Sultan"
         ]
+      },
+      "facts": {
+        "yemekler": "İskender kebabı Bursa'da doğdu; tereyağı ve domates sosuyla servis edilir.",
+        "gezilecek_yerler": "Yirmi kubbeli Ulu Cami ve Uludağ, Bursa'nın en tanınan duraklarıdır.",
+        "tarihi_yapilar": "Osmanlı'nın ilk başkenti Bursa'da Yeşil Türbe ve Koza Han bu dönemden kalmadır.",
+        "dogal_guzellikler": "Uludağ, Cumalıkızık köyü ve Uluabat Gölü, Bursa'nın doğal güzellikleridir.",
+        "yoresel_urunler": "Bursa ipeği, kestane şekeri ve Karagöz-Hacivat kuklaları yöreyle özdeştir.",
+        "unlu_kisiler": "'Sanat güneşi' Zeki Müren ve Müzeyyen Senar Bursa'da doğmuştur."
       }
     },
     {
@@ -320,7 +678,7 @@
           "Testi Kebabı",
           "Şilofta"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Kaleiçi",
           "Düden",
           "Aspendos",
@@ -328,13 +686,44 @@
           "Yivli",
           "Yanartaş"
         ],
-        "yoresel_kelimeler": [
-          "Hadi",
-          "Yavrum",
-          "Aba",
-          "Emmi",
-          "Gari"
+        "tarihi_yapilar": [
+          "Aspendos",
+          "Yivli Minare",
+          "Perge",
+          "Hıdırlık",
+          "Hadrian",
+          "Termessos"
+        ],
+        "dogal_guzellikler": [
+          "Düden",
+          "Manavgat",
+          "Yanartaş",
+          "Konyaaltı",
+          "Lara",
+          "Saklıkent"
+        ],
+        "yoresel_urunler": [
+          "Portakal",
+          "Nar Ekşisi",
+          "Zeytinyağı",
+          "Testi",
+          "Dokuma"
+        ],
+        "unlu_kisiler": [
+          "Rüştü Reçber",
+          "Deniz Baykal",
+          "Burcu Biricik",
+          "İsmail Balaban",
+          "Ekin Koç"
         ]
+      },
+      "facts": {
+        "yemekler": "Piyaz, yöresel baharatlar ve tahin sosuyla hazırlanan Antalya'nın simge mezesidir.",
+        "gezilecek_yerler": "Kaleiçi'nin taş sokakları ve Düden Şelalesi, Antalya'nın en sevilen duraklarıdır.",
+        "tarihi_yapilar": "Aspendos'un antik tiyatrosu bugün hâlâ konserlere ev sahipliği yapacak kadar sağlamdır.",
+        "dogal_guzellikler": "Söndürülemeyen alevleriyle Yanartaş ve Manavgat Şelalesi Antalya'nın doğa harikalarıdır.",
+        "yoresel_urunler": "Antalya portakalı ve zeytinyağı, Akdeniz güneşiyle olgunlaşan yöresel ürünlerdir.",
+        "unlu_kisiler": "Efsane kaleci Rüştü Reçber ve oyuncu Burcu Biricik Antalya'da doğmuştur."
       }
     },
     {
@@ -346,9 +735,14 @@
           "Kadayıf",
           "Su Böreği",
           "Kete",
-          "Lor Dolması"
+          "Lor Dolması",
+          "Piti",
+          "Kesme Aşı",
+          "Ayran Aşı",
+          "İspir Fasulye",
+          "Çiriş"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Çifte Minare",
           "Palandöken",
           "Yakutiye",
@@ -356,13 +750,44 @@
           "Tortum",
           "Kale"
         ],
-        "yoresel_kelimeler": [
-          "Hele",
-          "Uşağum",
-          "Emmi",
-          "Gari",
-          "Baba"
+        "tarihi_yapilar": [
+          "Çifte Minare",
+          "Yakutiye",
+          "Üç Kümbet",
+          "Erzurum Kalesi",
+          "Ulu Cami",
+          "Rüstem Paşa"
+        ],
+        "dogal_guzellikler": [
+          "Tortum",
+          "Palandöken",
+          "Beş Göller",
+          "İspir",
+          "Narman"
+        ],
+        "yoresel_urunler": [
+          "Oltu Taşı",
+          "Ehram",
+          "Bakır",
+          "Civil Peyniri",
+          "Küflü Peynir"
+        ],
+        "unlu_kisiler": [
+          "Nene Hatun",
+          "Alvarlı Efe",
+          "İbrahim Hakkı",
+          "Cemal Gürsel",
+          "Aşık Emrah"
         ]
+      },
+      "facts": {
+        "yemekler": "İnce ince kesilen cağ kebabı Erzurum'da doğdu; kadayıf dolması da şehrin tatlı simgesidir.",
+        "gezilecek_yerler": "Çifte Minareli Medrese ve kayak merkeziyle ünlü Palandöken, Erzurum'un simge duraklarıdır.",
+        "tarihi_yapilar": "Selçuklu'dan kalan Çifte Minareli Medrese ve Üç Kümbetler taş işçiliğinin başyapıtlarıdır.",
+        "dogal_guzellikler": "Türkiye'nin en yüksek şelalelerinden Tortum ve Palandöken'in karlı zirveleri ilin doğasını taçlandırır.",
+        "yoresel_urunler": "Siyah oltu taşından takılar ve dokuma ehram, Erzurum'un yüzyıllık el sanatlarıdır.",
+        "unlu_kisiler": "Aziziye savunmasının kahramanı Nene Hatun ve şair Alvarlı Efe Erzurumludur.",
+        "yemekler#1": "Erzurum sofrasının çorbaları meşhurdur: nohutlu ayran aşı ramazan iftarlarının baş köşesinde, kemikli etle saatlerce pişen piti ise kışın kuvvet kaynağıdır."
       }
     },
     {
@@ -377,13 +802,50 @@
           "Fellah Köftesi",
           "Muhammara"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Sen Piyer",
           "Hatay Müzesi",
           "Titus Tüneli",
           "Habibi Neccar",
           "Harbiye"
+        ],
+        "tarihi_yapilar": [
+          "Sen Piyer",
+          "Habibi Neccar",
+          "Titus Tüneli",
+          "Bakras",
+          "Payas",
+          "St. Simeon"
+        ],
+        "dogal_guzellikler": [
+          "Harbiye",
+          "Sofular",
+          "Milleyha",
+          "Gölbaşı",
+          "Nur Dağları"
+        ],
+        "yoresel_urunler": [
+          "Defne Sabunu",
+          "İpek",
+          "Zahter",
+          "Sumak",
+          "Zeytinyağı"
+        ],
+        "unlu_kisiler": [
+          "Cemil Meriç",
+          "Hamdi Alkan",
+          "Gökhan Zan",
+          "Erdem Yener",
+          "Aziz Petrus"
         ]
+      },
+      "facts": {
+        "yemekler": "Tel kadayıf ve peynirle yapılan sıcak künefe, Hatay Antakya'nın dünyaca ünlü tatlısıdır.",
+        "gezilecek_yerler": "Kayaya oyulmuş Sen Piyer Kilisesi, Hristiyanlığın ilk kiliselerinden biri kabul edilir.",
+        "tarihi_yapilar": "Antakya'daki Sen Piyer, 'Hristiyan' adının ilk kez kullanıldığı kadim bir ibadet yeridir.",
+        "dogal_guzellikler": "Defne (Harbiye) şelaleleri ve Samandağ'daki Milleyha sulak alanı Hatay'ın doğa köşeleridir.",
+        "yoresel_urunler": "Defne yağından yapılan Antakya sabunu ve zahter otu, Hatay'ın tescilli ürünleridir.",
+        "unlu_kisiler": "Düşünür Cemil Meriç, Hatay Reyhanlı'da dünyaya gelmiştir."
       }
     },
     {
@@ -397,13 +859,50 @@
           "Bici Bici",
           "Batırık"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Kızkalesi",
           "Mamure",
           "Kleopatra",
           "Tarsus",
           "Adamkayalar"
+        ],
+        "tarihi_yapilar": [
+          "Kızkalesi",
+          "Mamure",
+          "Korykos",
+          "Aya Tekla",
+          "Kanlıdivane",
+          "Uzuncaburç"
+        ],
+        "dogal_guzellikler": [
+          "Cennet",
+          "Cehennem",
+          "Göksu Deltası",
+          "Gilindire",
+          "Yerköprü"
+        ],
+        "yoresel_urunler": [
+          "Limon",
+          "Anamur Muzu",
+          "Çilek",
+          "Cezerye",
+          "Zeytin"
+        ],
+        "unlu_kisiler": [
+          "Ayberk Pekcan",
+          "Mabel Matiz",
+          "Deniz Oral",
+          "Aziz Pavlus",
+          "Metin Akdülger"
         ]
+      },
+      "facts": {
+        "yemekler": "İnce kıyılmış etle dürüm yapılan tantuni, Mersin'in en meşhur sokak lezzetidir.",
+        "gezilecek_yerler": "Denizin ortasındaki Kızkalesi ve Tarsus, Mersin kıyısının en tanınan duraklarıdır.",
+        "tarihi_yapilar": "İki Korykos kalesinden biri, 'Kızkalesi' adıyla dalgaların ortasında yükselir.",
+        "dogal_guzellikler": "Göksu deltası, dev Cennet-Cehennem obrukları ve yeraltı Aynalıgöl mağarası Mersin'dedir.",
+        "yoresel_urunler": "Akdeniz güneşiyle olgunlaşan Anamur muzu ve limon, Mersin'in simge ürünleridir.",
+        "unlu_kisiler": "Havuçtan yapılan cezeryenin diyarı Mersin, oyuncu Ayberk Pekcan'ın da memleketidir."
       }
     },
     {
@@ -417,13 +916,56 @@
           "Ağpakla",
           "Düğün Pilavı"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Göreme",
           "Peribacaları",
           "Derinkuyu",
           "Uçhisar",
-          "Ürgüp"
+          "Ürgüp",
+          "Avanos",
+          "Paşabağ",
+          "Kızılçukur",
+          "Devrent",
+          "Gülşehir"
+        ],
+        "tarihi_yapilar": [
+          "Kaymaklı",
+          "Zelve",
+          "Çavuşin",
+          "Ortahisar",
+          "Sarıhan",
+          "Hacıbektaş"
+        ],
+        "dogal_guzellikler": [
+          "Peribacaları",
+          "Güvercinlik",
+          "Aşıklar Vadisi",
+          "Nar Gölü",
+          "Kızılırmak"
+        ],
+        "yoresel_urunler": [
+          "Avanos Çömleği",
+          "Patates",
+          "Oniks",
+          "Testi",
+          "Halı"
+        ],
+        "unlu_kisiler": [
+          "Damat İbrahim",
+          "Hacı Bektaş",
+          "Ercan Kesal",
+          "İlayda Şeker",
+          "Vefa Küçük"
         ]
+      },
+      "facts": {
+        "yemekler": "Toprak testi içinde pişirilip önünde kırılan testi kebabı, Kapadokya'nın gösterili yemeğidir.",
+        "gezilecek_yerler": "Peri bacaları ve yeraltı şehirleriyle Kapadokya, balon turlarının dünyaca ünlü merkezidir.",
+        "tarihi_yapilar": "Derinkuyu ve Kaymaklı yeraltı şehirleri, kayaya oyulmuş katlarıyla binlerce kişiyi barındırırdı.",
+        "dogal_guzellikler": "Milyonlarca yılda rüzgâr ve suyun yonttuğu peri bacaları, Kapadokya'nın imzasıdır.",
+        "yoresel_urunler": "Avanos'un Kızılırmak çamurundan yapılan çömlekleri ve Ürgüp şarabı yöreyle özdeştir.",
+        "unlu_kisiler": "Lale Devri'nin sadrazamı Nevşehirli Damat İbrahim Paşa şehre adını vermiştir.",
+        "gezilecek_yerler#1": "Avanos, Kızılırmak'ın kırmızı kilinden çömlek yapan ustalarıyla ünlüdür. Paşabağ ve Devrent vadileri Kapadokya'nın en sıra dışı peribacalarına ev sahipliği yapar."
       }
     },
     {
@@ -437,13 +979,55 @@
           "Gömbe",
           "Kabak Tatlısı"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Pamukkale",
           "Hierapolis",
           "Laodikya",
           "Karahayıt",
           "Kaklık"
+        ],
+        "tarihi_yapilar": [
+          "Hierapolis",
+          "Laodikya",
+          "Tripolis",
+          "Colossae",
+          "Kaklık",
+          "Akhan",
+          "Beycesultan",
+          "Honaz Kalesi",
+          "Buldan Evleri",
+          "Plutonium"
+        ],
+        "dogal_guzellikler": [
+          "Pamukkale",
+          "Karahayıt",
+          "Güney Şelalesi",
+          "Işıklı Gölü",
+          "Keloğlan"
+        ],
+        "yoresel_urunler": [
+          "Denizli Horozu",
+          "Buldan Bezi",
+          "Babadağ Bezi",
+          "Tekstil",
+          "Traverten"
+        ],
+        "unlu_kisiler": [
+          "Sezen Aksu",
+          "Aras Bulut",
+          "Sıla",
+          "Demet Akbağ",
+          "Tuba Ünsal"
         ]
+      },
+      "facts": {
+        "yemekler": "Tandırda pişen Denizli kebabı ve gökçe (kabak) tatlısı, yörenin bilinen lezzetleridir.",
+        "gezilecek_yerler": "Bembeyaz travertenleriyle Pamukkale ve üstündeki antik Hierapolis, dünya mirasıdır.",
+        "tarihi_yapilar": "Pamukkale'nin tepesindeki Hierapolis'in dev tiyatrosu ve nekropolü hâlâ ziyaret edilir.",
+        "dogal_guzellikler": "Sıcak, bembeyaz travertenleriyle Pamukkale, dünyanın en tanınmış doğa harikalarından biridir.",
+        "yoresel_urunler": "Uzun süre öten Denizli horozu ile Buldan ve Babadağ dokumaları yöreyle özdeşleşmiştir.",
+        "unlu_kisiler": "Türk pop müziğinin 'Minik Serçe'si Sezen Aksu Denizli Sarayköy'de doğdu.",
+        "tarihi_yapilar#1": "Beycesultan Höyüğü Anadolu'nun Tunç Çağı'na, Selçuklu kervansarayı Akhan ise ipek yolunun konak yerlerine ışık tutar."
       }
     },
     {
@@ -457,13 +1041,50 @@
           "Keşkek",
           "Lokma"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Bodrum Kalesi",
           "Ölüdeniz",
           "Dalyan",
           "Marmaris",
           "Datça"
+        ],
+        "tarihi_yapilar": [
+          "Bodrum Kalesi",
+          "Amos",
+          "Knidos",
+          "Kaunos",
+          "Stratonikeia",
+          "Beçin"
+        ],
+        "dogal_guzellikler": [
+          "Ölüdeniz",
+          "Saklıkent",
+          "Sedir Adası",
+          "Akyaka",
+          "Köyceğiz"
+        ],
+        "yoresel_urunler": [
+          "Çam Balı",
+          "Zeytinyağı",
+          "Badem",
+          "Sünger",
+          "Halı"
+        ],
+        "unlu_kisiler": [
+          "Selda Bağcan",
+          "Keremcem",
+          "Salih Uçan",
+          "Neriman Uğur",
+          "Cevat Şakir"
         ]
+      },
+      "facts": {
+        "yemekler": "Çökertme kebabı ve Bodrum mantısı, Muğla'nın Ege mutfağından gelen sevilen lezzetleridir.",
+        "gezilecek_yerler": "Turkuaz suların birleştiği Ölüdeniz ve tarihi Bodrum Kalesi Muğla'nın simge duraklarıdır.",
+        "tarihi_yapilar": "Bodrum Kalesi'ni Rodos şövalyeleri yaptı; Knidos ve Kaunos ise ilin antik kentleridir.",
+        "dogal_guzellikler": "Caretta carettaların yumurtladığı Dalyan ve İztuzu, Muğla'nın korunan doğa hazineleridir.",
+        "yoresel_urunler": "Ormanların böceklerinden süzülen çam balı, Muğla'yı Türkiye'nin bal başkenti yapar.",
+        "unlu_kisiler": "Türk halk müziğinin sesi Selda Bağcan Muğla'da doğmuştur."
       }
     },
     {
@@ -477,13 +1098,51 @@
           "Mısır Ekmeği",
           "Karalahana"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ayder",
           "Pokut",
           "Zilkale",
           "Fırtına",
           "Palovit"
+        ],
+        "tarihi_yapilar": [
+          "Zilkale",
+          "Rize Kalesi",
+          "Çifteköprü",
+          "Taşhan",
+          "Gülbahar"
+        ],
+        "dogal_guzellikler": [
+          "Kaçkar",
+          "Çamlıhemşin",
+          "Verçenik",
+          "Anzer",
+          "Gito"
+        ],
+        "yoresel_urunler": [
+          "Çay",
+          "Anzer Balı",
+          "Bal",
+          "Keten Bezi",
+          "Turşu"
+        ],
+        "unlu_kisiler": [
+          "Sandıkçı Şükrü",
+          "Mehmet Haberal",
+          "Yılmaz Bilsel",
+          "Murat Hacıoğlu",
+          "Oktay Çevik",
+          "Birol Parlak",
+          "Ayşenur Sormaz"
         ]
+      },
+      "facts": {
+        "yemekler": "Tereyağlı muhlama ve hamsili pilav, Rize'nin Karadeniz mutfağının başrolleridir.",
+        "gezilecek_yerler": "Ayder Yaylası ve sisli Fırtına Vadisi, Rize'yi doğa tutkunlarının cennetine çevirir.",
+        "tarihi_yapilar": "Fırtına Deresi üzerindeki taş kemer köprüler ve Zilkale, Rize'nin tarihî izleridir.",
+        "dogal_guzellikler": "Kaçkar Dağları ve yemyeşil yaylalar, Rize'nin dünyaca ünlü doğasını oluşturur.",
+        "yoresel_urunler": "Rize çayı Türkiye çay üretiminin neredeyse tamamını karşılar; Anzer balı da eşsizdir.",
+        "unlu_kisiler": "Rize, çay bahçeleri ve yaylalarıyla anılan yeşil bir Karadeniz şehridir."
       }
     },
     {
@@ -495,15 +1154,58 @@
           "Van Kahvaltısı",
           "Otlu Peynir",
           "Murtuğa",
-          "Van Ketesi"
+          "Van Ketesi",
+          "Ayran Aşı",
+          "Kavut",
+          "Erişte",
+          "Tarhana",
+          "Bal Kaymak"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Van Kalesi",
           "Akdamar",
           "Van Gölü",
           "Muradiye",
           "Hoşap"
+        ],
+        "tarihi_yapilar": [
+          "Van Kalesi",
+          "Akdamar",
+          "Hoşap",
+          "Çavuştepe",
+          "Yedi Kilise",
+          "Halime Hatun"
+        ],
+        "dogal_guzellikler": [
+          "Van Gölü",
+          "Muradiye",
+          "Erçek",
+          "Çatak",
+          "Bendimahi"
+        ],
+        "yoresel_urunler": [
+          "Otlu Peynir",
+          "Van Balı",
+          "Savatlı Gümüş",
+          "Van Kedisi",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Sarduri",
+          "Nur Tatar",
+          "Sinan Çetin",
+          "Fatih Altaylı",
+          "Kadir Çermik"
         ]
+      },
+      "facts": {
+        "yemekler": "Onlarca çeşitten oluşan meşhur Van kahvaltısı ve otlu peynir, şehrin mutfak simgesidir.",
+        "gezilecek_yerler": "Akdamar Adası'ndaki bin yıllık kilise ve sodalı Van Gölü, şehrin en ünlü manzaralarıdır.",
+        "tarihi_yapilar": "Van Kalesi'ni Urartular kurdu; Çavuştepe ve Hoşap kaleleri de o çağdan kalmadır.",
+        "dogal_guzellikler": "Dünyanın en büyük sodalı gölü Van Gölü ile Muradiye Şelalesi ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Otlu peynir, Van balı ve savatlı gümüş; beyaz tüylü Van kedisi de şehrin simgesidir.",
+        "unlu_kisiler": "Van, Urartu kralı Sarduri'den milli tekvandocu Nur Tatar'a uzanan isimlerin şehridir.",
+        "yemekler#1": "Van mutfağı kışa hazırlıkla şekillenir; tarhana, erişte ve kavut uzun kış aylarının azığıdır. Ayran aşı ise balık sofrasının değişmez eşlikçisidir."
       }
     },
     {
@@ -517,13 +1219,50 @@
           "Lebeni",
           "İçli Köfte"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Surlar",
           "Ulu Cami",
           "On Gözlü Köprü",
           "Hevsel",
           "Hasanpaşa"
+        ],
+        "tarihi_yapilar": [
+          "Malabadi",
+          "Zinciriye",
+          "Hasan Paşa Hanı",
+          "Behram Paşa",
+          "Dört Ayaklı",
+          "Meryem Ana"
+        ],
+        "dogal_guzellikler": [
+          "Hevsel",
+          "Dicle",
+          "Hasuni",
+          "Devegeçidi",
+          "Eğil"
+        ],
+        "yoresel_urunler": [
+          "Karpuz",
+          "Örgü Peyniri",
+          "Bakır",
+          "Kilim",
+          "Puşi"
+        ],
+        "unlu_kisiler": [
+          "Ziya Gökalp",
+          "Cahit Sıtkı",
+          "Ahmed Arif",
+          "Süleyman Nazif",
+          "Celal Güzelses"
         ]
+      },
+      "facts": {
+        "yemekler": "İçli köfte ve kaburga dolması, Diyarbakır'ın bakır sinilerde servis edilen meşhur lezzetleridir.",
+        "gezilecek_yerler": "Beş kilometrelik siyah bazalt surları ve Hevsel Bahçeleri UNESCO Dünya Mirası listesindedir.",
+        "tarihi_yapilar": "On Gözlü Köprü ve Malabadi Köprüsü, Diyarbakır'ın yüzlerce yıllık taş köprüleridir.",
+        "dogal_guzellikler": "Dicle kıyısındaki Hevsel Bahçeleri, binlerce yıldır şehri besleyen yeşil bir vadidir.",
+        "yoresel_urunler": "Diyarbakır karpuzu iriliğiyle ünlüdür; örgü peyniri ve bakır işçiliği de yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Sosyolog Ziya Gökalp ve şair Cahit Sıtkı Tarancı Diyarbakır'da doğmuştur."
       }
     },
     {
@@ -537,13 +1276,50 @@
           "Yağlama",
           "Nevzine"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Erciyes",
           "Kültepe",
           "Gevher Nesibe",
           "Kurşunlu",
           "Talas"
+        ],
+        "tarihi_yapilar": [
+          "Kayseri Kalesi",
+          "Hunat Hatun",
+          "Gevher Nesibe",
+          "Döner Kümbet",
+          "Kültepe",
+          "Saat Kulesi"
+        ],
+        "dogal_guzellikler": [
+          "Erciyes",
+          "Zamantı",
+          "Kapuzbaşı",
+          "Sultan Sazlığı",
+          "Yay Gölü"
+        ],
+        "yoresel_urunler": [
+          "Pastırma",
+          "Sucuk",
+          "Bünyan Halısı",
+          "Yamula",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Mimar Sinan",
+          "Sakıp Sabancı",
+          "Abdullah Gül",
+          "Aşık Seyrani",
+          "Ahi Evran"
         ]
+      },
+      "facts": {
+        "yemekler": "Kayseri mantısı kaşıkla sayılacak kadar küçük yapılır; pastırma ve sucuk da şehrin simgesidir.",
+        "gezilecek_yerler": "Kayseri'ye adını veren Erciyes Dağı, hem kayak merkezi hem şehrin ardındaki dev volkandır.",
+        "tarihi_yapilar": "Dünyanın en eski ticaret merkezlerinden Kültepe ve Selçuklu Döner Kümbet Kayseri'dedir.",
+        "dogal_guzellikler": "Erciyes'in eteklerinden Kapuzbaşı Şelaleleri ve Sultan Sazlığı kuş cennetine uzanır.",
+        "yoresel_urunler": "Kayseri pastırması, sucuğu ve Bünyan halısı yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Büyük mimar Sinan ve iş insanı Sakıp Sabancı Kayseri'de doğmuştur."
       }
     },
     {
@@ -557,13 +1333,50 @@
           "Nuga Helva",
           "Miyane"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Odunpazarı",
           "Sazova",
           "Porsuk",
           "Kent Park",
           "Lületaşı"
+        ],
+        "tarihi_yapilar": [
+          "Odunpazarı",
+          "Seyitgazi",
+          "Şeyh Edebali",
+          "Kurşunlu",
+          "Zaimağa",
+          "Dorylaion"
+        ],
+        "dogal_guzellikler": [
+          "Porsuk",
+          "Kızılinler",
+          "Sündiken",
+          "Balıkdamı",
+          "Musaözü"
+        ],
+        "yoresel_urunler": [
+          "Lületaşı",
+          "Sorkun Çömlek",
+          "Cam İşi",
+          "Seramik",
+          "Met Helva"
+        ],
+        "unlu_kisiler": [
+          "Yunus Emre",
+          "Büyükerşen",
+          "Seyit Battal",
+          "Şahin Özyüksel",
+          "Melikgazi"
         ]
+      },
+      "facts": {
+        "yemekler": "İçi kıymayla doldurulan çıtır çibörek, Eskişehir'in Tatar mutfağından gelen en meşhur lezzetidir.",
+        "gezilecek_yerler": "Renkli Odunpazarı evleri ve Porsuk Çayı'ndaki gondollar Eskişehir'i öğrenci şehri yapan simgelerdir.",
+        "tarihi_yapilar": "Osmanlı'nın kuruluşuna tanıklık eden Şeyh Edebali ve Seyitgazi türbeleri Eskişehir'dedir.",
+        "dogal_guzellikler": "Porsuk Çayı şehri ikiye böler; Kızılinler'in kaplıcaları ise doğa kaçamağı sunar.",
+        "yoresel_urunler": "Yalnızca Eskişehir'de çıkarılan lületaşı, işlenerek dünyaca ünlü pipolara dönüşür.",
+        "unlu_kisiler": "Halk şairi Yunus Emre'nin doğduğu topraklar Eskişehir Mihalıççık'tır."
       }
     },
     {
@@ -577,13 +1390,50 @@
           "Baklalı Sarma",
           "Katık Böreği"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Bandırma",
           "Amisos",
           "Onur Anıtı",
           "Kuş Cenneti",
           "Şahinkaya"
+        ],
+        "tarihi_yapilar": [
+          "Amisos",
+          "Onur Anıtı",
+          "Pazar Camii",
+          "Yalı Camii",
+          "Saathane",
+          "Bedesten"
+        ],
+        "dogal_guzellikler": [
+          "Ladik Gölü",
+          "Kızılırmak",
+          "Simenlik",
+          "Bafra Deltası",
+          "Akgöl"
+        ],
+        "yoresel_urunler": [
+          "Pirinç",
+          "Fındık",
+          "Kestane Balı",
+          "Kolan Dokuma",
+          "Bakır"
+        ],
+        "unlu_kisiler": [
+          "Orhan Gencebay",
+          "Ferhan Şensoy",
+          "Tanju Çolak",
+          "Ahu Türkpençe",
+          "Aslantuğ"
         ]
+      },
+      "facts": {
+        "yemekler": "Bafra pidesi ve kaz tiridi, Samsun'un Karadeniz mutfağından gelen meşhur lezzetleridir.",
+        "gezilecek_yerler": "19 Mayıs 1919'da Atatürk'ün Samsun'a çıktığı Bandırma Vapuru, bugün müze gemi olarak sergilenir.",
+        "tarihi_yapilar": "Amisos Tepesi'nin antik kalıntıları ve Onur Anıtı, Kurtuluş'un başlangıcını anlatır.",
+        "dogal_guzellikler": "Kızılırmak ve Bafra deltalarındaki kuş cennetleri, yüzlerce göçmen kuşa ev sahipliği yapar.",
+        "yoresel_urunler": "Verimli Çarşamba ve Bafra ovaları Samsun'a pirinç ve fındık kazandırır.",
+        "unlu_kisiler": "Arabesk'in babası Orhan Gencebay ve tiyatrocu Ferhan Şensoy Samsun'da doğmuştur."
       }
     },
     {
@@ -597,13 +1447,56 @@
           "Peskütan",
           "Divriği Pilavı"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Divriği",
           "Gök Medrese",
           "Buruciye",
           "Çifte Minare",
           "Balıklı"
+        ],
+        "tarihi_yapilar": [
+          "Kale Camii",
+          "Gök Medrese",
+          "Buruciye",
+          "Şifaiye",
+          "Kongre Binası",
+          "Çifte Minare"
+        ],
+        "dogal_guzellikler": [
+          "Kızılırmak",
+          "Tödürge",
+          "Gürlevik",
+          "Sıcak Çermik",
+          "Yıldız Dağı",
+          "Hafik Gölü",
+          "Şuğul Vadisi",
+          "Koyulhisar",
+          "Zara",
+          "Suşehri"
+        ],
+        "yoresel_urunler": [
+          "Kangal",
+          "Kilim",
+          "Battaniye",
+          "El Halısı",
+          "Bakır"
+        ],
+        "unlu_kisiler": [
+          "Aşık Veysel",
+          "Pir Sultan",
+          "Ali Kınık",
+          "Yazıcıoğlu",
+          "Aşık Ali İzzet"
         ]
+      },
+      "facts": {
+        "yemekler": "İçli köfte kıvamındaki Sivas köftesi ve madımak, şehrin Anadolu mutfağından meşhur tatlarıdır.",
+        "gezilecek_yerler": "Divriği Ulu Camii'nin taş kapıları eşsiz işçiliğiyle UNESCO Dünya Mirası listesindedir.",
+        "tarihi_yapilar": "Sivas'taki Selçuklu medreseleri Gök Medrese ve Buruciye, taş oymacılığının şaheseridir.",
+        "dogal_guzellikler": "Sıcak Çermik kaplıcaları ve Yıldız Dağı, Sivas'ın şifa ve kar sunan doğa noktalarıdır.",
+        "yoresel_urunler": "Dünyaca ünlü Kangal çoban köpeği, adını Sivas'ın Kangal ilçesinden alır.",
+        "unlu_kisiler": "Halk ozanları Âşık Veysel ve Pir Sultan Abdal, Sivas topraklarında yetişmiştir.",
+        "dogal_guzellikler#1": "Hafik Gölü ve Şuğul Vadisi, Sivas'ın bozkır görüntüsünün ardındaki yeşil sırlarıdır; Şuğul kanyonu kuş sesleriyle bilinir."
       }
     },
     {
@@ -617,13 +1510,49 @@
           "Saçaklı Mantı",
           "Papalina"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ayvalık",
           "Cunda",
           "Kaz Dağları",
           "Sarımsaklı",
           "Manyas"
+        ],
+        "tarihi_yapilar": [
+          "Zağnos Paşa",
+          "Saat Kulesi",
+          "Adramytteion",
+          "Antandros",
+          "Yıldırım"
+        ],
+        "dogal_guzellikler": [
+          "Kaz Dağları",
+          "Manyas",
+          "Ayvalık",
+          "Sarımsaklı",
+          "Kapıdağ"
+        ],
+        "yoresel_urunler": [
+          "Zeytinyağı",
+          "Höşmerim",
+          "Kaymak",
+          "Tost",
+          "Susurluk"
+        ],
+        "unlu_kisiler": [
+          "Cengiz Ünder",
+          "Caner Erkin",
+          "Zeynep Günay",
+          "Ömer Seyfettin",
+          "Hande Erçel"
         ]
+      },
+      "facts": {
+        "yemekler": "Höşmerim tatlısı ve Susurluk tostu, Balıkesir'in bilinen yöresel lezzetleridir.",
+        "gezilecek_yerler": "Zeytin adası Cunda ve Ayvalık ile Kaz Dağları, Balıkesir'in gözde duraklarıdır.",
+        "tarihi_yapilar": "Mimar Sinan yapısı Zağnos Paşa Camii ve antik Antandros, ilin tarihini taşır.",
+        "dogal_guzellikler": "Kaz Dağları'nın oksijeni ve Manyas Kuş Cenneti, Balıkesir'in doğa harikalarıdır.",
+        "yoresel_urunler": "Ayvalık zeytinyağı ve Balıkesir kaymağı, yörenin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Balıkesir, Kaz Dağları ve zeytin diyarı Ayvalık ile anılan bir Marmara şehridir."
       }
     },
     {
@@ -637,13 +1566,50 @@
           "Tahinli Pide",
           "Keşkek"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Afrodisias",
           "Didim",
           "Kuşadası",
           "Milet",
           "Priene"
+        ],
+        "tarihi_yapilar": [
+          "Afrodisias",
+          "Milet",
+          "Priene",
+          "Nysa",
+          "Tralleis",
+          "Apollon"
+        ],
+        "dogal_guzellikler": [
+          "Dilek",
+          "Bafa Gölü",
+          "Zeus Mağarası",
+          "Kuşadası",
+          "Güzelçamlı"
+        ],
+        "yoresel_urunler": [
+          "İncir",
+          "Zeytinyağı",
+          "Kestane",
+          "Basma",
+          "Pamuk"
+        ],
+        "unlu_kisiler": [
+          "Adnan Menderes",
+          "Fatih Portakal",
+          "Gökhan Kırdar",
+          "Fırat Albayrak",
+          "Yörük Ali Efe"
         ]
+      },
+      "facts": {
+        "yemekler": "Dünyaca ünlü Aydın inciri ve közde çöp şiş, yörenin en bilinen tatlarıdır.",
+        "gezilecek_yerler": "Afrodisias antik kenti, mermer heykelleri ve stadıyla UNESCO Dünya Mirası listesindedir.",
+        "tarihi_yapilar": "Afrodisias, Milet ve Priene, Aydın topraklarındaki görkemli antik kentlerdir.",
+        "dogal_guzellikler": "Dilek Yarımadası Milli Parkı ve Bafa Gölü, Ege kıyısının el değmemiş doğa köşeleridir.",
+        "yoresel_urunler": "Menderes ovasında yetişen Aydın inciri, kuru incir olarak dünyaya ihraç edilir.",
+        "unlu_kisiler": "Başbakan Adnan Menderes Aydın Koçarlı'da doğmuştur."
       }
     },
     {
@@ -657,13 +1623,52 @@
           "Peynir Helvası",
           "İncir Dolması"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Truva",
           "Gelibolu",
           "Assos",
           "Bozcaada",
           "Şehitler"
+        ],
+        "tarihi_yapilar": [
+          "Truva",
+          "Assos",
+          "Smintheion",
+          "Kilitbahir",
+          "Şehitlik"
+        ],
+        "dogal_guzellikler": [
+          "Kaz Dağları",
+          "Bozcaada",
+          "Gökçeada",
+          "Saros",
+          "Ayvacık"
+        ],
+        "yoresel_urunler": [
+          "Peynir",
+          "Zeytinyağı",
+          "Zeytin",
+          "Sardalya",
+          "Domates"
+        ],
+        "unlu_kisiler": [
+          "Adnan Adıvar",
+          "Eren Kırca",
+          "Arif Damar",
+          "Nedim Doğan",
+          "Adalet Cimcoz",
+          "Yıldız Ecevit",
+          "Barış Çakmak",
+          "Kemal Gözler"
         ]
+      },
+      "facts": {
+        "yemekler": "Ezine peyniri ve taze sardalya, Çanakkale'nin bilinen yöresel lezzetleridir.",
+        "gezilecek_yerler": "Truva'nın ünlü tahta atı ve Gelibolu şehitlikleri, Çanakkale'nin simgeleridir.",
+        "tarihi_yapilar": "Homeros'un anlattığı Truva ve Athena tapınaklı Assos, Çanakkale'dedir.",
+        "dogal_guzellikler": "Rüzgârın adaları Bozcaada ve Gökçeada ile Kaz Dağları, ilin doğa incileridir.",
+        "yoresel_urunler": "Ezine peyniri ve Bozcaada şarabı, Çanakkale'nin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Çanakkale, Truva efsanesi ve Gelibolu destanıyla tarihe kazınmış bir şehirdir."
       }
     },
     {
@@ -677,13 +1682,50 @@
           "Sübye",
           "Höşmerim"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Spil Dağı",
           "Ağlayan Kaya",
           "Sardes",
           "Kula",
           "Şehzadeler"
+        ],
+        "tarihi_yapilar": [
+          "Sardes",
+          "Muradiye",
+          "Sultan Cami",
+          "Niobe",
+          "Ulu Cami"
+        ],
+        "dogal_guzellikler": [
+          "Spil Dağı",
+          "Ağlayan Kaya",
+          "Kula",
+          "Gördes",
+          "Marmara Gölü"
+        ],
+        "yoresel_urunler": [
+          "Üzüm",
+          "Mesir Macunu",
+          "Kula Halısı",
+          "Sultani",
+          "Zeytin"
+        ],
+        "unlu_kisiler": [
+          "Onur Kıvrak",
+          "I. Ahmed",
+          "III. Mehmed",
+          "I. Mustafa",
+          "Süleyman Küçük",
+          "Ali Meriç"
         ]
+      },
+      "facts": {
+        "yemekler": "Manisa kebabı ve şifa dağıtan mesir macunu, ilin dünyaca bilinen tatlarıdır.",
+        "gezilecek_yerler": "Spil Dağı ve efsanevi Ağlayan Kaya (Niobe), Manisa'nın simge duraklarıdır.",
+        "tarihi_yapilar": "Lidya başkenti Sardes ve Osmanlı Muradiye Camii, Manisa'nın mirasıdır.",
+        "dogal_guzellikler": "Manisa lalesinin anavatanı Spil Dağı ve volkanik Kula, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Çekirdeksiz sultani üzümü ve mesir macunu, Manisa'nın tescilli ürünleridir.",
+        "unlu_kisiler": "Manisa, şehzadelerin yetiştiği ve mesir macununun dağıtıldığı tarihî bir şehirdir."
       }
     },
     {
@@ -697,13 +1739,51 @@
           "Lokum",
           "Ağzı Açık"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Afyon Kalesi",
           "Frig Vadisi",
           "Gazlıgöl",
           "Zafer Anıtı",
           "Kaplıca"
+        ],
+        "tarihi_yapilar": [
+          "Afyon Kalesi",
+          "Frig Vadisi",
+          "Ulu Cami",
+          "Mevlevihane",
+          "Aslantaş"
+        ],
+        "dogal_guzellikler": [
+          "Frig Vadisi",
+          "Gazlıgöl",
+          "Emre Gölü",
+          "Akdağ",
+          "Sandıklı"
+        ],
+        "yoresel_urunler": [
+          "Sucuk",
+          "Kaymak",
+          "Lokum",
+          "Mermer",
+          "Ekmek Kadayıfı"
+        ],
+        "unlu_kisiler": [
+          "II. Mihail",
+          "Okyay Kaynak",
+          "Nizam Ergüden",
+          "Ayşe Yamaç",
+          "Fuat Çapa",
+          "Gökhan Abur",
+          "Nedret Gürcan"
         ]
+      },
+      "facts": {
+        "yemekler": "Afyon sucuğu ve kaymağı, ilin Türkiye'ye ün salan lezzetleridir.",
+        "gezilecek_yerler": "Kayaya kurulu Afyon Kalesi ve Frig Vadisi anıtları, ilin duraklarıdır.",
+        "tarihi_yapilar": "Volkanik kayadaki Afyon Kalesi ve Frig kaya anıtları, ilin tarihini taşır.",
+        "dogal_guzellikler": "Termal suları Gazlıgöl ve peri bacalı Frig Vadisi, Afyon'un doğa köşeleridir.",
+        "yoresel_urunler": "Afyon kaymağı, sucuğu ve mermeri, ilin coğrafi işaretli ünlü ürünleridir.",
+        "unlu_kisiler": "Afyonkarahisar, Kurtuluş Savaşı'nın kaderini belirleyen zaferle anılan bir şehirdir."
       }
     },
     {
@@ -717,13 +1797,50 @@
           "Yalvaç Güllacı",
           "Tirit"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Gül Bahçesi",
           "Eğirdir",
           "Davraz",
           "Zindan",
           "Lavanta"
+        ],
+        "tarihi_yapilar": [
+          "Yalvaç",
+          "Antiocheia",
+          "Zindan Mağara",
+          "Ulu Cami",
+          "Firdevs Bey"
+        ],
+        "dogal_guzellikler": [
+          "Eğirdir",
+          "Kovada",
+          "Davraz",
+          "Kızıldağ",
+          "Gölcük"
+        ],
+        "yoresel_urunler": [
+          "Gül",
+          "Halı",
+          "Elma",
+          "Gül Yağı",
+          "Lavanta"
+        ],
+        "unlu_kisiler": [
+          "Cahit Berkay",
+          "Murat Yüksel",
+          "Hasan Balaman",
+          "Hüseyin Kartal",
+          "Gülsüm Cengiz",
+          "Ramazan Gül"
         ]
+      },
+      "facts": {
+        "yemekler": "Gül tatlısı ve Isparta gül reçeli, ilin çiçek diyarı kimliğini yansıtır.",
+        "gezilecek_yerler": "Göller bölgesinin incisi Eğirdir Gölü ve Davraz kayak merkezi Isparta'dadır.",
+        "tarihi_yapilar": "Antik Antiocheia (Yalvaç) ve mağara kilisesi Zindan, ilin tarihini taşır.",
+        "dogal_guzellikler": "Eğirdir Gölü ve Kovada Milli Parkı, Isparta'nın doğa harikalarıdır.",
+        "yoresel_urunler": "Isparta gülü ve gül yağı, dünyaca ünlü; halısı da yörenin tescilli ürünüdür.",
+        "unlu_kisiler": "Isparta, güller şehri ve halısıyla anılan bir Göller Bölgesi şehridir."
       }
     },
     {
@@ -737,13 +1854,51 @@
           "Ovmaç Çorbası",
           "Saray Helvası"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Abant",
           "Yedigöller",
           "Kartalkaya",
           "Gölcük",
           "Mudurnu"
+        ],
+        "tarihi_yapilar": [
+          "Ulu Cami",
+          "Yıldırım",
+          "Göynük",
+          "Mudurnu",
+          "Aktaş"
+        ],
+        "dogal_guzellikler": [
+          "Abant",
+          "Yedigöller",
+          "Kartalkaya",
+          "Gölcük",
+          "Sülüklü"
+        ],
+        "yoresel_urunler": [
+          "Manda Yoğurdu",
+          "Bez",
+          "Kaşar",
+          "Bal",
+          "Aşçılık"
+        ],
+        "unlu_kisiler": [
+          "Murat Duruer",
+          "İzzet Baysal",
+          "Celal Yılmaz",
+          "İsmail Biçer",
+          "Muallim Cevdet",
+          "Serdar Şenkaya",
+          "Ekrem Canalp"
         ]
+      },
+      "facts": {
+        "yemekler": "Bolu, ünlü aşçılarıyla anılır; mengen mutfağı Türk sofralarına yön verir.",
+        "gezilecek_yerler": "Sisli Abant Gölü ve rengârenk Yedigöller, Bolu'nun en sevilen duraklarıdır.",
+        "tarihi_yapilar": "Osmanlı dokusunu koruyan Göynük ve Mudurnu evleri, ilin mirasıdır.",
+        "dogal_guzellikler": "Abant, Yedigöller ve Kartalkaya, Bolu'yu dört mevsim doğa cennetine çevirir.",
+        "yoresel_urunler": "Bolu manda yoğurdu ve ustalık geleneği (aşçılık), yöreyle özdeşleşmiştir.",
+        "unlu_kisiler": "Bolu, efsanevi halk kahramanı Köroğlu ve usta aşçılarıyla anılır."
       }
     },
     {
@@ -757,13 +1912,51 @@
           "Hardaliye",
           "Deva Macunu"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Selimiye",
           "Meriç",
           "Karaağaç",
           "Sarayiçi",
           "Eski Cami"
+        ],
+        "tarihi_yapilar": [
+          "Selimiye",
+          "Eski Cami",
+          "Üç Şerefeli",
+          "Beyazıt",
+          "Karaağaç"
+        ],
+        "dogal_guzellikler": [
+          "Meriç",
+          "Tunca",
+          "Saros",
+          "Gala Gölü",
+          "Longoz"
+        ],
+        "yoresel_urunler": [
+          "Meyve Sabunu",
+          "Süpürge",
+          "Deva Macunu",
+          "Badem Ezmesi",
+          "Ayna"
+        ],
+        "unlu_kisiler": [
+          "II. Mehmed",
+          "I. Bayezid",
+          "Fan Noli",
+          "Acun Ilıcalı",
+          "I. Mehmed",
+          "Muazzez Ersoy",
+          "I. Mahmud"
         ]
+      },
+      "facts": {
+        "yemekler": "Tava ciğeri ve badem ezmesi, Edirne'nin dünyaca bilinen lezzetleridir.",
+        "gezilecek_yerler": "Mimar Sinan'ın ustalık eseri Selimiye Camii, Edirne'nin simgesidir.",
+        "tarihi_yapilar": "Selimiye Camii ve dört minareli Üç Şerefeli, Osmanlı mimarisinin zirvesidir.",
+        "dogal_guzellikler": "Meriç ve Tunca nehirleri ile Gala Gölü kuş cenneti, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Edirne meyve sabunu, süpürgesi ve badem ezmesi, yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Edirne, Osmanlı'nın ikinci başkenti ve Kırkpınar yağlı güreşleriyle anılır."
       }
     },
     {
@@ -777,13 +1970,50 @@
           "Sini Pidesi",
           "Manda Yoğurdu"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Rakoczi",
           "Namık Kemal",
           "Uçmakdere",
           "Şarköy",
           "Ganos"
+        ],
+        "tarihi_yapilar": [
+          "Rakoczi",
+          "Namık Kemal",
+          "Hersekzade",
+          "Eski Cami",
+          "Uçmakdere"
+        ],
+        "dogal_guzellikler": [
+          "Ganos",
+          "Uçmakdere",
+          "Şarköy",
+          "Hisarlıdağ",
+          "Danişment"
+        ],
+        "yoresel_urunler": [
+          "Buğday",
+          "Köfte",
+          "Peynir",
+          "Ayçiçeği",
+          "Kaşar"
+        ],
+        "unlu_kisiler": [
+          "Ahsen Eroğlu",
+          "Tülay Eratalay",
+          "Özcan Arkoç",
+          "Ece Erken",
+          "Coşkun Demir",
+          "Gören Bulut"
         ]
+      },
+      "facts": {
+        "yemekler": "Tekirdağ köftesi, ilin Türkiye'ye ün salan coğrafi işaretli lezzetidir.",
+        "gezilecek_yerler": "Rakoczi Müzesi ve Şarköy bağları, Tekirdağ'ın bilinen duraklarıdır.",
+        "tarihi_yapilar": "Macar prensi Rakoczi'nin evi ve şair Namık Kemal'in izleri Tekirdağ'dadır.",
+        "dogal_guzellikler": "Yamaç paraşütüyle ünlü Uçmakdere ve Ganos Dağı, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Tekirdağ köftesi ve Trakya kaşarı, yörenin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Tekirdağ, şair Namık Kemal'in yaşadığı ve anıldığı bir Trakya şehridir."
       }
     },
     {
@@ -797,13 +2027,50 @@
           "Karalahana",
           "Pancar Çorbası"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Boztepe",
           "Yason Burnu",
           "Çambaşı",
           "Perşembe",
           "Ulugöl"
+        ],
+        "tarihi_yapilar": [
+          "Paşaoğlu",
+          "Yason Kilise",
+          "Kurul",
+          "Taşbaşı",
+          "Eski Pazar"
+        ],
+        "dogal_guzellikler": [
+          "Boztepe",
+          "Çambaşı",
+          "Perşembe",
+          "Ulugöl",
+          "Yason Burnu"
+        ],
+        "yoresel_urunler": [
+          "Fındık",
+          "Pestil",
+          "Bez",
+          "Bal",
+          "Turşu Kavurma"
+        ],
+        "unlu_kisiler": [
+          "Oktay Ekşi",
+          "Hasan Aydın",
+          "Hayati Çamaş",
+          "Memduh Ekşi",
+          "Yavuz Ünal",
+          "Nurhan Enginar"
         ]
+      },
+      "facts": {
+        "yemekler": "Fındıklı tatlılar ve Karadeniz pidesi, Ordu mutfağının bilinen lezzetleridir.",
+        "gezilecek_yerler": "Teleferikle çıkılan Boztepe ve Yason Burnu, Ordu'nun panoramik duraklarıdır.",
+        "tarihi_yapilar": "Paşaoğlu Konağı ve kaya üstü Kurul Kalesi, Ordu'nun tarihî yapılarıdır.",
+        "dogal_guzellikler": "Yaylalar (Çambaşı) ve Perşembe Yaylası, Ordu'nun yeşil doğa köşeleridir.",
+        "yoresel_urunler": "Ordu fındığı, Türkiye üretiminin önemli bölümünü karşılar.",
+        "unlu_kisiler": "Ordu, fındık bahçeleri ve Boztepe manzarasıyla anılan bir Karadeniz şehridir."
       }
     },
     {
@@ -817,13 +2084,50 @@
           "Mısır Ekmeği",
           "Hamsili Pilav"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Giresun Adası",
           "Kümbet",
           "Mavi Göl",
           "Kuzalan",
           "Bektaş"
+        ],
+        "tarihi_yapilar": [
+          "Giresun Kalesi",
+          "Zeytinlik",
+          "Karahisar",
+          "Andon",
+          "Meryem Ana"
+        ],
+        "dogal_guzellikler": [
+          "Giresun Adası",
+          "Kümbet",
+          "Mavi Göl",
+          "Kuzalan",
+          "Bektaş"
+        ],
+        "yoresel_urunler": [
+          "Fındık",
+          "Tombul Fındık",
+          "Pestil",
+          "Bez",
+          "Bal"
+        ],
+        "unlu_kisiler": [
+          "Dursun Özbek",
+          "Mustafa Öztürk",
+          "Hikmet Karaman",
+          "Picoğlu Osman",
+          "Hüseyin Öztürk",
+          "Ali Sakal"
         ]
+      },
+      "facts": {
+        "yemekler": "Fındıklı tatlılar ve Karadeniz mutfağı, Giresun sofralarının başrolüdür.",
+        "gezilecek_yerler": "Karadeniz'in tek adası Giresun Adası ve tarihi Zeytinlik evleri buradadır.",
+        "tarihi_yapilar": "Giresun Kalesi ve Şebinkarahisar Kalesi, ilin tarihî yapılarıdır.",
+        "dogal_guzellikler": "Efsanevi Giresun Adası ve Kümbet Yaylası, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Dünyaca aranan Giresun tombul fındığı, ilin simge ürünüdür.",
+        "unlu_kisiler": "Giresun, tombul fındığı ve Karadeniz'in tek adasıyla anılan bir şehirdir."
       }
     },
     {
@@ -837,13 +2141,51 @@
           "Çekme Helva",
           "Cırık"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ilgaz",
           "Küre",
           "Pınarbaşı",
           "Nasrullah",
           "Cide"
+        ],
+        "tarihi_yapilar": [
+          "Alaeddin",
+          "İsmail Bey",
+          "Mahmut Bey",
+          "Kasaba",
+          "Nasrullah"
+        ],
+        "dogal_guzellikler": [
+          "Ilgaz",
+          "Küre Dağları",
+          "Valla Kanyon",
+          "Ilıca Şelalesi",
+          "Pınarbaşı"
+        ],
+        "yoresel_urunler": [
+          "Sarımsak",
+          "Simit",
+          "Ahşap",
+          "Bakır",
+          "Siyez Bulguru"
+        ],
+        "unlu_kisiler": [
+          "Rıfat Ilgaz",
+          "Tülay Günal",
+          "Hadi Çaman",
+          "Tuncay Akça",
+          "Şerife Bacı",
+          "Cihan Ünal",
+          "Ezel Akay"
         ]
+      },
+      "facts": {
+        "yemekler": "Etli ekmek ve çekme helva, Kastamonu'nun bilinen yöresel lezzetleridir.",
+        "gezilecek_yerler": "Ilgaz Dağı ve tarihi konaklarıyla Kastamonu, doğa ve tarih sunar.",
+        "tarihi_yapilar": "Ahşap çivisiz Kasaba (Mahmut Bey) Camii ve Kastamonu Kalesi ilin mirasıdır.",
+        "dogal_guzellikler": "Küre Dağları'ndaki derin Valla Kanyonu ve Ilgaz, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Taşköprü sarımsağı ve siyez bulguru, Kastamonu'nun coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Kastamonu, Şapka İnkılabı'nın ilan edildiği tarihî bir Karadeniz şehridir."
       }
     },
     {
@@ -857,13 +2199,50 @@
           "Keşkek",
           "Toyga Çorbası"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Kral Kaya",
           "Harşena",
           "Yalıboyu",
           "Ferhat Şirin",
           "Borabay"
+        ],
+        "tarihi_yapilar": [
+          "Kral Kaya",
+          "Harşena",
+          "Bayezid Camii",
+          "Kapı Ağası",
+          "Bimarhane",
+          "Gök Medrese"
+        ],
+        "dogal_guzellikler": [
+          "Borabay",
+          "Yedikır",
+          "Yeşilırmak",
+          "Aydınca",
+          "Terziköy"
+        ],
+        "yoresel_urunler": [
+          "Elma",
+          "Bamya",
+          "Bakır",
+          "Çuha Bezi",
+          "Ceviz"
+        ],
+        "unlu_kisiler": [
+          "Strabon",
+          "Şeyh Hamdullah",
+          "Merzifonlu",
+          "Ferhat",
+          "Şirin"
         ]
+      },
+      "facts": {
+        "yemekler": "Dünyaca ünlü Amasya misket elması ve şehzade kebabı, yörenin bilinen tatlarıdır.",
+        "gezilecek_yerler": "Yeşilırmak kıyısındaki Yalıboyu evleri ve kayalara oyulu Kral Kaya Mezarları Amasya'nın simgesidir.",
+        "tarihi_yapilar": "Dağa oyulmuş Pontus Kral Kaya Mezarları ve Harşena Kalesi, Amasya'nın antik mirasıdır.",
+        "dogal_guzellikler": "Borabay Gölü ve Yeşilırmak vadisi, Amasya'ya huzurlu bir doğa manzarası kazandırır.",
+        "yoresel_urunler": "Amasya misket elması kokusuyla ünlüdür; kuru bamyası da yörenin tescilli ürünüdür.",
+        "unlu_kisiler": "Coğrafyacı Strabon ve hat üstadı Şeyh Hamdullah Amasya'da doğmuştur."
       }
     },
     {
@@ -877,13 +2256,50 @@
           "Bat",
           "Çemen"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Ballıca",
           "Tokat Kalesi",
           "Ali Paşa",
           "Latifoğlu",
           "Sulusokak"
+        ],
+        "tarihi_yapilar": [
+          "Tokat Kalesi",
+          "Gök Medrese",
+          "Latifoğlu",
+          "Ali Paşa",
+          "Hıdırlık",
+          "Garipler"
+        ],
+        "dogal_guzellikler": [
+          "Ballıca",
+          "Zinav",
+          "Almus",
+          "Reşadiye",
+          "Dumanlı"
+        ],
+        "yoresel_urunler": [
+          "Yazma",
+          "Zile Pekmezi",
+          "Bakır",
+          "Üzüm",
+          "Ceviz"
+        ],
+        "unlu_kisiler": [
+          "Engin Günaydın",
+          "Seda Sayan",
+          "Cahit Külebi",
+          "Kıvırcık Ali",
+          "Gazi Osman Paşa"
         ]
+      },
+      "facts": {
+        "yemekler": "Kağıt gibi ince Tokat kebabı ve bez sucuğu, yörenin fırın ve mangal lezzetleridir.",
+        "gezilecek_yerler": "Sarkıt-dikitleriyle dev Ballıca Mağarası ve Tokat Kalesi, ilin en çok gezilen yerleridir.",
+        "tarihi_yapilar": "Selçuklu Gök Medrese ve Latifoğlu Konağı, Tokat'ın taş ve ahşap işçiliğini yansıtır.",
+        "dogal_guzellikler": "Türkiye'nin en büyük mağaralarından Ballıca ve Zinav Gölü, Tokat'ın doğa harikalarıdır.",
+        "yoresel_urunler": "Elde basılan renkli Tokat yazması ve Zile pekmezi, yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Oyuncu Engin Günaydın ve şair Cahit Külebi Tokat'ta doğmuştur."
       }
     },
     {
@@ -897,13 +2313,56 @@
           "İçli Köfte",
           "Kömbe"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Aslantepe",
           "Levent Vadisi",
           "Battalgazi",
           "Somuncu Baba",
           "Gülpınar"
+        ],
+        "tarihi_yapilar": [
+          "Aslantepe",
+          "Battalgazi",
+          "Ulu Cami",
+          "Silahtar Han",
+          "Taşhoron",
+          "Somuncu Baba"
+        ],
+        "dogal_guzellikler": [
+          "Levent Vadisi",
+          "Tohma",
+          "Karakaya",
+          "Sürgü",
+          "Gündüzbey",
+          "Darende",
+          "Günpınar",
+          "Sultansuyu",
+          "Beydağı",
+          "Yeşilyurt"
+        ],
+        "yoresel_urunler": [
+          "Kayısı",
+          "Dut Pekmezi",
+          "Kağıt Helva",
+          "Bakırcılık",
+          "Ceviz"
+        ],
+        "unlu_kisiler": [
+          "Turgut Özal",
+          "Ahmet Kaya",
+          "Hasan Kaçan",
+          "Battal Gazi",
+          "Niyazi Mısri"
         ]
+      },
+      "facts": {
+        "yemekler": "Malatya kayısısı dünya üretiminin çoğunu karşılar; kağıt kebabı da ilin fırın lezzetidir.",
+        "gezilecek_yerler": "Dünyanın ilk saraylarından Aslantepe Höyüğü, UNESCO Dünya Mirası listesindedir.",
+        "tarihi_yapilar": "Beş bin yıllık Aslantepe Höyüğü ve eski Malatya (Battalgazi) surları ilin tarihini taşır.",
+        "dogal_guzellikler": "Levent Vadisi'nin dik kanyonları ve Tohma Çayı, Malatya'nın doğa sporları merkezidir.",
+        "yoresel_urunler": "Malatya, kuru kayısının başkentidir; dut pekmezi de yörenin bilinen ürünüdür.",
+        "unlu_kisiler": "Cumhurbaşkanı Turgut Özal ve müzisyen Ahmet Kaya Malatya'da doğmuştur.",
+        "dogal_guzellikler#1": "Darende'de Tohma Kanyonu ve Günpınar Şelalesi, kayısı bahçelerinin arasından akan suyun şehre armağanıdır."
       }
     },
     {
@@ -917,13 +2376,50 @@
           "Patila",
           "Gömme"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Harput",
           "Hazar Gölü",
           "Buzluk",
           "Palu",
           "Keban"
+        ],
+        "tarihi_yapilar": [
+          "Harput Kalesi",
+          "Ulu Cami",
+          "Arap Baba",
+          "Meryem Ana",
+          "Palu Kalesi",
+          "Kurşunlu"
+        ],
+        "dogal_guzellikler": [
+          "Hazar Gölü",
+          "Buzluk",
+          "Keban",
+          "Hazarbaba",
+          "Fırat"
+        ],
+        "yoresel_urunler": [
+          "Orcik",
+          "Dut Pekmezi",
+          "Öküzgözü",
+          "Bakır",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Naci Görür",
+          "Canan Karatay",
+          "Necati Şaşmaz",
+          "Belçim Bilgin",
+          "Fethi Sekin"
         ]
+      },
+      "facts": {
+        "yemekler": "İçli köftenin en ince örneği ve Harput köftesi, Elazığ mutfağının simgeleridir.",
+        "gezilecek_yerler": "Kaya üzerine kurulu Harput'un kalesi ve camileri, Elazığ'ın tarihî çekirdeğidir.",
+        "tarihi_yapilar": "Harput Kalesi ve etrafındaki eski yapılar, Elazığ'ın binlerce yıllık geçmişini taşır.",
+        "dogal_guzellikler": "Fay hattı üzerindeki masmavi Hazar Gölü ve Buzluk Mağarası ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Ceviz ve pekmezden yapılan orcik, Elazığ'ın tescilli ürünüdür.",
+        "unlu_kisiler": "Bilim insanı Canan Karatay ve şehit polis Fethi Sekin Elazığludur."
       }
     },
     {
@@ -937,13 +2433,56 @@
           "Sembusek",
           "Firik Pilavı"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Zinciriye",
           "Kasımiye",
           "Eski Mardin",
           "Dara",
-          "Midyat"
+          "Midyat",
+          "Mor Gabriel",
+          "Nusaybin",
+          "Derik",
+          "Sultan İsa",
+          "Kızıltepe"
+        ],
+        "tarihi_yapilar": [
+          "Ulu Cami",
+          "Deyrulzafaran",
+          "Kırklar Kilise",
+          "Şehidiye",
+          "Kasımiye",
+          "Zinciriye"
+        ],
+        "dogal_guzellikler": [
+          "Savur",
+          "Gurs Vadisi",
+          "Beyazsu",
+          "Zinnar",
+          "Dara"
+        ],
+        "yoresel_urunler": [
+          "Telkari",
+          "Bıttım Sabunu",
+          "Badem Şekeri",
+          "Menengiç Kahvesi",
+          "Taş Oyma"
+        ],
+        "unlu_kisiler": [
+          "Aziz Sancar",
+          "Murathan",
+          "Pınar Deniz",
+          "Murat Yıldırım",
+          "Ebru Baybara"
         ]
+      },
+      "facts": {
+        "yemekler": "Kaburga dolması ve firik pilavı, Mardin'in Mezopotamya mutfağının en bilinen tabaklarıdır.",
+        "gezilecek_yerler": "Taş evleriyle ünlü Mardin, Mezopotamya ovasına bakan yamaçlara kurulmuş bir müze şehirdir.",
+        "tarihi_yapilar": "Artuklu döneminden kalan Kasımiye ve Zinciriye medreseleri Mardin taş işçiliğinin şaheseridir.",
+        "dogal_guzellikler": "Savur Göleti ve Gurs Vadisi, taş şehrin çevresindeki yeşil doğa köşeleridir.",
+        "yoresel_urunler": "Telkari gümüş işçiliği, bıttım sabunu ve badem şekeri Mardin'in tescilli ürünleridir.",
+        "unlu_kisiler": "Nobel ödüllü bilim insanı Aziz Sancar ve yazar Murathan Mungan Mardinlidir.",
+        "gezilecek_yerler#1": "Midyat yakınındaki Mor Gabriel, dünyanın ayakta kalan en eski Süryani manastırlarından biridir; 397 yılından beri açıktır."
       }
     },
     {
@@ -957,13 +2496,51 @@
           "Kelecoş",
           "Kemalpaşa"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Girlevik",
           "Kemaliye",
           "Ergan",
           "Altıntepe",
           "Munzur"
+        ],
+        "tarihi_yapilar": [
+          "Kemaliye",
+          "Altıntepe",
+          "Ergan",
+          "Mama Hatun",
+          "Kadıgölü"
+        ],
+        "dogal_guzellikler": [
+          "Girlevik",
+          "Kemaliye",
+          "Ergan",
+          "Munzur",
+          "Karasu"
+        ],
+        "yoresel_urunler": [
+          "Tulum Peyniri",
+          "Bakır",
+          "Cimin Üzümü",
+          "Bal",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Hamdi Ulukaya",
+          "Deniz Barış",
+          "Oya Aydoğan",
+          "Oğuzhan Koç",
+          "Enver Gökçe",
+          "Kadir Savun",
+          "Mahir Polat"
         ]
+      },
+      "facts": {
+        "yemekler": "Erzincan tulum peyniri ve kadayıf dolması, ilin bilinen yöresel tatlarıdır.",
+        "gezilecek_yerler": "Karanlık Kanyon'a kurulu Kemaliye ve Girlevik Şelalesi, Erzincan'dadır.",
+        "tarihi_yapilar": "Tercan'daki Mama Hatun Kervansarayı ve Altıntepe Urartu kalesi ilin mirasıdır.",
+        "dogal_guzellikler": "Girlevik Şelalesi ve Karanlık Kanyon (Kemaliye), Erzincan'ın doğa harikalarıdır.",
+        "yoresel_urunler": "Erzincan tulum peyniri ve Cimin üzümü, yörenin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Erzincan, tulum peyniri ve Kemaliye'nin taş yollarıyla anılan bir Doğu şehridir."
       }
     },
     {
@@ -977,13 +2554,2236 @@
           "Hamsi Tava",
           "Prenses"
         ],
-        "unlu_yerler": [
+        "gezilecek_yerler": [
           "Sinop Kalesi",
           "İnceburun",
           "Hamsilos",
           "Erfelek",
           "Cezaevi"
+        ],
+        "tarihi_yapilar": [
+          "Sinop Kalesi",
+          "Balatlar",
+          "Alaeddin",
+          "Cezaevi",
+          "Serapis"
+        ],
+        "dogal_guzellikler": [
+          "Hamsilos",
+          "İnceburun",
+          "Erfelek",
+          "Sarıkum",
+          "Akliman"
+        ],
+        "yoresel_urunler": [
+          "Nokul",
+          "Ahşap",
+          "Model Gemi",
+          "Keten",
+          "Manda Yoğurdu"
+        ],
+        "unlu_kisiler": [
+          "Diyojen",
+          "Serhat Özcan",
+          "Şefik Döğen",
+          "Semicenk",
+          "Hakan Ünsal"
         ]
+      },
+      "facts": {
+        "yemekler": "Sinop mantısı ve nokul, ilin Karadeniz mutfağından bilinen lezzetleridir.",
+        "gezilecek_yerler": "Türkiye'nin en kuzeyi İnceburun ve tarihi Sinop Cezaevi, ilin duraklarıdır.",
+        "tarihi_yapilar": "Antik surlar Sinop Kalesi ve tarihi cezaevi, şehrin geçmişini taşır.",
+        "dogal_guzellikler": "Fiyort benzeri Hamsilos Koyu ve Erfelek şelaleleri, ilin doğa incileridir.",
+        "yoresel_urunler": "Sinop'un ahşap oymacılığı ve model gemi yapımı, yörenin el sanatlarıdır.",
+        "unlu_kisiler": "Sinop, filozof Diyojen'in doğduğu kadim bir liman şehridir."
+      }
+    },
+    {
+      "name": "Adıyaman",
+      "plate": 2,
+      "items": {
+        "yemekler": [
+          "Çiğ Köfte",
+          "Kah Kah",
+          "Lebeni",
+          "Tirşik",
+          "Bostana",
+          "Perpaşan"
+        ],
+        "gezilecek_yerler": [
+          "Nemrut",
+          "Cendere",
+          "Arsameia",
+          "Perre",
+          "Atatürk Barajı"
+        ],
+        "tarihi_yapilar": [
+          "Nemrut",
+          "Cendere Köprü",
+          "Perre",
+          "Arsameia",
+          "Kâhta Kalesi"
+        ],
+        "dogal_guzellikler": [
+          "Nemrut",
+          "Atatürk Barajı",
+          "Gölbaşı",
+          "Çat Barajı",
+          "Fırat"
+        ],
+        "yoresel_urunler": [
+          "Besni Üzümü",
+          "Fıstık",
+          "Nar",
+          "Kilim",
+          "Bakır"
+        ],
+        "unlu_kisiler": [
+          "Mehmet Güven",
+          "Ali Tekintüre",
+          "Ayşenur Alkan",
+          "Kahtalı Mıçe",
+          "İsmet Güneşhan"
+        ]
+      },
+      "facts": {
+        "yemekler": "Adıyaman çiğ köftesi ve tirşik çorbası, yörenin bilinen tatlarındandır.",
+        "gezilecek_yerler": "Nemrut Dağı'nın zirvesindeki dev heykeller, gün doğumuyla ünlü bir dünya mirasıdır.",
+        "tarihi_yapilar": "Kommagene kralının Nemrut'taki anıt mezarı ve tek kemerli Cendere Köprüsü buradadır.",
+        "dogal_guzellikler": "Nemrut zirvesi ve Atatürk Barajı gölü, Adıyaman'ın en çok bilinen manzaralarıdır.",
+        "yoresel_urunler": "Besni üzümü ve Antep fıstığı yörenin başlıca ürünleridir.",
+        "unlu_kisiler": "Adıyaman, Kommagene mirasıyla anılan kadim bir Güneydoğu şehridir."
+      }
+    },
+    {
+      "name": "Ağrı",
+      "plate": 4,
+      "items": {
+        "yemekler": [
+          "Abdigör",
+          "Ayran Aşı",
+          "Hasuta",
+          "Bişi",
+          "Kavut"
+        ],
+        "gezilecek_yerler": [
+          "Ağrı Dağı",
+          "İshak Paşa",
+          "Balık Gölü",
+          "Meteor Çukuru",
+          "Nuh Gemisi"
+        ],
+        "tarihi_yapilar": [
+          "İshak Paşa",
+          "Ahmedi Hani",
+          "Eski Cami",
+          "Kilise",
+          "Kervansaray"
+        ],
+        "dogal_guzellikler": [
+          "Ağrı Dağı",
+          "Balık Gölü",
+          "Meteor Çukuru",
+          "Murat",
+          "Diyadin"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Peynir",
+          "Kilim",
+          "Deri",
+          "Tereyağı"
+        ],
+        "unlu_kisiler": [
+          "Ahmed-i Hânî",
+          "Salih Kalyon",
+          "Burhan Çaçan",
+          "Sema Keçik",
+          "Emrah Bedir",
+          "Berdan Öztürk",
+          "Can Kahraman",
+          "Adem Atmaca"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kıymalı abdigör köftesi ve ayran aşı, Ağrı'nın Doğu Anadolu mutfağından tatlarıdır.",
+        "gezilecek_yerler": "Türkiye'nin çatısı Ağrı Dağı ve İshak Paşa Sarayı, ilin simge duraklarıdır.",
+        "tarihi_yapilar": "Doğubayazıt'taki İshak Paşa Sarayı, Osmanlı ve Doğu mimarisini birleştiren bir yapıdır.",
+        "dogal_guzellikler": "5137 metrelik Ağrı Dağı ile Balık Gölü, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Ağrı balı ve otlu peyniri yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "'Ağrı Dağı Efsanesi' bu topraklarla özdeşleşmiş bir Anadolu masalıdır."
+      }
+    },
+    {
+      "name": "Artvin",
+      "plate": 8,
+      "items": {
+        "yemekler": [
+          "Muhlama",
+          "Hangel",
+          "Kuymak",
+          "Borano",
+          "Sinori"
+        ],
+        "gezilecek_yerler": [
+          "Karagöl",
+          "Kafkasör",
+          "Maçahel",
+          "Borçka",
+          "Şavşat"
+        ],
+        "tarihi_yapilar": [
+          "Livane Kalesi",
+          "Şavşat Kalesi",
+          "Otingo",
+          "Dolishane",
+          "Kilise"
+        ],
+        "dogal_guzellikler": [
+          "Karagöl",
+          "Maçahel",
+          "Kafkasör",
+          "Borçka",
+          "Şavşat"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Ceviz",
+          "Peynir",
+          "Dokuma",
+          "Şavşat Fasulyesi"
+        ],
+        "unlu_kisiler": [
+          "İlhami Atalay",
+          "Mehmet Genç",
+          "Sinan Meydan",
+          "Adnan Çolak",
+          "Kâzım Koyuncu"
+        ]
+      },
+      "facts": {
+        "yemekler": "Tereyağlı muhlama (kuymak) ve hangel, Artvin'in Karadeniz mutfağının simgeleridir.",
+        "gezilecek_yerler": "Yeşilin bin tonu, Karagöl ve Maçahel'in el değmemiş vadilerinde açığa çıkar.",
+        "tarihi_yapilar": "Çoruh vadisindeki ortaçağ kaleleri ve kiliseleri Artvin'in kadim mirasıdır.",
+        "dogal_guzellikler": "Biyosfer rezervi Maçahel ve yansımalarıyla ünlü Karagöl, ilin doğa incileridir.",
+        "yoresel_urunler": "Artvin'in Maçahel balı dünyaca aranan bir üründür.",
+        "unlu_kisiler": "Artvin, Karadeniz kültürünün ve horonun canlı yaşadığı bir sınır şehridir."
+      }
+    },
+    {
+      "name": "Bilecik",
+      "plate": 11,
+      "items": {
+        "yemekler": [
+          "Cızlak",
+          "Papara",
+          "Gedik",
+          "Höşmerim",
+          "Ayva"
+        ],
+        "gezilecek_yerler": [
+          "Söğüt",
+          "Osmaneli",
+          "Şeyh Edebali",
+          "Pelitözü",
+          "Harmanköy"
+        ],
+        "tarihi_yapilar": [
+          "Şeyh Edebali",
+          "Söğüt",
+          "Orhan Gazi",
+          "Aya Yorgi",
+          "Ertuğrul Gazi"
+        ],
+        "dogal_guzellikler": [
+          "Pelitözü",
+          "İnhisar",
+          "Gölpazarı",
+          "Sakarya",
+          "Harmanköy"
+        ],
+        "yoresel_urunler": [
+          "Mermer",
+          "Ayva",
+          "İpek",
+          "Kiremit",
+          "Bakır"
+        ],
+        "unlu_kisiler": [
+          "Sinan Turhan",
+          "Salim Yaşar",
+          "Bilgesu Erenus",
+          "Aydın Tohumcu",
+          "Hasan Kayıhan",
+          "Mehmet Terzi",
+          "Niyazi Akı",
+          "Kâmil Koç"
+        ]
+      },
+      "facts": {
+        "yemekler": "Cızlak ve ayva, Bilecik'in bilinen yöresel lezzet ve ürünlerindendir.",
+        "gezilecek_yerler": "Osmanlı'nın ilk filizlendiği Söğüt ve Şeyh Edebali Türbesi Bilecik'tedir.",
+        "tarihi_yapilar": "Ertuğrul Gazi'nin Söğüt'teki türbesi, Osmanlı'nın kuruluşuna tanıklık eder.",
+        "dogal_guzellikler": "Pelitözü Gölpark ve Harmanköy kanyonu, Bilecik'in doğa köşeleridir.",
+        "yoresel_urunler": "Bilecik mermeri ve ayvası yöreyle özdeşleşmiş ürünlerdir.",
+        "unlu_kisiler": "Bilecik, Osmanlı Devleti'nin kuruluş toprağı olarak anılır."
+      }
+    },
+    {
+      "name": "Bingöl",
+      "plate": 12,
+      "items": {
+        "yemekler": [
+          "Cacık",
+          "Kavut",
+          "Sırın",
+          "Sac Kavurma",
+          "Herse"
+        ],
+        "gezilecek_yerler": [
+          "Yüzen Adalar",
+          "Kral Kızı",
+          "Buban",
+          "Çir Şelalesi",
+          "Yolçatı"
+        ],
+        "tarihi_yapilar": [
+          "Bingöl Kalesi",
+          "Ulu Cami",
+          "Çapakçur",
+          "Kığı",
+          "Genç"
+        ],
+        "dogal_guzellikler": [
+          "Yüzen Adalar",
+          "Kral Kızı",
+          "Çir Şelalesi",
+          "Buban",
+          "Yolçatı"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Peynir",
+          "Kilim",
+          "Tereyağı",
+          "Ceviz"
+        ],
+        "unlu_kisiler": [
+          "Reha Özcan",
+          "Metin Kaygalak",
+          "Cemal Gencer",
+          "İbrahim Çapak",
+          "Hikmet Tekin"
+        ]
+      },
+      "facts": {
+        "yemekler": "Bingöl'ün sac kavurması ve kavutu, dağ mutfağının bilinen tatlarıdır.",
+        "gezilecek_yerler": "Rüzgârla yer değiştiren Yüzen Adalar, Bingöl'ün doğa harikasıdır.",
+        "tarihi_yapilar": "Çapakçur (Bingöl) Kalesi ve Kığı'nın eski yapıları ilin tarihini taşır.",
+        "dogal_guzellikler": "Kral Kızı ve Çir şelaleleri ile Yüzen Adalar, ilin doğal cazibeleridir.",
+        "yoresel_urunler": "Bingöl balı ve otlu peyniri yörenin ünlü ürünleridir.",
+        "unlu_kisiler": "Bingöl, 'bin göl' anlamına gelen yayla ve göller diyarıdır."
+      }
+    },
+    {
+      "name": "Bitlis",
+      "plate": 13,
+      "items": {
+        "yemekler": [
+          "Büryan",
+          "Avşor",
+          "Keledoş",
+          "Motal",
+          "Küfte"
+        ],
+        "gezilecek_yerler": [
+          "Nemrut Krater",
+          "Ahlat",
+          "Bitlis Kalesi",
+          "Süphan",
+          "İhlasiye"
+        ],
+        "tarihi_yapilar": [
+          "Bitlis Kalesi",
+          "Ahlat",
+          "İhlasiye",
+          "Şerefiye",
+          "El Aman"
+        ],
+        "dogal_guzellikler": [
+          "Nemrut Krater",
+          "Süphan",
+          "Ahlat",
+          "Van Gölü",
+          "Adilcevaz"
+        ],
+        "yoresel_urunler": [
+          "Otlu Peynir",
+          "Bal",
+          "Ceviz",
+          "Kilim",
+          "Herbal"
+        ],
+        "unlu_kisiler": [
+          "Said Nursî",
+          "Halil Babür",
+          "Zaro Ağa",
+          "Cumali Birol",
+          "Vural Avar"
+        ]
+      },
+      "facts": {
+        "yemekler": "Tandırda pişen büryan kebabı ve keledoş, Bitlis'in meşhur lezzetleridir.",
+        "gezilecek_yerler": "Dünyanın en büyük krater göllerinden Nemrut ve Ahlat'ın Selçuklu mezarlığı buradadır.",
+        "tarihi_yapilar": "Ahlat'taki devasa Selçuklu mezar taşları, taş işçiliğinin eşsiz örneğidir.",
+        "dogal_guzellikler": "Nemrut Krater Gölü ve karlı Süphan Dağı, Bitlis'in doğa harikalarıdır.",
+        "yoresel_urunler": "Bitlis'in otlu peyniri ve balı yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Bitlis, Selçuklu ve Ahlatlı taş ustalarının mirasını taşır."
+      }
+    },
+    {
+      "name": "Burdur",
+      "plate": 15,
+      "items": {
+        "yemekler": [
+          "Şiş Köfte",
+          "Kabak Tatlısı",
+          "Ekşili",
+          "Ballıbaba",
+          "Testi Kebabı"
+        ],
+        "gezilecek_yerler": [
+          "Salda Gölü",
+          "Sagalassos",
+          "İnsuyu",
+          "Kibyra",
+          "Burdur Gölü"
+        ],
+        "tarihi_yapilar": [
+          "Sagalassos",
+          "Kibyra",
+          "Hacılar",
+          "Kremna",
+          "Ulu Cami"
+        ],
+        "dogal_guzellikler": [
+          "Salda Gölü",
+          "İnsuyu",
+          "Burdur Gölü",
+          "Yarışlı",
+          "Gölhisar"
+        ],
+        "yoresel_urunler": [
+          "Halı",
+          "Gül",
+          "Süt",
+          "Deri",
+          "Mermer"
+        ],
+        "unlu_kisiler": [
+          "İsmail Altınok",
+          "Ahmet Yamacı",
+          "Lütfi Şahin",
+          "Hamit Çine",
+          "Nadir Yavuzkan",
+          "Osman Sınav",
+          "Mehmet Özbey",
+          "Sadık Deda"
+        ]
+      },
+      "facts": {
+        "yemekler": "Burdur şiş köftesi ve kabak tatlısı, yörenin bilinen lezzetleridir.",
+        "gezilecek_yerler": "'Türkiye'nin Maldivleri' Salda Gölü ve antik Sagalassos, Burdur'un simgeleridir.",
+        "tarihi_yapilar": "Dağların arasındaki Sagalassos antik kenti, iyi korunmuş tiyatrosuyla ünlüdür.",
+        "dogal_guzellikler": "Bembeyaz kumsalı ve turkuaz suyuyla Salda Gölü, ilin doğa harikasıdır.",
+        "yoresel_urunler": "Burdur halısı ve gülü, yörenin tescilli ürünlerindendir.",
+        "unlu_kisiler": "Burdur, Salda Gölü ve Sagalassos ile doğa ve tarihi buluşturur."
+      }
+    },
+    {
+      "name": "Çankırı",
+      "plate": 18,
+      "items": {
+        "yemekler": [
+          "Tatar Böreği",
+          "Toyga",
+          "Çankırı Simidi",
+          "Bici",
+          "Keşkek"
+        ],
+        "gezilecek_yerler": [
+          "Tuz Mağarası",
+          "Ilgaz",
+          "Çankırı Kalesi",
+          "Şabanözü",
+          "Yaran"
+        ],
+        "tarihi_yapilar": [
+          "Çankırı Kalesi",
+          "Taş Mescit",
+          "Ulu Cami",
+          "Cemaleddin",
+          "Buğday Pazarı"
+        ],
+        "dogal_guzellikler": [
+          "Tuz Mağarası",
+          "Ilgaz",
+          "Çivi Dağı",
+          "Acıçay",
+          "Karataş"
+        ],
+        "yoresel_urunler": [
+          "Kaya Tuzu",
+          "Tulum Peyniri",
+          "Kilim",
+          "Bakır",
+          "Sünger"
+        ],
+        "unlu_kisiler": [
+          "Çağatay Uluçay",
+          "Ankaralı Namık",
+          "Abdullah Nefes",
+          "Cevdet Can",
+          "Erol Çakır"
+        ]
+      },
+      "facts": {
+        "yemekler": "Çankırı'nın tatar böreği ve toyga çorbası, İç Anadolu mutfağının tatlarıdır.",
+        "gezilecek_yerler": "İçinde yürünen dev Tuz Mağarası ve Ilgaz Dağı, Çankırı'nın duraklarıdır.",
+        "tarihi_yapilar": "Selçuklu Taş Mescit ve Çankırı Kalesi, ilin tarihî yapılarıdır.",
+        "dogal_guzellikler": "Milyonlarca yıllık Çankırı Tuz Mağarası ve Ilgaz, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Çankırı kaya tuzu, dünyanın sayılı tuz madenlerindendir.",
+        "unlu_kisiler": "Çankırı, 'Yaran' geleneği ve kaya tuzuyla anılan bir İç Anadolu şehridir."
+      }
+    },
+    {
+      "name": "Çorum",
+      "plate": 19,
+      "items": {
+        "yemekler": [
+          "Leblebi",
+          "Çorum Mantısı",
+          "İskilip Dolma",
+          "Keşkek",
+          "Ballı Mahmut"
+        ],
+        "gezilecek_yerler": [
+          "Hattuşa",
+          "Alacahöyük",
+          "Yazılıkaya",
+          "İncesu",
+          "Kargı"
+        ],
+        "tarihi_yapilar": [
+          "Hattuşa",
+          "Alacahöyük",
+          "Yazılıkaya",
+          "Ulu Cami",
+          "Kale"
+        ],
+        "dogal_guzellikler": [
+          "İncesu Kanyon",
+          "Kızılırmak",
+          "Kargı",
+          "Obruk",
+          "Sıklık"
+        ],
+        "yoresel_urunler": [
+          "Leblebi",
+          "Bakır",
+          "Çorum Bezi",
+          "Kiremit",
+          "Tarhana"
+        ],
+        "unlu_kisiler": [
+          "Nihat Nikerel",
+          "Tevfik Odabaşı",
+          "Zafer Önen",
+          "Komet",
+          "Hasan Tuluk"
+        ]
+      },
+      "facts": {
+        "yemekler": "Çorum leblebisi Türkiye'ye ün salmıştır; İskilip dolması da yörenin lezzetidir.",
+        "gezilecek_yerler": "Hitit başkenti Hattuşa ve Yazılıkaya açık hava tapınağı, dünya mirasıdır.",
+        "tarihi_yapilar": "Hitit İmparatorluğu'nun başkenti Hattuşa'nın surları ve Aslanlı Kapı buradadır.",
+        "dogal_guzellikler": "İncesu Kanyonu ve Kızılırmak vadisi, Çorum'un doğa köşeleridir.",
+        "yoresel_urunler": "Çorum leblebisi ve bakır işçiliği yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Çorum, Hititlerin başkenti Hattuşa'ya ev sahipliği yapmış kadim bir şehirdir."
+      }
+    },
+    {
+      "name": "Gümüşhane",
+      "plate": 29,
+      "items": {
+        "yemekler": [
+          "Pestil",
+          "Köme",
+          "Siron",
+          "Kuymak",
+          "Hasuta"
+        ],
+        "gezilecek_yerler": [
+          "Karaca Mağara",
+          "Santa",
+          "Süleymaniye",
+          "Tomara",
+          "Örümcek"
+        ],
+        "tarihi_yapilar": [
+          "Süleymaniye",
+          "Santa",
+          "Canca Kalesi",
+          "Krom",
+          "İmera"
+        ],
+        "dogal_guzellikler": [
+          "Karaca Mağara",
+          "Tomara",
+          "Örümcek",
+          "Limni",
+          "Artabel"
+        ],
+        "yoresel_urunler": [
+          "Pestil",
+          "Köme",
+          "Dut",
+          "Bakır",
+          "Gümüş"
+        ],
+        "unlu_kisiler": [
+          "Aydın Doğan",
+          "Numan Acar",
+          "Rabia Kayahan",
+          "Turgay Erdener",
+          "Metin Tokel",
+          "Sinan Aygün"
+        ]
+      },
+      "facts": {
+        "yemekler": "Gümüşhane pestili ve kömesi, dut kurutularak yapılan yöresel tatlılardır.",
+        "gezilecek_yerler": "Sarkıt-dikitleriyle Karaca Mağarası ve terk edilmiş Santa harabeleri buradadır.",
+        "tarihi_yapilar": "Eski Gümüşhane'deki Süleymaniye ve Santa'nın taş kiliseleri ilin mirasıdır.",
+        "dogal_guzellikler": "Karaca Mağarası ve Tomara Şelalesi, Gümüşhane'nin doğa harikalarıdır.",
+        "yoresel_urunler": "Dut pestili ve kömesi, Gümüşhane'nin tescilli ürünleridir.",
+        "unlu_kisiler": "Gümüşhane, adını gümüş madenlerinden alan bir Karadeniz dağ şehridir."
+      }
+    },
+    {
+      "name": "Hakkari",
+      "plate": 30,
+      "items": {
+        "yemekler": [
+          "Dovga",
+          "Keledoş",
+          "Sarma",
+          "Kavut",
+          "Herse"
+        ],
+        "gezilecek_yerler": [
+          "Cilo",
+          "Sat Buzulu",
+          "Zap",
+          "Meydan",
+          "Berçelan"
+        ],
+        "tarihi_yapilar": [
+          "Meydan Medrese",
+          "Zeynel Bey",
+          "Bay Kalesi",
+          "Kilise",
+          "Ulu Cami"
+        ],
+        "dogal_guzellikler": [
+          "Cilo",
+          "Sat Gölleri",
+          "Zap",
+          "Berçelan",
+          "Kırık Dağı"
+        ],
+        "yoresel_urunler": [
+          "Kilim",
+          "Bal",
+          "Deri",
+          "Herbal",
+          "Peynir"
+        ],
+        "unlu_kisiler": [
+          "Yılmaz Erdoğan",
+          "Ersin Korkut",
+          "Emre Ertunç",
+          "Seyyid Taha",
+          "Aydın Aydın"
+        ]
+      },
+      "facts": {
+        "yemekler": "Hakkari'nin dovga ve keledoşu, yüksek dağ mutfağının bilinen tatlarıdır.",
+        "gezilecek_yerler": "Cilo Dağı ve Sat buzul gölleri, Hakkari'yi doğa turizmi merkezine çevirir.",
+        "tarihi_yapilar": "Meydan Medresesi ve tarihi kaleler, Hakkari'nin kadim izlerini taşır.",
+        "dogal_guzellikler": "Buzullarıyla Cilo Dağı ve masmavi Sat gölleri, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Hakkari kilimi ve dağ balı yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Yılmaz Erdoğan ile kuzeni Ersin Korkut Hakkâri doğumludur; şehrin anlatı geleneği ve mizahı Türk sinemasına bu isimlerle taşındı."
+      }
+    },
+    {
+      "name": "Kars",
+      "plate": 36,
+      "items": {
+        "yemekler": [
+          "Kars Kaşarı",
+          "Bal",
+          "Piti",
+          "Hangel",
+          "Kaz"
+        ],
+        "gezilecek_yerler": [
+          "Ani",
+          "Kars Kalesi",
+          "Sarıkamış",
+          "Çıldır Gölü",
+          "Kümbet"
+        ],
+        "tarihi_yapilar": [
+          "Ani",
+          "Kars Kalesi",
+          "Kümbet Cami",
+          "Fethiye",
+          "Aziz Arakelos",
+          "Taşköprü",
+          "Beylerbeyi",
+          "Ebul Manuçehr",
+          "Havariler",
+          "Mazlum Ağa"
+        ],
+        "dogal_guzellikler": [
+          "Çıldır Gölü",
+          "Sarıkamış",
+          "Aygır Gölü",
+          "Kuyucuk",
+          "Susuz"
+        ],
+        "yoresel_urunler": [
+          "Kaşar",
+          "Bal",
+          "Kaz",
+          "Gravyer",
+          "Deri"
+        ],
+        "unlu_kisiler": [
+          "Rıfat Yıldız",
+          "Erol Ertuğrul",
+          "Tevfik Karabağ",
+          "Tuğba Ekinci",
+          "Ali Rıza Ezgi",
+          "Orhan Birgit",
+          "Öztürk İlmaz",
+          "Erhan Güzel"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kars kaşarı ve balı ile kaz eti, yörenin dünyaca bilinen ürün ve lezzetleridir.",
+        "gezilecek_yerler": "Bin kiliseli ören yeri Ani ve donan Çıldır Gölü, Kars'ın simgeleridir.",
+        "tarihi_yapilar": "Ortaçağ Ermeni başkenti Ani'nin katedrali ve surları UNESCO listesindedir.",
+        "dogal_guzellikler": "Kışın buz tutan Çıldır Gölü ve Sarıkamış ormanları, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Kars gravyeri ve balı, coğrafi işaretli meşhur ürünlerdir.",
+        "unlu_kisiler": "Kars, kadim Ani şehri ve kaşarıyla anılan bir sınır kentidir.",
+        "tarihi_yapilar#1": "Ani Ören Yeri'ndeki Ebul Manuçehr Camii, Anadolu'daki ilk Türk camisi kabul edilir. Havariler Kilisesi ve Taşköprü de aynı ıssız başkentin taş tanıklarıdır."
+      }
+    },
+    {
+      "name": "Kırklareli",
+      "plate": 39,
+      "items": {
+        "yemekler": [
+          "Hardaliye",
+          "Beyaz Peynir",
+          "Kaşkaval",
+          "Manda Yoğurdu",
+          "Papara"
+        ],
+        "gezilecek_yerler": [
+          "Dupnisa",
+          "İğneada",
+          "Longoz",
+          "Kıyıköy",
+          "Dereköy"
+        ],
+        "tarihi_yapilar": [
+          "Hızırbey",
+          "Dupnisa",
+          "Kıyıköy",
+          "Aya Nikola",
+          "Kadın Camii"
+        ],
+        "dogal_guzellikler": [
+          "İğneada",
+          "Longoz",
+          "Dupnisa",
+          "Kıyıköy",
+          "Saka Gölü"
+        ],
+        "yoresel_urunler": [
+          "Hardaliye",
+          "Peynir",
+          "Bal",
+          "Kaşkaval",
+          "Ayçiçeği"
+        ],
+        "unlu_kisiler": [
+          "Timur Soykan",
+          "Cem Kara",
+          "Bilge Olgaç",
+          "Cihat Erbil",
+          "Faik Canselen",
+          "Burhan Öçal",
+          "Güler Alkan",
+          "Kemal Aratan"
+        ]
+      },
+      "facts": {
+        "yemekler": "Üzümden yapılan hardaliye içeceği ve beyaz peyniri, Kırklareli'nin simgeleridir.",
+        "gezilecek_yerler": "Su basar longoz ormanları İğneada ve Dupnisa Mağarası, ilin doğa duraklarıdır.",
+        "tarihi_yapilar": "Hızırbey Camii ve Kıyıköy'ün Bizans sarnıçları, Kırklareli'nin tarihini taşır.",
+        "dogal_guzellikler": "İğneada longoz ormanları, Türkiye'nin nadir su basar ormanlarındandır.",
+        "yoresel_urunler": "Kırklareli hardaliyesi ve kaşkaval peyniri yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Kırklareli, longoz ormanları ve hardaliyesiyle Trakya'nın doğa şehridir."
+      }
+    },
+    {
+      "name": "Kırşehir",
+      "plate": 40,
+      "items": {
+        "yemekler": [
+          "Çömlek Kebabı",
+          "Bulgur Pilavı",
+          "Höşmerim",
+          "Tandır",
+          "Cimcik"
+        ],
+        "gezilecek_yerler": [
+          "Cacabey",
+          "Aşık Paşa",
+          "Kaman",
+          "Terme",
+          "Mucur"
+        ],
+        "tarihi_yapilar": [
+          "Cacabey",
+          "Aşık Paşa",
+          "Ahi Evran",
+          "Kesikköprü",
+          "Alaeddin"
+        ],
+        "dogal_guzellikler": [
+          "Terme",
+          "Seyfe Gölü",
+          "Kaman",
+          "Kılıçözü",
+          "Obruk"
+        ],
+        "yoresel_urunler": [
+          "Ceviz",
+          "Bulgur",
+          "Kilim",
+          "Bakır",
+          "Halı"
+        ],
+        "unlu_kisiler": [
+          "Yılmaz Köksal",
+          "Neşet Ertaş",
+          "Adem Göçer",
+          "Sibel Tekin",
+          "Suat Yalaz",
+          "Mustafa Kaplan",
+          "Muharrem Ertaş"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kırşehir kebabı ve cimcik hamuru, İç Anadolu mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Selçuklu astronomi medresesi Cacabey ve Aşık Paşa Türbesi Kırşehir'dedir.",
+        "tarihi_yapilar": "Ahilik teşkilatının piri Ahi Evran'ın türbesi ve Cacabey Medresesi buradadır.",
+        "dogal_guzellikler": "Flamingolarıyla Seyfe Gölü ve Terme kaplıcaları, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Kaman cevizi, Kırşehir'in coğrafi işaretli ünlü ürünüdür.",
+        "unlu_kisiler": "Kırşehir, Ahilik teşkilatının ve halk müziği (bozlak) geleneğinin merkezidir."
+      }
+    },
+    {
+      "name": "Kocaeli",
+      "plate": 41,
+      "items": {
+        "yemekler": [
+          "Pişmaniye",
+          "İzmit Simidi",
+          "Kağıt Helva",
+          "Umurbey Kirazı",
+          "Çupra"
+        ],
+        "gezilecek_yerler": [
+          "Kartepe",
+          "Maşukiye",
+          "Saatçi Ali",
+          "Seka Park",
+          "Kandıra"
+        ],
+        "tarihi_yapilar": [
+          "Saatçi Ali",
+          "Pertev Paşa",
+          "Fevziye",
+          "Sultan Baba",
+          "Ovacık"
+        ],
+        "dogal_guzellikler": [
+          "Kartepe",
+          "Maşukiye",
+          "Kandıra",
+          "Ballıkayalar",
+          "Sapanca"
+        ],
+        "yoresel_urunler": [
+          "Pişmaniye",
+          "Kiraz",
+          "Kağıt Helva",
+          "Kandıra Bezi",
+          "Yoğurt"
+        ],
+        "unlu_kisiler": [
+          "Demet Akalın",
+          "Cevat Çapan",
+          "Yenovk Şahen",
+          "Ekrem Yavuz",
+          "Nuray Kıvanç",
+          "Ali Güngör Ekin",
+          "Onur Balkan",
+          "Aysel Tanju"
+        ]
+      },
+      "facts": {
+        "yemekler": "Tel tel pişmaniye, İzmit'in dünyaca ünlü şekerlemesidir.",
+        "gezilecek_yerler": "Kayak merkezi Kartepe ve şelaleleriyle Maşukiye, Kocaeli'nin duraklarıdır.",
+        "tarihi_yapilar": "Mimar Sinan yapısı Pertev Paşa Camii ve tarihi Saatçi Ali Konağı İzmit'tedir.",
+        "dogal_guzellikler": "Kartepe zirvesi ve Ballıkayalar kanyonu, Kocaeli'nin doğa köşeleridir.",
+        "yoresel_urunler": "İzmit pişmaniyesi ve Kandıra bezi, yörenin tescilli ürünleridir.",
+        "unlu_kisiler": "Kocaeli (İzmit), pişmaniyesi ve sanayisiyle Marmara'nın önemli şehridir."
+      }
+    },
+    {
+      "name": "Kütahya",
+      "plate": 43,
+      "items": {
+        "yemekler": [
+          "Çini Manisası",
+          "Gökçimen",
+          "Cimcik",
+          "Tarhana",
+          "Höşmerim"
+        ],
+        "gezilecek_yerler": [
+          "Aizanoi",
+          "Çini Müzesi",
+          "Frig Vadisi",
+          "Yoncalı",
+          "Domaniç"
+        ],
+        "tarihi_yapilar": [
+          "Aizanoi",
+          "Kütahya Kalesi",
+          "Ulu Cami",
+          "Vacidiye",
+          "Kossuth"
+        ],
+        "dogal_guzellikler": [
+          "Frig Vadisi",
+          "Yoncalı",
+          "Türkmen Dağı",
+          "Zeytin",
+          "Domaniç"
+        ],
+        "yoresel_urunler": [
+          "Çini",
+          "Seramik",
+          "Gümüş",
+          "Halı",
+          "Tarhana"
+        ],
+        "unlu_kisiler": [
+          "Vasıf Öngören",
+          "Tezer Özlü",
+          "Sezer Duru",
+          "Ahmet Uluçay",
+          "Yüksel Gündüz",
+          "Fahri Domaniç"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kütahya'nın cimcik hamuru ve tarhanası, İç Ege mutfağının tatlarıdır.",
+        "gezilecek_yerler": "Zeus tapınağıyla Aizanoi antik kenti ve dünyaca ünlü çini atölyeleri buradadır.",
+        "tarihi_yapilar": "Aizanoi'deki iyi korunmuş Zeus Tapınağı, Anadolu'nun en görkemlilerindendir.",
+        "dogal_guzellikler": "Peri bacalı Frig Vadisi ve Yoncalı kaplıcaları, Kütahya'nın doğa köşeleridir.",
+        "yoresel_urunler": "Kütahya çinisi, yüzyıllardır süren dünyaca ünlü bir el sanatıdır.",
+        "unlu_kisiler": "Kütahya, İznik'ten sonra Türk çini sanatının başkenti sayılır."
+      }
+    },
+    {
+      "name": "Muş",
+      "plate": 49,
+      "items": {
+        "yemekler": [
+          "Kavut",
+          "Herse",
+          "Çorti",
+          "Sıron",
+          "Kelecoş"
+        ],
+        "gezilecek_yerler": [
+          "Muş Ovası",
+          "Murat",
+          "Haçlı Gölü",
+          "Kepenek",
+          "Malazgirt"
+        ],
+        "tarihi_yapilar": [
+          "Malazgirt",
+          "Muş Kalesi",
+          "Ulu Cami",
+          "Aslanlı Han",
+          "Kızıl Cami"
+        ],
+        "dogal_guzellikler": [
+          "Muş Ovası",
+          "Haçlı Gölü",
+          "Murat",
+          "Bilican",
+          "Şeyh Yusuf"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Kilim",
+          "Susam",
+          "Peynir",
+          "Kavut"
+        ],
+        "unlu_kisiler": [
+          "Yücel Erten",
+          "Sezgin Ataç",
+          "Kanat Güner",
+          "Doğan Demir",
+          "Nail Çiler",
+          "Özgür Doğan",
+          "Kerem Al"
+        ]
+      },
+      "facts": {
+        "yemekler": "Muş'un kavut ve çorti çorbası, Doğu Anadolu mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "1071 Malazgirt Savaşı'nın yapıldığı ova ve laleleriyle Muş Ovası buradadır.",
+        "tarihi_yapilar": "Malazgirt Kalesi ve surları, Anadolu'nun kapılarının açıldığı yeri simgeler.",
+        "dogal_guzellikler": "İlkbaharda kırmızı lalelerle kaplanan Muş Ovası, ilin doğa harikasıdır.",
+        "yoresel_urunler": "Muş balı ve susamı yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Muş, 1071 Malazgirt Zaferi'yle tarihe geçmiş bir Doğu Anadolu şehridir."
+      }
+    },
+    {
+      "name": "Niğde",
+      "plate": 51,
+      "items": {
+        "yemekler": [
+          "Niğde Tava",
+          "Çömlek Peyniri",
+          "Elma",
+          "Gölban",
+          "Bombar"
+        ],
+        "gezilecek_yerler": [
+          "Aladağlar",
+          "Gümüşler",
+          "Eski Gümüş",
+          "Narlıgöl",
+          "Çamardı"
+        ],
+        "tarihi_yapilar": [
+          "Alaeddin Cami",
+          "Gümüşler",
+          "Sungur Bey",
+          "Niğde Kalesi",
+          "Hüdavent"
+        ],
+        "dogal_guzellikler": [
+          "Aladağlar",
+          "Narlıgöl",
+          "Kemerhisar",
+          "Çamardı",
+          "Bolkar"
+        ],
+        "yoresel_urunler": [
+          "Elma",
+          "Patates",
+          "Çömlek Peyniri",
+          "Halı",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Halit Mengi",
+          "Nükhet Duru",
+          "Kazım Kartal",
+          "Asım Tanış",
+          "Dursun Özden",
+          "Koray Arslan",
+          "Nadide Akdeniz",
+          "Ali Yaramancı"
+        ]
+      },
+      "facts": {
+        "yemekler": "Niğde tava ve tulukta olgunlaşan çömlek peyniri, yörenin bilinen tatlarıdır.",
+        "gezilecek_yerler": "Kayaya oyulmuş Gümüşler Manastırı ve Aladağlar Milli Parkı Niğde'dedir.",
+        "tarihi_yapilar": "Gümüşler Manastırı'nın freskleri ve Selçuklu Alaeddin Camii ilin mirasıdır.",
+        "dogal_guzellikler": "Dağcıların gözdesi Aladağlar ve krater gölü Narlıgöl, ilin doğa harikalarıdır.",
+        "yoresel_urunler": "Niğde elması ve patatesi, yörenin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Niğde, Aladağlar ve Gümüşler Manastırı ile doğa-tarih şehridir."
+      }
+    },
+    {
+      "name": "Sakarya",
+      "plate": 54,
+      "items": {
+        "yemekler": [
+          "Islama Köfte",
+          "Dartılı Pide",
+          "Keşkek",
+          "Manda Yoğurdu",
+          "Fındık"
+        ],
+        "gezilecek_yerler": [
+          "Sapanca",
+          "Maşukiye",
+          "Poyrazlar",
+          "Acarlar",
+          "Karagöl"
+        ],
+        "tarihi_yapilar": [
+          "Justinianus",
+          "Harmantepe",
+          "Seyfeler",
+          "Aya Triada",
+          "Taraklı"
+        ],
+        "dogal_guzellikler": [
+          "Sapanca",
+          "Poyrazlar",
+          "Acarlar Longoz",
+          "Karagöl",
+          "Doğancıl"
+        ],
+        "yoresel_urunler": [
+          "Fındık",
+          "Islama",
+          "Manda Yoğurdu",
+          "Süs Bitkisi",
+          "Bal"
+        ],
+        "unlu_kisiler": [
+          "Hakan Şükür",
+          "Vedat Dicleli",
+          "Aykut Kocaman",
+          "Süleyman Seba",
+          "Metehan Başar"
+        ]
+      },
+      "facts": {
+        "yemekler": "Et suyuna batırılan ıslama köfte, Adapazarı'nın (Sakarya) meşhur lezzetidir.",
+        "gezilecek_yerler": "Kıyısındaki bungalovlarla Sapanca Gölü ve Acarlar longozu, Sakarya'nın duraklarıdır.",
+        "tarihi_yapilar": "Sakarya Nehri üzerindeki tarihi Justinianus (Beşköprü) Köprüsü buradadır.",
+        "dogal_guzellikler": "Sapanca Gölü ve Avrupa'nın büyük su basar ormanı Acarlar, ilin doğa incileridir.",
+        "yoresel_urunler": "Sakarya fındığı ve süs bitkileri yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Sakarya (Adapazarı), Sapanca Gölü ve ıslama köftesiyle anılan Marmara şehridir."
+      }
+    },
+    {
+      "name": "Siirt",
+      "plate": 56,
+      "items": {
+        "yemekler": [
+          "Büryan",
+          "Perde Pilavı",
+          "Kavut",
+          "İçli Köfte",
+          "Sembusek"
+        ],
+        "gezilecek_yerler": [
+          "Tillo",
+          "Ulu Cami",
+          "Botan",
+          "Şeyh Hamza",
+          "Aydınlar"
+        ],
+        "tarihi_yapilar": [
+          "Ulu Cami",
+          "Tillo",
+          "Veysel Karani",
+          "Cas Evleri",
+          "İbrahim Hakkı"
+        ],
+        "dogal_guzellikler": [
+          "Botan Vadisi",
+          "Herekol",
+          "Aydınlar",
+          "Zernek",
+          "Bilaloğlu"
+        ],
+        "yoresel_urunler": [
+          "Bıttım Sabunu",
+          "Battaniye",
+          "Bal",
+          "Fıstık",
+          "Perde Pilavı"
+        ],
+        "unlu_kisiler": [
+          "Ruşena Rahimli",
+          "Bülent Yavuz",
+          "Rojda",
+          "Hasan Akınay",
+          "Necip San",
+          "Zehra Demirhan",
+          "Cindi Çelik"
+        ]
+      },
+      "facts": {
+        "yemekler": "Tandırda pişen büryan ve badem serpili perde pilavı, Siirt'in meşhur lezzetleridir.",
+        "gezilecek_yerler": "Bilim insanı İbrahim Hakkı'nın yaşadığı Tillo (Aydınlar) ve Ulu Cami buradadır.",
+        "tarihi_yapilar": "Erzurumlu İbrahim Hakkı'nın Tillo'daki türbesi ve güneş ışığı düzeneği ünlüdür.",
+        "dogal_guzellikler": "Botan Çayı vadisi ve Herekol Dağı, Siirt'in doğa köşeleridir.",
+        "yoresel_urunler": "Siirt bıttım (menengiç) sabunu ve battaniyesi, coğrafi işaretli ürünlerdir.",
+        "unlu_kisiler": "Siirt, âlim İbrahim Hakkı ve Veysel Karani ile anılan bir Güneydoğu şehridir."
+      }
+    },
+    {
+      "name": "Şırnak",
+      "plate": 73,
+      "items": {
+        "yemekler": [
+          "Kavurma",
+          "Doklinik",
+          "Herse",
+          "Kutilk",
+          "Sırın"
+        ],
+        "gezilecek_yerler": [
+          "Cudi",
+          "Uludere",
+          "Cizre",
+          "Kasrik",
+          "Beytüşşebap"
+        ],
+        "tarihi_yapilar": [
+          "Cizre Ulu Cami",
+          "Mem u Zin",
+          "Nuh Nebi",
+          "Abdaliye",
+          "Kale"
+        ],
+        "dogal_guzellikler": [
+          "Cudi",
+          "Kasrik",
+          "Uludere",
+          "Beytüşşebap",
+          "Zap"
+        ],
+        "yoresel_urunler": [
+          "Kilim",
+          "Bal",
+          "Ceviz",
+          "Deri",
+          "Reyhan"
+        ],
+        "unlu_kisiler": [
+          "Berken Bereh",
+          "Nuran İmir",
+          "Şehzade Demir",
+          "Hikmet Tan",
+          "İbnü'l-Esîr"
+        ]
+      },
+      "facts": {
+        "yemekler": "Şırnak'ın kavurma ve dokliniki, yöresel dağ mutfağının bilinen tatlarıdır.",
+        "gezilecek_yerler": "Nuh'un Gemisi'yle anılan Cudi Dağı ve tarihi Cizre ilçesi buradadır.",
+        "tarihi_yapilar": "Cizre'deki Ulu Cami ve Kırmızı Medrese, El-Cezeri'nin şehrinin mirasıdır.",
+        "dogal_guzellikler": "Cudi Dağı ve Kasrik Boğazı, Şırnak'ın doğa manzaralarıdır.",
+        "yoresel_urunler": "Şırnak kilimi ve dağ balı yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Cizre, tarihte otomatik makineler tasarlayan mucit El-Cezeri ile anılır."
+      }
+    },
+    {
+      "name": "Uşak",
+      "plate": 64,
+      "items": {
+        "yemekler": [
+          "Tarhana",
+          "Uşak Simidi",
+          "Höşmerim",
+          "Arabaşı",
+          "Keşkek"
+        ],
+        "gezilecek_yerler": [
+          "Ulubey Kanyon",
+          "Blaundus",
+          "Clandras",
+          "Karun",
+          "Banaz"
+        ],
+        "tarihi_yapilar": [
+          "Blaundus",
+          "Clandras Köprü",
+          "Ulu Cami",
+          "Burma Cami",
+          "Hanlar"
+        ],
+        "dogal_guzellikler": [
+          "Ulubey Kanyon",
+          "Clandras",
+          "Banaz",
+          "Murat Dağı",
+          "Takmak"
+        ],
+        "yoresel_urunler": [
+          "Halı",
+          "Tarhana",
+          "Deri",
+          "Battaniye",
+          "Şeker"
+        ],
+        "unlu_kisiler": [
+          "Turgay Tanülkü",
+          "Devrim Erbil",
+          "Ahmet Demir",
+          "Turhan Çetin",
+          "Haydar Dümen",
+          "İskender Pala",
+          "Durmuş Yılmaz",
+          "Hacim Çarıklı"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kurutulup çorbası yapılan Uşak tarhanası, yörenin en bilinen ürünüdür.",
+        "gezilecek_yerler": "Dünyanın büyük kanyonlarından Ulubey ve antik Blaundus kenti Uşak'tadır.",
+        "tarihi_yapilar": "Ulubey Kanyonu kıyısındaki antik Blaundus ve Clandras Köprüsü ilin mirasıdır.",
+        "dogal_guzellikler": "Cam terasıyla Ulubey Kanyonu ve Murat Dağı kaplıcaları, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Uşak halısı, Anadolu'nun en eski dokuma geleneklerinden birine sahiptir.",
+        "unlu_kisiler": "Uşak, ünlü 'Karun Hazineleri'nin (Lidya) bulunduğu topraklarla anılır."
+      }
+    },
+    {
+      "name": "Yozgat",
+      "plate": 66,
+      "items": {
+        "yemekler": [
+          "Testi Kebabı",
+          "Arabaşı",
+          "Parmak Çörek",
+          "Madımak",
+          "Katmer"
+        ],
+        "gezilecek_yerler": [
+          "Çamlık",
+          "Kerkenes",
+          "Sarıkaya",
+          "Çapanoğlu",
+          "Akdağmadeni"
+        ],
+        "tarihi_yapilar": [
+          "Çapanoğlu",
+          "Kerkenes",
+          "Sarıkaya Roma",
+          "Nizamoğlu",
+          "Saat Kulesi"
+        ],
+        "dogal_guzellikler": [
+          "Çamlık",
+          "Akdağ",
+          "Sarıkaya",
+          "Karagöl",
+          "Aydıncık"
+        ],
+        "yoresel_urunler": [
+          "Bakır",
+          "Kilim",
+          "Nohut",
+          "Çörek",
+          "Bulgur"
+        ],
+        "unlu_kisiler": [
+          "Ahmet Hakan",
+          "Emin Zararsız",
+          "Osman Erbaş",
+          "Mehmet Topuz",
+          "Yusuf Aslan",
+          "Mehmet Yıldız",
+          "Kürşad Zorlu"
+        ]
+      },
+      "facts": {
+        "yemekler": "Sabah çorbası arabaşı ve parmak çörek, Yozgat'ın bilinen yöresel tatlarıdır.",
+        "gezilecek_yerler": "Türkiye'nin ilk milli parkı Çamlık ve antik Kerkenes şehri Yozgat'tadır.",
+        "tarihi_yapilar": "Ahşap işçiliğiyle Çapanoğlu Camii ve Sarıkaya Roma hamamı ilin mirasıdır.",
+        "dogal_guzellikler": "Karaçam ormanı Çamlık Milli Parkı ve Akdağ, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Yozgat bakırcılığı ve nohudu yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Yozgat, Çapanoğulları'nın konağı ve bozlak türküleriyle anılan bir şehirdir."
+      }
+    },
+    {
+      "name": "Zonguldak",
+      "plate": 67,
+      "items": {
+        "yemekler": [
+          "Kömür Pidesi",
+          "Uykuluk",
+          "Saç Kavurma",
+          "Mısır Ekmeği",
+          "Kuyu Kebabı"
+        ],
+        "gezilecek_yerler": [
+          "Gökgöl",
+          "Cehennemağzı",
+          "Kdz Ereğli",
+          "Filyos",
+          "Değirmenağzı"
+        ],
+        "tarihi_yapilar": [
+          "Filyos",
+          "Cehennemağzı",
+          "Ereğli",
+          "Maden Müzesi",
+          "Tios"
+        ],
+        "dogal_guzellikler": [
+          "Gökgöl",
+          "Harmankaya",
+          "Filyos",
+          "Kapuz",
+          "Değirmenağzı"
+        ],
+        "yoresel_urunler": [
+          "Kömür",
+          "Bakla",
+          "Baston",
+          "Mısır",
+          "Bal"
+        ],
+        "unlu_kisiler": [
+          "Fuat Sevimay",
+          "Zafer Toprak",
+          "Can Tutuğ",
+          "Nilgün Efes",
+          "Ferhat Özçep",
+          "Şemsi Denizer",
+          "Emrah Ablak"
+        ]
+      },
+      "facts": {
+        "yemekler": "Zonguldak'ın kömür pidesi ve uykuluğu, Batı Karadeniz mutfağının tatlarıdır.",
+        "gezilecek_yerler": "Sarkıtlı Gökgöl Mağarası ve Herakles'in indiği söylenen Cehennemağzı buradadır.",
+        "tarihi_yapilar": "Antik liman Tios (Filyos) ve maden ocaklarının izleri, ilin tarihini taşır.",
+        "dogal_guzellikler": "Türkiye'nin uzun mağaralarından Gökgöl ve Harmankaya şelalesi, ilin doğasıdır.",
+        "yoresel_urunler": "Zonguldak, Türkiye'nin taş kömürü havzasının merkezidir.",
+        "unlu_kisiler": "Zonguldak, taş kömürü madenciliğiyle özdeşleşmiş bir Karadeniz kentidir."
+      }
+    },
+    {
+      "name": "Aksaray",
+      "plate": 68,
+      "items": {
+        "yemekler": [
+          "Aksaray Kebabı",
+          "Tandır",
+          "Bulgur",
+          "Höşmerim",
+          "Yağlama"
+        ],
+        "gezilecek_yerler": [
+          "Ihlara",
+          "Güzelyurt",
+          "Aşıklı Höyük",
+          "Selime",
+          "Nora"
+        ],
+        "tarihi_yapilar": [
+          "Ihlara",
+          "Selime",
+          "Ulu Cami",
+          "Zinciriye",
+          "Aşıklı Höyük"
+        ],
+        "dogal_guzellikler": [
+          "Ihlara Vadisi",
+          "Hasan Dağı",
+          "Tuz Gölü",
+          "Güzelyurt",
+          "Ziga"
+        ],
+        "yoresel_urunler": [
+          "Halı",
+          "Kilim",
+          "Patates",
+          "Bakır",
+          "Un"
+        ],
+        "unlu_kisiler": [
+          "Nissalı Gregor",
+          "Fikret Otyam",
+          "Polat Yaldır",
+          "Cenap Aşcı",
+          "Kamil Yazıcı",
+          "Mahmut Makal"
+        ]
+      },
+      "facts": {
+        "yemekler": "Aksaray tandır kebabı ve yağlaması, İç Anadolu mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Kayaya oyulmuş kiliseleriyle Ihlara Vadisi ve Güzelyurt Aksaray'dadır.",
+        "tarihi_yapilar": "Ihlara Vadisi'ndeki fresk süslü kaya kiliseleri ve Selime Katedrali ilin mirasıdır.",
+        "dogal_guzellikler": "Yeşil Ihlara Vadisi ve volkanik Hasan Dağı, Aksaray'ın doğa harikalarıdır.",
+        "yoresel_urunler": "Aksaray halısı ve kilimi, yörenin geleneksel el sanatlarıdır.",
+        "unlu_kisiler": "Aksaray, Kapadokya'nın vadisi Ihlara ile anılan kadim bir şehirdir."
+      }
+    },
+    {
+      "name": "Bayburt",
+      "plate": 69,
+      "items": {
+        "yemekler": [
+          "Ehli Cennet",
+          "Lor Dolması",
+          "Kete",
+          "Civil",
+          "Pestil"
+        ],
+        "gezilecek_yerler": [
+          "Bayburt Kalesi",
+          "Aydıntepe",
+          "Sırakayalar",
+          "Kop",
+          "Çoruh"
+        ],
+        "tarihi_yapilar": [
+          "Bayburt Kalesi",
+          "Aydıntepe",
+          "Ulu Cami",
+          "Şingah",
+          "Bent Kalesi"
+        ],
+        "dogal_guzellikler": [
+          "Sırakayalar",
+          "Kop Dağı",
+          "Çoruh",
+          "Soğanlı",
+          "Kırklar"
+        ],
+        "yoresel_urunler": [
+          "Ehram",
+          "Bakır",
+          "Bal",
+          "Pestil",
+          "Gümüş"
+        ],
+        "unlu_kisiler": [
+          "Ayşe Kara",
+          "Vasip Şahin",
+          "Bilgehan Demir",
+          "Hicabi Dursun",
+          "Günay Kut",
+          "Yahya Akengin",
+          "Piraye Şengel",
+          "Orhan Dündar"
+        ]
+      },
+      "facts": {
+        "yemekler": "Bayburt'un ehli cennet tatlısı ve lor dolması, yörenin bilinen lezzetleridir.",
+        "gezilecek_yerler": "Şehre hâkim Bayburt Kalesi ve yeraltı Aydıntepe şehri buradadır.",
+        "tarihi_yapilar": "Çoruh vadisine bakan Bayburt Kalesi ve Aydıntepe yeraltı şehri ilin mirasıdır.",
+        "dogal_guzellikler": "Sırakayalar Şelalesi ve Kop Dağı, Bayburt'un doğa köşeleridir.",
+        "yoresel_urunler": "Bayburt ehramı (dokuma) yörenin tescilli el sanatıdır.",
+        "unlu_kisiler": "Bayburt, Dede Korkut hikâyeleriyle anılan bir Kuzeydoğu Anadolu şehridir."
+      }
+    },
+    {
+      "name": "Karaman",
+      "plate": 70,
+      "items": {
+        "yemekler": [
+          "Bunlu Bat",
+          "Tarhana",
+          "Divle Tulum",
+          "Sac Böreği",
+          "Höşmerim"
+        ],
+        "gezilecek_yerler": [
+          "Binbir Kilise",
+          "Manazan",
+          "Taşkale",
+          "Derbe",
+          "İncemağara"
+        ],
+        "tarihi_yapilar": [
+          "Hatuniye",
+          "Binbir Kilise",
+          "Yunus Emre",
+          "Karaman Kalesi",
+          "Ak Tekke"
+        ],
+        "dogal_guzellikler": [
+          "Manazan",
+          "Taşkale",
+          "Yeşildere",
+          "Göksu",
+          "İncesu"
+        ],
+        "yoresel_urunler": [
+          "Elma",
+          "Divle Tulum",
+          "Bulgur",
+          "Un",
+          "Kilim"
+        ],
+        "unlu_kisiler": [
+          "Emin Alper",
+          "Giray Kaçar",
+          "İshak",
+          "Rahmi Güven",
+          "Nuh Paşa",
+          "Hikmet Birand",
+          "Atila Zorlu"
+        ]
+      },
+      "facts": {
+        "yemekler": "Karaman'ın Divle obruğu tulum peyniri ve bat, yörenin bilinen ürün ve tatlarıdır.",
+        "gezilecek_yerler": "Yunus Emre'nin türbesi ve kayaya oyulu Manazan yeraltı şehri Karaman'dadır.",
+        "tarihi_yapilar": "Yunus Emre Türbesi ve Karamanoğulları'ndan Hatuniye Medresesi ilin mirasıdır.",
+        "dogal_guzellikler": "Manazan mağara evleri ve Taşkale tahıl ambarları, ilin doğa-tarih köşeleridir.",
+        "yoresel_urunler": "Karaman elması ve Divle tulum peyniri, coğrafi işaretli ürünlerdir.",
+        "unlu_kisiler": "Türkçeyi resmî dil ilan eden Karamanoğlu Mehmet Bey Karaman'la anılır."
+      }
+    },
+    {
+      "name": "Kırıkkale",
+      "plate": 71,
+      "items": {
+        "yemekler": [
+          "Bici Bici",
+          "Tirit",
+          "Cızlama",
+          "Höşmerim",
+          "Bazlama"
+        ],
+        "gezilecek_yerler": [
+          "Kapulukaya",
+          "Hasandede",
+          "Kalehöyük",
+          "Delice",
+          "Balışeyh"
+        ],
+        "tarihi_yapilar": [
+          "Hasandede",
+          "Kalehöyük",
+          "Çeşnigir",
+          "Ulu Cami",
+          "Delice Köprü"
+        ],
+        "dogal_guzellikler": [
+          "Kapulukaya",
+          "Kızılırmak",
+          "Delice",
+          "Karabekir",
+          "Hırkatepe"
+        ],
+        "yoresel_urunler": [
+          "Silah",
+          "Bakır",
+          "Bulgur",
+          "Kilim",
+          "Un"
+        ],
+        "unlu_kisiler": [
+          "Sedat Laçiner",
+          "İbrahim Çelebi",
+          "Tuğba Karataş",
+          "Lara",
+          "Gönül Kıvılcım"
+        ]
+      },
+      "facts": {
+        "yemekler": "Kırıkkale'nin tirit ve cızlaması, İç Anadolu mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Kızılırmak üzerindeki Kapulukaya Barajı ve Hasandede, ilin duraklarıdır.",
+        "tarihi_yapilar": "Kızılırmak üzerindeki Selçuklu Çeşnigir Köprüsü ve tarihi silah fabrikası buradadır.",
+        "dogal_guzellikler": "Kapulukaya Barajı ve Kızılırmak kıyıları, Kırıkkale'nin doğa köşeleridir.",
+        "yoresel_urunler": "Kırıkkale, Türkiye'nin ilk silah sanayisiyle özdeşleşmiştir.",
+        "unlu_kisiler": "Kırıkkale, MKE silah fabrikasıyla kurulmuş genç bir sanayi şehridir."
+      }
+    },
+    {
+      "name": "Batman",
+      "plate": 72,
+      "items": {
+        "yemekler": [
+          "İçli Köfte",
+          "Meftune",
+          "Sembusek",
+          "Kavurma",
+          "Sırın"
+        ],
+        "gezilecek_yerler": [
+          "Hasankeyf",
+          "Malabadi",
+          "Zeynel Bey",
+          "Ilısu",
+          "Kozluk"
+        ],
+        "tarihi_yapilar": [
+          "Hasankeyf",
+          "Zeynel Bey",
+          "Malabadi",
+          "Er-Rızk",
+          "Mağaralar"
+        ],
+        "dogal_guzellikler": [
+          "Dicle",
+          "Batman Çayı",
+          "Ilısu",
+          "Kozluk",
+          "Sason"
+        ],
+        "yoresel_urunler": [
+          "Petrol",
+          "Bal",
+          "Kilim",
+          "Ceviz",
+          "Reyhan"
+        ],
+        "unlu_kisiler": [
+          "Zeynep Oduncu",
+          "Miradê Kinê",
+          "İsa Altsoy",
+          "Edip Gümüş",
+          "Nermin Tuğuşlu"
+        ]
+      },
+      "facts": {
+        "yemekler": "Batman'ın içli köftesi ve meftunesi, Mezopotamya mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Dicle kıyısındaki antik Hasankeyf ve turkuaz çinili Zeynel Bey Türbesi buradadır.",
+        "tarihi_yapilar": "Hasankeyf'in kaya mağaraları ve Zeynel Bey Türbesi, ilin kadim mirasıdır.",
+        "dogal_guzellikler": "Dicle Nehri ve Batman Çayı vadileri, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Batman, Türkiye'nin ilk petrol rafinerilerinden birine ev sahipliği yapar.",
+        "unlu_kisiler": "Batman, tarihî Hasankeyf ve petrolüyle anılan genç bir Güneydoğu şehridir."
+      }
+    },
+    {
+      "name": "Bartın",
+      "plate": 74,
+      "items": {
+        "yemekler": [
+          "Bartın Mantısı",
+          "Göveç",
+          "Kaygana",
+          "Mısır Ekmeği",
+          "Cevizli"
+        ],
+        "gezilecek_yerler": [
+          "Amasra",
+          "Güzelcehisar",
+          "İnkumu",
+          "Kuşkayası",
+          "Çakraz"
+        ],
+        "tarihi_yapilar": [
+          "Amasra Kalesi",
+          "Kuşkayası",
+          "Bedesten",
+          "Fatih Cami",
+          "Direkli"
+        ],
+        "dogal_guzellikler": [
+          "Amasra",
+          "İnkumu",
+          "Güzelcehisar",
+          "Çakraz",
+          "Uluyayla"
+        ],
+        "yoresel_urunler": [
+          "Tel Kırma",
+          "Ahşap",
+          "Çilek",
+          "Bakır",
+          "Dokuma"
+        ],
+        "unlu_kisiler": [
+          "Hüdai Aksu",
+          "Altan Dinçer",
+          "Selçuk Ural",
+          "Mehmet Çubuk",
+          "Recai Akçay",
+          "Şennur Demir",
+          "Alişan Şeker",
+          "Tarık Minkari"
+        ]
+      },
+      "facts": {
+        "yemekler": "Amasra'nın deniz mahsulleri ve Bartın mantısı, yörenin bilinen lezzetleridir.",
+        "gezilecek_yerler": "İki koylu güzel Amasra ve bazalt sütunlu Güzelcehisar sahili Bartın'dadır.",
+        "tarihi_yapilar": "Amasra Kalesi ve Roma yolu Kuşkayası Anıtı, ilin tarihî yapılarıdır.",
+        "dogal_guzellikler": "Amasra koyları ve İnkumu sahili, Bartın'ın doğa incileridir.",
+        "yoresel_urunler": "Bartın tel kırma işlemesi ve ahşap oymacılığı, yörenin el sanatlarıdır.",
+        "unlu_kisiler": "Bartın, sevimli liman kasabası Amasra ile anılan bir Batı Karadeniz şehridir."
+      }
+    },
+    {
+      "name": "Ardahan",
+      "plate": 75,
+      "items": {
+        "yemekler": [
+          "Bal",
+          "Kaşar",
+          "Hasuta",
+          "Evelik",
+          "Kete"
+        ],
+        "gezilecek_yerler": [
+          "Çıldır Gölü",
+          "Şeytan Kalesi",
+          "Aktaş",
+          "Savaşır",
+          "Yalnızçam"
+        ],
+        "tarihi_yapilar": [
+          "Şeytan Kalesi",
+          "Ardahan Kalesi",
+          "Kazak",
+          "Ur",
+          "Altınbulak"
+        ],
+        "dogal_guzellikler": [
+          "Çıldır Gölü",
+          "Yalnızçam",
+          "Aktaş",
+          "Savaşır",
+          "Ardahan Ovası"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Kaşar",
+          "Peynir",
+          "Tereyağı",
+          "Deri"
+        ],
+        "unlu_kisiler": [
+          "Tamer Tuna",
+          "Şeref Taşlıova",
+          "Yusuf Nazım",
+          "Esra Ruşan",
+          "Fidan Atmaca"
+        ]
+      },
+      "facts": {
+        "yemekler": "Ardahan'ın çiçek balı ve kaşarı, yörenin coğrafi işaretli ürünleridir.",
+        "gezilecek_yerler": "Kışın buz tutan Çıldır Gölü ve kanyona kurulu Şeytan Kalesi Ardahan'dadır.",
+        "tarihi_yapilar": "Uçuruma kurulu Şeytan Kalesi ve Ardahan Kalesi, ilin tarihî yapılarıdır.",
+        "dogal_guzellikler": "Buz üstünde atlı kızak yapılan Çıldır Gölü, ilin doğa harikasıdır.",
+        "yoresel_urunler": "Ardahan balı ve kaşarı, yüksek yaylalarda üretilen ünlü ürünlerdir.",
+        "unlu_kisiler": "Ardahan, Çıldır Gölü ve yüksek yaylalarıyla anılan bir sınır şehridir."
+      }
+    },
+    {
+      "name": "Iğdır",
+      "plate": 76,
+      "items": {
+        "yemekler": [
+          "Bozbaş",
+          "Levengi",
+          "Abgora",
+          "Kuymak",
+          "Kete"
+        ],
+        "gezilecek_yerler": [
+          "Ağrı Dağı",
+          "Kızıl Cami",
+          "Nuh Gemisi",
+          "Meteor Çukuru",
+          "Tuzluca"
+        ],
+        "tarihi_yapilar": [
+          "Kızıl Cami",
+          "Karakoyunlu",
+          "Korhan",
+          "Tuzluca",
+          "Bayezid"
+        ],
+        "dogal_guzellikler": [
+          "Ağrı Dağı",
+          "Nuh Gemisi",
+          "Meteor Çukuru",
+          "Aras",
+          "Korhan"
+        ],
+        "yoresel_urunler": [
+          "Pamuk",
+          "Kayısı",
+          "Tuz",
+          "Nar",
+          "Bal"
+        ],
+        "unlu_kisiler": [
+          "Servet Çetin",
+          "İsmet Taşdemir",
+          "Talat Tufan",
+          "Tuğrul Keskin",
+          "Osman Can",
+          "Ercan Arslan"
+        ]
+      },
+      "facts": {
+        "yemekler": "Iğdır'ın bozbaş ve levengisi, Azeri etkili yöresel mutfağın tatlarıdır.",
+        "gezilecek_yerler": "Ağrı Dağı manzarası ve efsanevi Nuh'un Gemisi oluşumu Iğdır'dadır.",
+        "tarihi_yapilar": "Karakoyunlu dönemi Kızıl Cami ve Tuzluca tuz mağaraları ilin mirasıdır.",
+        "dogal_guzellikler": "Ağrı Dağı eteği ve Aras Nehri ovası, Iğdır'ın doğa köşeleridir.",
+        "yoresel_urunler": "Sıcak ikliminde yetişen Iğdır pamuğu ve kayısısı yörenin ürünleridir.",
+        "unlu_kisiler": "Iğdır, Ağrı Dağı'nın eteğinde Azeri kültürünün yaşadığı bir sınır şehridir."
+      }
+    },
+    {
+      "name": "Yalova",
+      "plate": 77,
+      "items": {
+        "yemekler": [
+          "Pideli Köfte",
+          "Esma Sultan",
+          "Kestane",
+          "Zeytin",
+          "Çiçek"
+        ],
+        "gezilecek_yerler": [
+          "Termal",
+          "Yürüyen Köşk",
+          "Sudüşen",
+          "Erikli",
+          "Gökçedere"
+        ],
+        "tarihi_yapilar": [
+          "Yürüyen Köşk",
+          "Termal",
+          "Atatürk Köşkü",
+          "Çınarcık",
+          "Hersek"
+        ],
+        "dogal_guzellikler": [
+          "Termal",
+          "Sudüşen",
+          "Erikli",
+          "Delmece",
+          "Dipsiz Göl"
+        ],
+        "yoresel_urunler": [
+          "Kesme Çiçek",
+          "Kestane",
+          "Zeytin",
+          "Süs Bitkisi",
+          "Bal"
+        ],
+        "unlu_kisiler": [
+          "Şebnem Ferah",
+          "Mehmet Okur",
+          "Demet Demir",
+          "Öykü Özen",
+          "İzel",
+          "Arda Kural"
+        ]
+      },
+      "facts": {
+        "yemekler": "Yalova'nın pideli köftesi ve kestane şekeri, yörenin bilinen lezzetleridir.",
+        "gezilecek_yerler": "Atatürk'ün Yürüyen Köşkü ve şifalı Termal kaplıcaları Yalova'dadır.",
+        "tarihi_yapilar": "Bir ağaç için taşınan ünlü Yürüyen Köşk, Yalova'nın simge yapısıdır.",
+        "dogal_guzellikler": "Termal ormanları ve Sudüşen Şelalesi, Yalova'nın doğa köşeleridir.",
+        "yoresel_urunler": "Yalova, Türkiye'nin kesme çiçek ve süs bitkisi üretim merkezidir.",
+        "unlu_kisiler": "Yalova, Atatürk'ün Yürüyen Köşkü ve termal kaplıcalarıyla anılır."
+      }
+    },
+    {
+      "name": "Karabük",
+      "plate": 78,
+      "items": {
+        "yemekler": [
+          "Lokum",
+          "Kuyu Kebabı",
+          "Bükme",
+          "Peruhi",
+          "Cevizli"
+        ],
+        "gezilecek_yerler": [
+          "Safranbolu",
+          "Bulak Mağara",
+          "Yörük Köyü",
+          "İncekaya",
+          "Tokatlı"
+        ],
+        "tarihi_yapilar": [
+          "Konaklar",
+          "Cinci Han",
+          "Köprülü Cami",
+          "İncekaya",
+          "Yörük Köyü"
+        ],
+        "dogal_guzellikler": [
+          "Bulak Mağara",
+          "Tokatlı Kanyon",
+          "İncekaya",
+          "Sırçalı",
+          "Gökpınar"
+        ],
+        "yoresel_urunler": [
+          "Safran",
+          "Lokum",
+          "Bakır",
+          "Yemeni",
+          "Ahşap"
+        ],
+        "unlu_kisiler": [
+          "Ahmet Telli",
+          "Korcan Çelikay",
+          "Selim Gürata",
+          "Kaya Erdem",
+          "Mustafa Yılmaz",
+          "Tahir Karauğuz",
+          "Bilgin Adalı"
+        ]
+      },
+      "facts": {
+        "yemekler": "Safranbolu lokumu ve safranlı tatlılar, Karabük'ün dünyaca bilinen ürünleridir.",
+        "gezilecek_yerler": "UNESCO korumalı Safranbolu'nun konakları ve Bulak (Mencilis) Mağarası buradadır.",
+        "tarihi_yapilar": "Safranbolu'nun geleneksel Osmanlı evleri ve Cinci Hanı, dünya mirasıdır.",
+        "dogal_guzellikler": "Tokatlı ve İncekaya kanyonları ile Bulak Mağarası, ilin doğa köşeleridir.",
+        "yoresel_urunler": "Karabük'te yetişen safran, dünyanın en değerli baharatlarından biridir.",
+        "unlu_kisiler": "Karabük, korunmuş Osmanlı şehri Safranbolu ve demir-çelik sanayisiyle anılır."
+      }
+    },
+    {
+      "name": "Kilis",
+      "plate": 79,
+      "items": {
+        "yemekler": [
+          "Kilis Tava",
+          "Chorba",
+          "Oruk",
+          "Katmer",
+          "Simit"
+        ],
+        "gezilecek_yerler": [
+          "Ravanda",
+          "Oylum Höyük",
+          "Ulu Cami",
+          "Tekke",
+          "Çalgı"
+        ],
+        "tarihi_yapilar": [
+          "Ravanda Kalesi",
+          "Ulu Cami",
+          "Tekke Cami",
+          "Oylum Höyük",
+          "Canpolat"
+        ],
+        "dogal_guzellikler": [
+          "Kartal Gölü",
+          "Oylum",
+          "Deliktaş",
+          "Çil",
+          "Musabeyli"
+        ],
+        "yoresel_urunler": [
+          "Zeytinyağı",
+          "Fıstık",
+          "Sabun",
+          "Bulgur",
+          "Üzüm"
+        ],
+        "unlu_kisiler": [
+          "Doğan Güreş",
+          "Aydan Şener",
+          "Serengil",
+          "Kilisli Rifat",
+          "Halil Taşkent"
+        ]
+      },
+      "facts": {
+        "yemekler": "Fırında pişen Kilis tava ve katmeri, yörenin en meşhur lezzetleridir.",
+        "gezilecek_yerler": "Ravanda Kalesi ve binlerce yıllık Oylum Höyük, Kilis'in duraklarıdır.",
+        "tarihi_yapilar": "Ravanda Kalesi ve Oylum Höyük, Kilis'in kadim geçmişini taşır.",
+        "dogal_guzellikler": "Kartal Gölü ve Deliktaş, Kilis'in doğa köşeleridir.",
+        "yoresel_urunler": "Kilis zeytinyağı ve Antep fıstığı, yörenin coğrafi işaretli ürünleridir.",
+        "unlu_kisiler": "Kilis; Genelkurmay Başkanlığı yapan Orgeneral Doğan Güreş'i, Çalıkuşu'nun Feride'si Aydan Şener'i ve Divânü Lugâti't-Türk'ü yayına hazırlayan Muallim Kilisli Rifat'ı yetiştirdi."
+      }
+    },
+    {
+      "name": "Osmaniye",
+      "plate": 80,
+      "items": {
+        "yemekler": [
+          "Zahter",
+          "Sıkma",
+          "Analı Kızlı",
+          "Karakuş",
+          "Cezerye"
+        ],
+        "gezilecek_yerler": [
+          "Karatepe",
+          "Kastabala",
+          "Hemite",
+          "Zorkun",
+          "Oluk"
+        ],
+        "tarihi_yapilar": [
+          "Karatepe",
+          "Kastabala",
+          "Hemite",
+          "Toprakkale",
+          "Aslantaş"
+        ],
+        "dogal_guzellikler": [
+          "Zorkun",
+          "Aslantaş",
+          "Oluk Şelalesi",
+          "Savrun",
+          "Karaçay"
+        ],
+        "yoresel_urunler": [
+          "Yer Fıstığı",
+          "Zeytin",
+          "Zahter",
+          "Kilim",
+          "Portakal"
+        ],
+        "unlu_kisiler": [
+          "Yaşar Kemal",
+          "Arif Keskiner",
+          "Emre Karayel",
+          "Rahime Hatun",
+          "Âşık Feymani"
+        ]
+      },
+      "facts": {
+        "yemekler": "Osmaniye'nin zahter dürümü ve sıkması, Çukurova mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Hitit açık hava müzesi Karatepe ve antik Kastabala Osmaniye'dedir.",
+        "tarihi_yapilar": "Karatepe-Aslantaş'ın Geç Hitit kabartmaları ve Kastabala sütunları buradadır.",
+        "dogal_guzellikler": "Zorkun Yaylası ve Aslantaş Barajı, Osmaniye'nin doğa köşeleridir.",
+        "yoresel_urunler": "Osmaniye yer fıstığı, Türkiye üretiminin büyük kısmını karşılar.",
+        "unlu_kisiler": "Osmaniye, Hitit Karatepe ören yeri ve yer fıstığıyla anılır."
+      }
+    },
+    {
+      "name": "Düzce",
+      "plate": 81,
+      "items": {
+        "yemekler": [
+          "Düzce Mantısı",
+          "Kabak Tatlısı",
+          "Mısır Ekmeği",
+          "Saç Böreği",
+          "Baklava"
+        ],
+        "gezilecek_yerler": [
+          "Akçakoca",
+          "Güzeldere",
+          "Samandere",
+          "Topuk",
+          "Aydınpınar"
+        ],
+        "tarihi_yapilar": [
+          "Konuralp",
+          "Prusias",
+          "Akçakoca",
+          "Ceneviz",
+          "Fatih Cami"
+        ],
+        "dogal_guzellikler": [
+          "Samandere",
+          "Güzeldere",
+          "Akçakoca",
+          "Topuk",
+          "Aydınpınar"
+        ],
+        "yoresel_urunler": [
+          "Fındık",
+          "Kestane",
+          "Mısır",
+          "Bal",
+          "Ahşap"
+        ],
+        "unlu_kisiler": [
+          "Hande Sarıoğlu",
+          "Ersin Yazıcı",
+          "Mertcan Aktaş",
+          "Kenan Güven",
+          "Münir Kutluata",
+          "Lütfi Gören",
+          "Osman Çakır"
+        ]
+      },
+      "facts": {
+        "yemekler": "Düzce mantısı ve fındıklı tatlılar, Batı Karadeniz mutfağının bilinen tatlarıdır.",
+        "gezilecek_yerler": "Karadeniz kıyısı Akçakoca ve Samandere Şelalesi, Düzce'nin duraklarıdır.",
+        "tarihi_yapilar": "Antik Prusias ad Hypium (Konuralp) tiyatrosu ve mozaikleri Düzce'dedir.",
+        "dogal_guzellikler": "Samandere ve Güzeldere şelaleleri ile Akçakoca koyları, ilin doğasıdır.",
+        "yoresel_urunler": "Düzce fındığı ve kestanesi, verimli topraklarının bilinen ürünleridir.",
+        "unlu_kisiler": "Düzce, Akçakoca sahili ve antik Konuralp kalıntılarıyla anılır."
+      }
+    },
+    {
+      "name": "Tunceli",
+      "plate": 62,
+      "items": {
+        "yemekler": [
+          "Sac Kavurma",
+          "İçli Köfte",
+          "Herse",
+          "Kavut",
+          "Sırın"
+        ],
+        "gezilecek_yerler": [
+          "Munzur",
+          "Ovacık",
+          "Pülümür",
+          "Kutu Deresi",
+          "Buyer Baba"
+        ],
+        "tarihi_yapilar": [
+          "Mazgirt",
+          "Pertek Kalesi",
+          "Sağman",
+          "Elti Hatun",
+          "Bağın"
+        ],
+        "dogal_guzellikler": [
+          "Munzur Vadisi",
+          "Ovacık",
+          "Pülümür",
+          "Kutu Deresi",
+          "Gözeler"
+        ],
+        "yoresel_urunler": [
+          "Bal",
+          "Dut",
+          "Kilim",
+          "Ceviz",
+          "Tereyağı"
+        ],
+        "unlu_kisiler": [
+          "Seyit Rıza",
+          "Hakkı Bulut",
+          "Nuri Dersimi",
+          "Selçuk Şahin",
+          "Aynur Doğan",
+          "Cemal Şan"
+        ]
+      },
+      "facts": {
+        "yemekler": "Tunceli'nin sac kavurması ve içli köftesi, dağ mutfağının yöresel tatlarıdır.",
+        "gezilecek_yerler": "Berrak sularıyla Munzur Vadisi Milli Parkı ve Pülümür vadisi buradadır.",
+        "tarihi_yapilar": "Baraj kıyısındaki Pertek Kalesi ve Elti Hatun Camii, ilin tarihî yapılarıdır.",
+        "dogal_guzellikler": "Munzur Gözeleri ve vadisi, Türkiye'nin en berrak akarsularındandır.",
+        "yoresel_urunler": "Tunceli (Munzur) balı ve dut pekmezi, yörenin bilinen ürünleridir.",
+        "unlu_kisiler": "Tunceli (Dersim), Munzur Vadisi ve doğasıyla özdeşleşmiş bir Doğu şehridir."
       }
     }
   ],
@@ -1004,7 +4804,8 @@
         "Hazar",
         "Gazneli",
         "Kıpçak"
-      ]
+      ],
+      "info": "Göktürkler, tarihte 'Türk' adını resmî devlet adı olarak kullanan ilk topluluktur (MS 552)."
     },
     {
       "title": "Eski Türkçe",
@@ -1022,7 +4823,8 @@
         "Kurgan",
         "Damga",
         "Yörük"
-      ]
+      ],
+      "info": "Kağan, otağ ve tümen gibi sözcükler Orhun Yazıtları'ndan bugüne ulaşan en eski Türkçe kelimelerdendir."
     }
   ]
 }
