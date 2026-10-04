@@ -4,7 +4,8 @@
     "ads_enabled": true,
     "reminders_enabled": true,
     "min_supported_build": 0,
-    "notice": ""
+    "notice": "",
+    "era1_open": true
   },
   "schema_version": 1,
   "updatedAt": "2026-08-20",
